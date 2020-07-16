@@ -1,0 +1,7 @@
+/*Color classes from global color definitions*/
+<?
+for (var i in clr) {
+?>${setCSSColors('fc', i, 'color', clr[i], drk)}<?
+?>${setCSSColors('bd', i, 'border-color', clr[i], drk)}<?
+?>${setCSSColors('bg', i, 'background-color', clr[i], drk)}<? }
+?>

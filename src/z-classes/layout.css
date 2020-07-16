@@ -1,0 +1,77 @@
+<?setBPX(true, function(b){
+return ?>
+
+    /* Columns */
+    .${r} .${x}${s}${b}wrap {
+        width: 100%;
+        margin: auto;
+        max-width: ${maxw}px;
+        min-width: ${minw}px;
+    }
+
+    .${r} .${x}${s}${b}same-size {
+        table-layout: fixed;
+    }
+
+    .${r} .${x}${s}${b}cols {
+        display: table;
+        width: 100%;
+    }
+
+    .${r} .${x}${s}${b}col,
+    .${r} .${x}${s}${b}cols > * {
+        width: auto;
+        float: none;
+        height: 100%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .${r} .${x}${s}${b}col0 { width: ${((100/12)*0)}% }
+    .${r} .${x}${s}${b}col1 { width: ${((100/12)*1)}%; }
+    .${r} .${x}${s}${b}col2 { width: ${((100/12)*2)}%; }
+    .${r} .${x}${s}${b}col3 { width: ${((100/12)*3)}%; }
+    .${r} .${x}${s}${b}col4 { width: ${((100/12)*4)}%; }
+    .${r} .${x}${s}${b}col5 { width: ${((100/12)*5)}%; }
+    .${r} .${x}${s}${b}col6 { width: ${((100/12)*6)}%; }
+    .${r} .${x}${s}${b}col7 { width: ${((100/12)*7)}%; }
+    .${r} .${x}${s}${b}col8 { width: ${((100/12)*8)}%; }
+    .${r} .${x}${s}${b}col9 { width: ${((100/12)*9)}%; }
+    .${r} .${x}${s}${b}col10 { width: ${((100/12)*10)}%; }
+    .${r} .${x}${s}${b}col11 { width: ${((100/12)*11)}%; }
+    .${r} .${x}${s}${b}col12 { width: ${((100/12)*12)}%; }
+
+
+    /*Flex*/
+    .${r} .${x}${s}${b}flex-row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+    }
+
+    .${r} .${x}${s}${b}flex-m {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+    }
+
+    .${r} .${x}${s}${b}flex-col {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+<?});?>

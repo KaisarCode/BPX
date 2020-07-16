@@ -1,0 +1,35 @@
+<?
+var r = 'app';
+var x = '';
+var s = '';
+var speed = 0.5;
+var maxw = 768;
+var minw = 320;
+var drk  = 30;
+
+/*Breakpoints*/
+var bps = [
+    '0',
+    '576px',
+    '768px',
+    '992px',
+    '1200px'
+];
+
+// Colors
+var clr = {
+    bgc: '#F9FBFD',
+    bdc: '#E1E1E1',
+    txt: '#7C8798',
+    pnl: '#FFFFFF',
+    prm: '#1C2D41',
+    sec: '#5F76E8',
+    inf: '#17A2B8',
+    scc: '#3AAA35',
+    wrn: '#FFC107',
+    dng: '#DC3545',
+    wht: '#FFFFFF',
+    gre: '#CCCCCC',
+    blk: '#000000'
+};
+?>
