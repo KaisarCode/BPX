@@ -1,7 +1,7 @@
 {
   "name": "bpx",
   "version": "1.0.1",
-  "description": "JS compiled CSS framework",
+  "description": "Breakpoint X - A complete CSS framework",
   "main": "build.js",
   "author": "KaisarCode",
   "license": "ISC",
