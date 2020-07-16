@@ -1,101 +1,96 @@
-<?setBPX(true, function(b){
-return ?>
+/*General components*/
+.${r} .${x}${s}pnl,
+.${r} .${x}${s}lbl,
+.${r} .${x}${s}bdg,
+.${r} .${x}${s}tag,
+.${r} .${x}${s}ipt,
+.${r} .${x}${s}btn {
+    color: ${clr.txt};
+    display: inline-block;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: ${clr.pnl};
+    border-color: ${clr.bdc};
+}
 
-    /*General components*/
-    .${r} .${x}${s}${b}pnl,
-    .${r} .${x}${s}${b}lbl,
-    .${r} .${x}${s}${b}bdg,
-    .${r} .${x}${s}${b}tag,
-    .${r} .${x}${s}${b}ipt,
-    .${r} .${x}${s}${b}btn {
-        color: ${clr.txt};
-        display: inline-block;
-        -webkit-border-radius: 3px;
-        border-radius: 3px;
-        background-color: ${clr.pnl};
-        border-color: ${clr.bdc};
-    }
+/*Panel styles*/
+<? for (var i in clr) {
+var txtc = 'wht'; ?>
+.${r} .${x}${s}pnl-${i} {
+    color: ${clr[txtc]};
+    background-color: ${clr[i]};
+    border-color: ${clr[i]};
+}<? } ?>
 
-    /*Panel styles*/
-    <? for (var i in clr) {
-    var txtc = 'wht'; ?>
-    .${r} .${x}${s}${b}pnl-${i} {
-        color: ${clr[txtc]};
-        background-color: ${clr[i]};
-        border-color: ${clr[i]};
-    }<? } ?>
+/*Label styles*/
+<? for (var i in clr) {
+var txtc = 'wht'; ?>
+.${r} .${x}${s}lbl-${i} {
+    color: ${clr[txtc]};
+    background-color: ${clr[i]};
+    border-color: ${clr[i]};
+}<? } ?>
 
-    /*Label styles*/
-    <? for (var i in clr) {
-    var txtc = 'wht'; ?>
-    .${r} .${x}${s}${b}lbl-${i} {
-        color: ${clr[txtc]};
-        background-color: ${clr[i]};
-        border-color: ${clr[i]};
-    }<? } ?>
+/*Badge styles*/
+.${r} .${x}${s}bdg {
+    padding: 0.2em 0.5em;
+    font-size: 0.7em;
+    -webkit-border-radius: 9999999px;
+    border-radius: 9999999px;
+}
+<? for (var i in clr) {
+var txtc = 'wht'; ?>
+.${r} .${x}${s}bdg-${i} {
+    color: ${clr[txtc]};
+    background-color: ${clr[i]};
+    border-color: ${clr[i]};
+}<? } ?>
 
-    /*Badge styles*/
-    .${r} .${x}${s}${b}bdg {
-        padding: 0.2em 0.5em;
-        font-size: 0.7em;
-        -webkit-border-radius: 9999999px;
-        border-radius: 9999999px;
-    }
-    <? for (var i in clr) {
-    var txtc = 'wht'; ?>
-    .${r} .${x}${s}${b}bdg-${i} {
-        color: ${clr[txtc]};
-        background-color: ${clr[i]};
-        border-color: ${clr[i]};
-    }<? } ?>
+/*Tag styles*/
+.${r} .${x}${s}tag {
+    padding: 0.2em 0.5em;
+    font-size: 0.7em;
+}
+<? for (var i in clr) {
+var txtc = 'wht'; ?>
+.${r} .${x}${s}tag-${i} {
+    color: ${clr[txtc]};
+    background-color: ${clr[i]};
+    border-color: ${clr[i]};
+}<? } ?>
 
-    /*Tag styles*/
-    .${r} .${x}${s}${b}tag {
-        padding: 0.2em 0.5em;
-        font-size: 0.7em;
-    }
-    <? for (var i in clr) {
-    var txtc = 'wht'; ?>
-    .${r} .${x}${s}${b}tag-${i} {
-        color: ${clr[txtc]};
-        background-color: ${clr[i]};
-        border-color: ${clr[i]};
-    }<? } ?>
+/*Button styles*/
+.${r} .${x}${s}btn {
+    color: ${clr.wht};
+    background-color: ${clr.prm};
+    border-color: ${clr.prm};
+}
+.${r} .${x}${s}btn:hover {
+    background-color: ${cssDarken(clr.prm, drk)};
+    border-color: ${cssDarken(clr.prm, drk)};
+}
+<? for (var i in clr) {
+var txtc = 'wht'; ?>
+.${r} .${x}${s}btn-${i} {
+    color: ${clr[txtc]};
+    background-color: ${clr[i]};
+    border-color: ${clr[i]};
+}
+.${r} .${x}${s}btn-${i}:hover {
+    background-color: ${cssDarken(clr[i], drk)};
+    border-color: ${cssDarken(clr[i], drk)};
+}<? } ?>
 
-    /*Button styles*/
-    .${r} .${x}${s}${b}btn {
-        color: ${clr.wht};
-        background-color: ${clr.prm};
-        border-color: ${clr.prm};
-    }
-    .${r} .${x}${s}${b}btn:hover {
-        background-color: ${cssDarken(clr.prm, drk)};
-        border-color: ${cssDarken(clr.prm, drk)};
-    }
-    <? for (var i in clr) {
-    var txtc = 'wht'; ?>
-    .${r} .${x}${s}${b}btn-${i} {
-        color: ${clr[txtc]};
-        background-color: ${clr[i]};
-        border-color: ${clr[i]};
-    }
-    .${r} .${x}${s}${b}btn-${i}:hover {
-        background-color: ${cssDarken(clr[i], drk)};
-        border-color: ${cssDarken(clr[i], drk)};
-    }<? } ?>
-
-    /*Input styles*/
-    .${r} .${x}${s}${b}ipt:focus {
-        border-color: ${cssDarken(clr.bdc, drk)};
-    }
-    <? for (var i in clr) {
-    var txtc = 'txt'; ?>
-    .${r} .${x}${s}${b}ipt-${i} {
-        color: ${clr[txtc]};
-        border-color: ${clr[i]};
-    }
-    .${r} .${x}${s}${b}ipt-${i}:focus {
-        border-color: ${cssDarken(clr[i], drk)};
-    }<? } ?>
-
-<?});?>
+/*Input styles*/
+.${r} .${x}${s}ipt:focus {
+    border-color: ${cssDarken(clr.bdc, drk)};
+}
+<? for (var i in clr) {
+var txtc = 'txt'; ?>
+.${r} .${x}${s}ipt-${i} {
+    color: ${clr[txtc]};
+    border-color: ${clr[i]};
+}
+.${r} .${x}${s}ipt-${i}:focus {
+    border-color: ${cssDarken(clr[i], drk)};
+}<? } ?>
