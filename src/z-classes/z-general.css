@@ -168,23 +168,6 @@ return ?>
     .${r} .${x}${s}${b}opc90 { opacity: 0.9; }
     .${r} .${x}${s}${b}opc100 { opacity: 1; }
 
-    /*Border*/
-    .${r} .${x}${s}${b}bd { border-width: 1px; border-style: solid; }
-    .${r} .${x}${s}${b}bd-xs { border-width: 1px; border-style: solid; }
-    .${r} .${x}${s}${b}bd-sm { border-width: 2px; border-style: solid; }
-    .${r} .${x}${s}${b}bd-md { border-width: 3px; border-style: solid; }
-    .${r} .${x}${s}${b}bd-lg { border-width: 4px; border-style: solid; }
-    .${r} .${x}${s}${b}bd-xl { border-width: 5px; border-style: solid; }
-    .${r} .${x}${s}${b}bd-no { border: 0; }
-    .${r} .${x}${s}${b}bd-x-no { border-left: 0; border-right: 0; }
-    .${r} .${x}${s}${b}bd-y-no { border-top: 0; border-bottom: 0; }
-    .${r} .${x}${s}${b}bd-t-no { border-top: 0; }
-    .${r} .${x}${s}${b}bd-r-no { border-right: 0; }
-    .${r} .${x}${s}${b}bd-b-no { border-bottom: 0; }
-    .${r} .${x}${s}${b}bd-l-no { border-left: 0; }
-    .${r} .${x}${s}${b}dotted { border-style: dotted; }
-    .${r} .${x}${s}${b}dashed { border-style: dashed; }
-
     /*Background image*/
     .${r} .${x}${s}${b}bg-img {
         background-position: 50%;
