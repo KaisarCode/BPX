@@ -60,6 +60,7 @@ return ?>
     /*Box layout*/
     .${r} .${x}${s}${b}block { display: block; }
     .${r} .${x}${s}${b}inline { display: inline-block; }
+    .${r} .${x}${s}${b}cell { display: table-cell; }
     .${r} .${x}${s}${b}hide { visibility: hidden; }
     .${r} .${x}${s}${b}none { display: none; }
     .${r} .${x}${s}${b}abs { position: absolute; }
