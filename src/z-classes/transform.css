@@ -136,5 +136,27 @@ return ?>
         -ms-transform: scale(0.9);
         transform: scale(0.9);
     }
+    
+    /*Rotate*/
+    .${r} .${x}${s}${b}rotate0 {
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0);
+    }
+    .${r} .${x}${s}${b}rotate90 {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    .${r} .${x}${s}${b}rotate180 {
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    .${r} .${x}${s}${b}rotate270 {
+        -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
 
 <?});?>
