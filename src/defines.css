@@ -10,10 +10,7 @@ var drk  = 30;
 /*Breakpoints*/
 var bps = [
     '0',
-    '576px',
-    '768px',
-    '992px',
-    '1200px'
+    '768px'
 ];
 
 // Colors
