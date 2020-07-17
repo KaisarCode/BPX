@@ -10,7 +10,7 @@ function setBPX(enable, cb) {
         if (b == 0) b = '';
         if (b != 0) b = 'bp'+b+'-';
         if (b == 0) ?>${cb(b)}<?;
-        if (b != 0) {?>
+        if (b != 0 && enable) {?>
         @media (min-width: ${m}) {
             ${cb(b)}
         }<?}
