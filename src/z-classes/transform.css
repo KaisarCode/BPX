@@ -1,26 +1,36 @@
-<?setBPX(false, function(b){
+<?setBPX(true, function(b){
 return ?>
 
     /*Slide*/
-    .${r} .${x}${s}${b}t-out {
+    .${r} .${x}${s}${b}out-t {
         webkit-transform: translateY(-150%);
         -ms-transform: translateY(-150%);
         transform: translateY(-150%);
     }
-    .${r} .${x}${s}${b}r-out {
+    .${r} .${x}${s}${b}out-r {
         webkit-transform: translateX(150%);
         -ms-transform: translateX(150%);
         transform: translateX(150%);
     }
-    .${r} .${x}${s}${b}b-out {
+    .${r} .${x}${s}${b}out-b {
         webkit-transform: translateY(150%);
         -ms-transform: translateY(150%);
         transform: translateY(150%);
     }
-    .${r} .${x}${s}${b}l-out {
+    .${r} .${x}${s}${b}out-l {
         webkit-transform: translateX(-150%);
         -ms-transform: translateX(-150%);
         transform: translateX(-150%);
+    }
+    .${r} .${x}${s}${b}out-x-no {
+        webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+    .${r} .${x}${s}${b}out-y-no {
+        webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
     }
 
     /*Grow*/
