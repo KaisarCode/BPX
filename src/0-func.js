@@ -15,6 +15,13 @@ function setBPX(enable, cb) {
             ${cb(b)}
         }<?}
     });
+};
+
+// Set specific breakpoint
+function setBP(sz, cb) {
+    ?>@media (min-width: ${sz}) {<?
+    ?>${cb()}<?
+    ?>}<?
 }
 
 // RGB to HEX
