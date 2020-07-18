@@ -27,6 +27,7 @@ var runCSS = function() {
 
 runCSS();
 var dir = dwalk('src');
+dir.unshift('src');
 watch(dir, function(d, f, e){
     if (
     !d.match(/^\./g) &&
