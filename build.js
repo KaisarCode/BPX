@@ -2,13 +2,14 @@ var fs = require('fs');
 var vm = require('vm');
 var t2js = require('t2js');
 var watch = require('kc-watch');
+var dwalk = require('kc-dwalk');
 var fwalk = require('kc-fwalk');
 var fread = require('kc-fread');
 var fwrite = require('kc-fwrite');
 var strmin = require('kc-strmin');
 var rmcomm = require('kc-rmcomm');
 
-var run = function() {
+var runCSS = function() {
     var str = '';
     fwalk('src').forEach(function(f){
         str += fread(f);
@@ -24,10 +25,11 @@ var run = function() {
     console.log('CSS Compiled');
 }
 
-run();
-watch('src', function(d, f, e){
+runCSS();
+var dir = dwalk('src');
+watch(dir, function(d, f, e){
     if (
-    !d.match(/^\..*/g) &&
-    !f.match(/^\..*/g)
-    ) { run(); }
+    !d.match(/^\./g) &&
+    !f.match(/^\./g)
+    ) { runCSS(); }
 });
