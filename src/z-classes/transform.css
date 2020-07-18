@@ -143,15 +143,30 @@ return ?>
         -ms-transform: rotate(0);
         transform: rotate(0);
     }
+    .${r} .${x}${s}${b}rotate45 {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
     .${r} .${x}${s}${b}rotate90 {
         -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
     }
-    .${r} .${x}${s}${b}rotate180 {
+    .${r} .${x}${s}${b}rotate135 {
         -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    .${r} .${x}${s}${b}rotate180 {
+        -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
         transform: rotate(180deg);
+    }
+    .${r} .${x}${s}${b}rotate225 {
+        -webkit-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+        transform: rotate(225deg);
     }
     .${r} .${x}${s}${b}rotate270 {
         -webkit-transform: rotate(270deg);
