@@ -41,37 +41,4 @@ return ?>
     .${r} .${x}${s}${b}col11 { width: ${((100/12)*11)}%; }
     .${r} .${x}${s}${b}col12 { width: ${((100/12)*12)}%; }
 
-
-    /*Flex*/
-    .${r} .${x}${s}${b}flex-row {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-        align-items: stretch;
-    }
-
-    .${r} .${x}${s}${b}flex-m {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: stretch;
-    }
-
-    .${r} .${x}${s}${b}flex-col {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-
 <?});?>
