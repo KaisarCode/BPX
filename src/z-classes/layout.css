@@ -40,5 +40,18 @@ return ?>
     .${r} .${x}${s}${b}col10 { width: ${((100/12)*10)}%; }
     .${r} .${x}${s}${b}col11 { width: ${((100/12)*11)}%; }
     .${r} .${x}${s}${b}col12 { width: ${((100/12)*12)}%; }
+    
+    /*Flex*/
+    .${r} .${x}${s}${b}cols-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .${r} .${x}${s}${b}rows-flex {
+        display: flex;
+        flex-direction: row;
+    }
+    .${r} .${x}${s}${b}full-flex {
+        flex: auto;
+    }
 
 <?});?>
