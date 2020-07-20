@@ -4,9 +4,19 @@ return ?>
     /* Columns */
     .${r} .${x}${s}${b}wrap {
         width: 100%;
-        margin: auto;
+        margin: 0 auto;
         max-width: ${maxw}px;
         min-width: ${minw}px;
+    }
+    .${r} .${x}${s}${b}wrap-min {
+        width: 100%;
+        margin: 0 auto;
+        min-width: ${minw}px;
+    }
+    .${r} .${x}${s}${b}wrap-max {
+        width: 100%;
+        margin: 0 auto;
+        max-width: ${maxw}px;
     }
 
     .${r} .${x}${s}${b}same-size {
@@ -42,16 +52,22 @@ return ?>
     .${r} .${x}${s}${b}col12 { width: ${((100/12)*12)}%; }
     
     /*Flex*/
-    .${r} .${x}${s}${b}cols-flex {
+    .${r} .${x}${s}${b}col-flex {
         display: flex;
         flex-direction: column;
     }
-    .${r} .${x}${s}${b}rows-flex {
+    .${r} .${x}${s}${b}row-flex {
         display: flex;
         flex-direction: row;
     }
     .${r} .${x}${s}${b}full-flex {
         flex: auto;
+    }
+    .${r} .${x}${s}${b}wrap-flex {
+        flex-wrap: wrap;
+    }
+    .${r} .${x}${s}${b}nowrap-flex {
+        flex-wrap: nowrap;
     }
 
 <?});?>

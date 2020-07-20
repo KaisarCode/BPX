@@ -17,8 +17,8 @@ return ?>
     .${r} .${x}${s}${b}h0 { font-size: 0em; }
 
     /*Text style*/
-    .${r} .${x}${s}${b}bolder { font-weight: 600; }
-    .${r} .${x}${s}${b}bold { font-weight: 500; }
+    .${r} .${x}${s}${b}bolder { font-weight: 800; }
+    .${r} .${x}${s}${b}bold { font-weight: 600; }
     .${r} .${x}${s}${b}regular { font-weight: 400; }
     .${r} .${x}${s}${b}thin { font-weight: 300; }
     .${r} .${x}${s}${b}thinner { font-weight: 200; }
