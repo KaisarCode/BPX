@@ -30,4 +30,9 @@ var clr = {
     gre: '#CCCCCC',
     blk: '#000000'
 };
+
+// Redefine variables
+if (typeof bpxDefines !== 'undefined') {
+    bpxDefines();
+}
 ?>
