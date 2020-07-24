@@ -1,6 +1,7 @@
 var fs = require('fs');
 var vm = require('vm');
 var t2js = require('t2js');
+var jrun = vm.runInNewContext;
 var watch = require('kc-watch');
 var dwalk = require('kc-dwalk');
 var fwalk = require('kc-fwalk');
@@ -11,14 +12,15 @@ var rmcomm = require('kc-rmcomm');
 
 var runCSS = function() {
     var str = '';
-    fwalk('src').forEach(function(f){
-        str += fread(f);
+    fwalk('./').forEach(function(f){
+        if (f.match(/\.t2\.css$/ig)) {
+        str += fread(f); }
     });
     str = t2js(str, {
         mode: 'tpl'
     });
     str = rmcomm(str);
-    str = vm.runInNewContext(str);
+    str = jrun(str);
     str = strmin(str);
     str = str.trim();
     fwrite('dist/style.css', str);
@@ -26,11 +28,9 @@ var runCSS = function() {
 }
 
 runCSS();
-var dir = dwalk('src');
-dir.unshift('src');
+var dir = dwalk('./');
 watch(dir, function(d, f, e){
     if (
-    !d.match(/^\./g) &&
-    !f.match(/^\./g)
+    f.match(/\.t2\.css$/ig)
     ) { runCSS(); }
 });
