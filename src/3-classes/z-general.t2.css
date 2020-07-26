@@ -34,7 +34,10 @@ return ?>
         white-space: nowrap;
         text-overflow: ellipsis;
     }
-
+    
+    /*Top*/
+    .${r} .${x}${s}${b}t01 { top: 0.1em; }
+    
     /*Line height*/
     .${r} .${x}${s}${b}lnh0  { line-height: 0; }
     .${r} .${x}${s}${b}lnh05 { line-height: 0.5; }
