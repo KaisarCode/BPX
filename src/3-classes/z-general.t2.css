@@ -37,6 +37,7 @@ return ?>
     
     /*Top*/
     .${r} .${x}${s}${b}t01 { top: 0.1em; }
+    .${r} .${x}${s}${b}t015 { top: 0.15em; }
     
     /*Line height*/
     .${r} .${x}${s}${b}lnh0  { line-height: 0; }
