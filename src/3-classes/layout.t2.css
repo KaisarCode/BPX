@@ -22,6 +22,11 @@ return ?>
     .${r} .${x}${s}${b}same-size {
         table-layout: fixed;
     }
+    
+    .${r} .${x}${s}${b}same-size > * {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
     .${r} .${x}${s}${b}cols {
         display: table;
