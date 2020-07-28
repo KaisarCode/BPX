@@ -102,5 +102,20 @@ return ?>
     .${r} .${x}${s}${b}nowrap-flex {
         flex-wrap: nowrap;
     }
+    .${r} .${x}${s}${b}align-l-flex {
+        justify-content: flex-start;
+    }
+    .${r} .${x}${s}${b}align-c-flex {
+        justify-content: center;
+    }
+    .${r} .${x}${s}${b}align-r-flex {
+        justify-content: flex-end;
+    }
+    .${r} .${x}${s}${b}align-a-flex {
+        justify-content: space-around;
+    }
+    .${r} .${x}${s}${b}align-b-flex {
+        justify-content: space-between;
+    }
 
 <?});?>

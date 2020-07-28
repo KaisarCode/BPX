@@ -10,7 +10,7 @@
     -webkit-border-radius: 3px;
     border-radius: 3px;
     background-color: ${clr.pnl};
-    border-color: ${clr.bdc};
+    border: 1px solid ${clr.bdc};
 }
 
 /*Panel styles*/

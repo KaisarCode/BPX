@@ -60,6 +60,18 @@ function cssDarken(hex, amn) {
     return rgbToHex(r,g,b);
 };
 
+// Horizontal gradient
+function cssGradX(c1, c2) { return ?>
+    background: ${c1};
+    background: -moz-linear-gradient(left, ${c1} 0%, ${c2} 100%);
+    background: -webkit-linear-gradient(left, ${c1} 0%, ${c2} 100%);
+    background: linear-gradient(to right, ${c1} 0%, ${c2} 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(
+    startColorstr='${c1}',
+    endColorstr='${c2}',
+    GradientType=1 );
+<?};
+
 // Vertical gradient
 function cssGradY(c1, c2) { return ?>
     background: ${c1};
