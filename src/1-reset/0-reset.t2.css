@@ -8,7 +8,8 @@
 .${r} h1 { margin: 0.67em 0; }
 .${r} hr {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -64,6 +65,12 @@
   line-height: 1.15;
   margin: 0;
 }
+.${r} button,
+.${r} input,
+.${r} select,
+.${r} textarea {
+  border: 1px solid #ccc;
+}
 .${r} button[disabled],
 .${r} input[disabled],
 .${r} optgroup[disabled],
@@ -80,11 +87,18 @@
 .${r} select {
   text-transform: none;
 }
+.${r} input,
+.${r} select,
+.${r} textarea {
+  background-color: transparent;
+}
 .${r} button,
 .${r} [type="button"],
 .${r} [type="reset"],
 .${r} [type="submit"] {
+  background-color: #ccc;
   -webkit-appearance: button;
+  -moz-appearance: button;
 }
 .${r} button::-moz-focus-inner,
 .${r} [type="button"]::-moz-focus-inner,
@@ -97,7 +111,7 @@
 .${r} [type="button"]:-moz-focusring,
 .${r} [type="reset"]:-moz-focusring,
 .${r} [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 1px dotted #ccc;
 }
 .${r} button {
     padding: 0.5em 1em;
@@ -107,7 +121,8 @@
 }
 .${r} legend {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -123,7 +138,8 @@
 .${r} [type="checkbox"],
 .${r} [type="radio"] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   cursor: pointer;
 }
 .${r} [type="number"]::-webkit-inner-spin-button,
@@ -132,13 +148,16 @@
 }
 .${r} [type="search"] {
   -webkit-appearance: textfield;
+  -moz-appearance: textfield;
   outline-offset: -2px;
 }
 .${r} [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
 .${r} ::-webkit-file-upload-button {
   -webkit-appearance: button;
+  -moz-appearance: button;
   font: inherit;
 }
 .${r} details {
@@ -163,7 +182,8 @@
 .${r},
 .${r} * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
 .${r} a {
@@ -237,15 +257,16 @@
   display: inline-block;
   vertical-align: middle;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   font-family: sans-serif;
   font-size: 1em;
   line-height: 1.5;
   border: 1px solid #CCCCCC;
   padding: 0.25em 1em;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 // Restyle form controls

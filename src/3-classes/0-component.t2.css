@@ -95,6 +95,9 @@ var txtc = 'wht'; ?>
 }<? } ?>
 
 /*Input styles*/
+.${r} .${x}${s}ipt {
+    background-color: transparent;
+}
 .${r} .${x}${s}ipt:focus {
     border-color: ${cssDarken(clr.bdc, drk)};
 }
