@@ -1,59 +1,59 @@
 <?setBPX(true, function(b){
 return ?>
 
-    .${r} .${x}${s}${b}pad     { padding: 0.5em; }
+    .${r} .${x}${s}${b}pad     { padding: 0.75em; }
     .${r} .${x}${s}${b}pad-xl  { padding: 2em; }
     .${r} .${x}${s}${b}pad-lg  { padding: 1.5em; }
     .${r} .${x}${s}${b}pad-md  { padding: 1em; }
-    .${r} .${x}${s}${b}pad-sm  { padding: 0.5em; }
+    .${r} .${x}${s}${b}pad-sm  { padding: 0.75em; }
     .${r} .${x}${s}${b}pad-xs  { padding: 0.25em; }
     .${r} .${x}${s}${b}pad-no  { padding: 0em; }
 
-    .${r} .${x}${s}${b}pad-x     { padding-left: 0.5em;  padding-right: 0.5em;}
+    .${r} .${x}${s}${b}pad-x     { padding-left: 0.75em;  padding-right: 0.75em;}
     .${r} .${x}${s}${b}pad-x-xl  { padding-left: 2em; padding-right: 2em; }
     .${r} .${x}${s}${b}pad-x-lg  { padding-left: 1.5em; padding-right: 1.5em; }
     .${r} .${x}${s}${b}pad-x-md  { padding-left: 1em;   padding-right: 1em;   }
-    .${r} .${x}${s}${b}pad-x-sm  { padding-left: 0.5em; padding-right: 0.5em; }
+    .${r} .${x}${s}${b}pad-x-sm  { padding-left: 0.75em; padding-right: 0.75em; }
     .${r} .${x}${s}${b}pad-x-xs  { padding-left: 0.25em; padding-right: 0.25em; }
     .${r} .${x}${s}${b}pad-x-no  { padding-left: 0em;   padding-right: 0em;   }
 
-    .${r} .${x}${s}${b}pad-y     { padding-top: 0.5em;  padding-bottom: 0.5em;}
+    .${r} .${x}${s}${b}pad-y     { padding-top: 0.75em;  padding-bottom: 0.75em;}
     .${r} .${x}${s}${b}pad-y-xl  { padding-top: 2em; padding-bottom: 2em; }
     .${r} .${x}${s}${b}pad-y-lg  { padding-top: 1.5em; padding-bottom: 1.5em; }
     .${r} .${x}${s}${b}pad-y-md  { padding-top: 1em;   padding-bottom: 1em;   }
-    .${r} .${x}${s}${b}pad-y-sm  { padding-top: 0.5em; padding-bottom: 0.5em; }
+    .${r} .${x}${s}${b}pad-y-sm  { padding-top: 0.75em; padding-bottom: 0.75em; }
     .${r} .${x}${s}${b}pad-y-xs  { padding-top: 0.25em; padding-bottom: 0.25em; }
     .${r} .${x}${s}${b}pad-y-no  { padding-top: 0em;   padding-bottom: 0em;   }
 
-    .${r} .${x}${s}${b}pad-t     { padding-top: 0.5em; }
+    .${r} .${x}${s}${b}pad-t     { padding-top: 0.75em; }
     .${r} .${x}${s}${b}pad-t-xl  { padding-top: 2em; }
     .${r} .${x}${s}${b}pad-t-lg  { padding-top: 1.5em; }
     .${r} .${x}${s}${b}pad-t-md  { padding-top: 1em;   }
-    .${r} .${x}${s}${b}pad-t-sm  { padding-top: 0.5em; }
+    .${r} .${x}${s}${b}pad-t-sm  { padding-top: 0.75em; }
     .${r} .${x}${s}${b}pad-t-xs  { padding-top: 0.25em; }
     .${r} .${x}${s}${b}pad-t-no  { padding-top: 0em;   }
 
-    .${r} .${x}${s}${b}pad-r     { padding-right: 0.5em; }
+    .${r} .${x}${s}${b}pad-r     { padding-right: 0.75em; }
     .${r} .${x}${s}${b}pad-r-xl  { padding-right: 2em; }
     .${r} .${x}${s}${b}pad-r-lg  { padding-right: 1.5em; }
     .${r} .${x}${s}${b}pad-r-md  { padding-right: 1em;   }
-    .${r} .${x}${s}${b}pad-r-sm  { padding-right: 0.5em; }
+    .${r} .${x}${s}${b}pad-r-sm  { padding-right: 0.75em; }
     .${r} .${x}${s}${b}pad-r-xs  { padding-right: 0.25em; }
     .${r} .${x}${s}${b}pad-r-no  { padding-right: 0em;   }
 
-    .${r} .${x}${s}${b}pad-b     { padding-bottom: 0.5em; }
+    .${r} .${x}${s}${b}pad-b     { padding-bottom: 0.75em; }
     .${r} .${x}${s}${b}pad-b-xl  { padding-bottom: 2em; }
     .${r} .${x}${s}${b}pad-b-lg  { padding-bottom: 1.5em; }
     .${r} .${x}${s}${b}pad-b-md  { padding-bottom: 1em;   }
-    .${r} .${x}${s}${b}pad-b-sm  { padding-bottom: 0.5em; }
+    .${r} .${x}${s}${b}pad-b-sm  { padding-bottom: 0.75em; }
     .${r} .${x}${s}${b}pad-b-xs  { padding-bottom: 0.25em; }
     .${r} .${x}${s}${b}pad-b-no  { padding-bottom: 0em;   }
 
-    .${r} .${x}${s}${b}pad-l     { padding-left: 0.5em; }
+    .${r} .${x}${s}${b}pad-l     { padding-left: 0.75em; }
     .${r} .${x}${s}${b}pad-l-xl  { padding-left: 2em; }
     .${r} .${x}${s}${b}pad-l-lg  { padding-left: 1.5em; }
     .${r} .${x}${s}${b}pad-l-md  { padding-left: 1em;   }
-    .${r} .${x}${s}${b}pad-l-sm  { padding-left: 0.5em; }
+    .${r} .${x}${s}${b}pad-l-sm  { padding-left: 0.75em; }
     .${r} .${x}${s}${b}pad-l-xs  { padding-left: 0.25em; }
     .${r} .${x}${s}${b}pad-l-no  { padding-left: 0em;   }
 
