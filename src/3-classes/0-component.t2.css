@@ -22,6 +22,21 @@ var txtc = 'wht'; ?>
     border-color: ${clr[i]};
 }<? } ?>
 
+// Labels and buttons
+.${r} .${x}${s}lbl,
+.${r} .${x}${s}btn {
+    margin: 0;
+    padding: 0.5em 1em;
+    display: inline-block;
+    font-size: 1em;
+    line-height: 1.15;
+    font-weight: normal;
+    font-family: inherit;
+    color: ${clr.wht};
+    background-color: ${clr.bdc};
+    border-color: ${clr.bdc}; 
+}
+
 /*Label styles*/
 <? for (var i in clr) {
 var txtc = 'wht'; ?>
@@ -61,9 +76,7 @@ var txtc = 'wht'; ?>
 
 /*Button styles*/
 .${r} .${x}${s}btn {
-    color: ${clr.wht};
-    background-color: ${clr.prm};
-    border-color: ${clr.prm};
+    cursor: pointer;
 }
 .${r} .${x}${s}btn:hover {
     background-color: ${cssDarken(clr.prm, drk)};
