@@ -97,6 +97,7 @@ var txtc = 'wht'; ?>
 
 /*Input styles*/
 .${r} .${x}${s}ipt {
+    color: inherit;
     background-color: transparent;
 }
 .${r} .${x}${s}ipt:focus {
