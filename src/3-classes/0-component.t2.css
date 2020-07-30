@@ -91,7 +91,8 @@ var txtc = 'wht'; ?>
     background-color: ${clr[i]};
     border-color: ${clr[i]};
 }
-.${r} .${x}${s}btn-${i}:hover {
+.${r} .${x}${s}btn-${i}:hover,
+.${r} .${x}${s}btn-${i}.act {
     background-color: ${cssDarken(clr[i], drk)};
     border-color: ${cssDarken(clr[i], drk)};
 }<? } ?>
