@@ -112,3 +112,14 @@ var txtc = 'txt'; ?>
 .${r} .${x}${s}ipt-${i}:focus {
     border-color: ${cssDarken(clr[i], drk)};
 }<? } ?>
+
+/*Profile picture*/
+.${r} .${x}${s}pic {
+    padding: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 999999px;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
