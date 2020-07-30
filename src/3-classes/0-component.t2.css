@@ -79,7 +79,8 @@ var txtc = 'wht'; ?>
 .${r} .${x}${s}btn {
     cursor: pointer;
 }
-.${r} .${x}${s}btn:hover {
+.${r} .${x}${s}btn:hover,
+.${r} .${x}${s}btn.act {
     background-color: ${cssDarken(clr.prm, drk)};
     border-color: ${cssDarken(clr.prm, drk)};
 }
