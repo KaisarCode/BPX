@@ -100,6 +100,7 @@ var txtc = 'wht'; ?>
 
 /*Input styles*/
 .${r} .${x}${s}ipt {
+    width: 100%;
     color: inherit;
     line-height: 1.5;
     overflow: hidden;
@@ -108,6 +109,12 @@ var txtc = 'wht'; ?>
     vertical-align: middle;
     text-overflow: ellipsis;
     background-color: transparent;
+}
+.${r} .${x}${s}ipt[type="checkbox"],
+.${r} .${x}${s}ipt[type="radio"] {
+    width:0em;
+    height:0em;
+    padding:0.5em;
 }
 .${r} .${x}${s}ipt:focus {
     border-color: ${cssDarken(clr.bdc, drk)};
