@@ -78,6 +78,7 @@ var txtc = 'wht'; ?>
 /*Button styles*/
 .${r} .${x}${s}btn {
     cursor: pointer;
+    vertical-align: middle;
 }
 .${r} .${x}${s}btn:hover,
 .${r} .${x}${s}btn.act {
@@ -101,7 +102,11 @@ var txtc = 'wht'; ?>
 .${r} .${x}${s}ipt {
     color: inherit;
     line-height: 1.5;
+    overflow: hidden;
     padding: 0.25em 1em;
+    display: inline-block;
+    vertical-align: middle;
+    text-overflow: ellipsis;
     background-color: transparent;
 }
 .${r} .${x}${s}ipt:focus {
