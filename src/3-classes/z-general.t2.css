@@ -153,17 +153,22 @@ return ?>
     }
 
     /*Shadow*/
-    .${r} .${x}${s}${b}shad {
+    .${r} .${x}${s}${b}shad,
+    .${r} .${x}${s}${b}shad-sm {
+        -webkit-box-shadow: 0 6px 3px -6px rgba(0,0,0,0.5);
+        box-shadow: 0 6px 3px -6px rgba(0,0,0,0.5);
+    }
+    .${r} .${x}${s}${b}shad-md {
         -webkit-box-shadow: 0 .125em .25em rgba(0,0,0,.075);
         box-shadow: 0 .125em .25em rgba(0,0,0,.075);
     }
-    .${r} .${x}${s}${b}shad-md {
-        -webkit-box-shadow: 0 .5em 1em rgba(0,0,0,.15);
-        box-shadow: 0 .5em 1em rgba(0,0,0,.15);
-    }
     .${r} .${x}${s}${b}shad-lg {
-        -webkit-box-shadow: 0 1em 3em rgba(0,0,0,.175);
-        box-shadow: 0 1em 3em rgba(0,0,0,.175);
+        -webkit-box-shadow: 0 .5em 1em rgba(0,0,0,0.15);
+        box-shadow: 0 .5em 1em rgba(0,0,0,0.15);
+    }
+    .${r} .${x}${s}${b}shad-xl {
+        -webkit-box-shadow: 0 1em 3em rgba(0,0,0,0.175);
+        box-shadow: 0 1em 3em rgba(0,0,0,0.175);
     }
     
     .${r} .${x}${s}${b}shad-no {

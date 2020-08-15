@@ -15,19 +15,18 @@ var bps = [
 
 // Colors
 var clr = {
-    bgc: '#F9FBFD',
-    bdc: '#E1E1E1',
-    txt: '#7C8798',
-    lnk: '#7C8798',
+    bgc: '#F5F5F5',
+    bdc: '#E6E6E6',
+    txt: '#606C76',
+    lnk: '#337AB7',
     pnl: '#FFFFFF',
-    prm: '#1C2D41',
+    prm: '#536878',
     sec: '#5F76E8',
     inf: '#17A2B8',
     scc: '#3AAA35',
     wrn: '#FFC107',
     dng: '#DC3545',
     wht: '#FFFFFF',
-    gre: '#CCCCCC',
     blk: '#000000'
 };
 
