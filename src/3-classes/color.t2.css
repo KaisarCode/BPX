@@ -7,18 +7,18 @@ for (var i in clr) {
 ?>
 
 /*Opaque bg*/
-.${r} .${x}${s}bg-opq,
-.${r} .${x}${s}bg-opq-hvr:hover,
-.${r} .${x}${s}bg-opq-act.act {
+.${r} .${x}${s}${b}bg-opq,
+.${r} .${x}${s}${b}bg-opq-hvr:hover,
+.${r} .${x}${s}${b}bg-opq-act.act {
     background-color: rgba(0, 0, 0, 0.2);
 }
-.${r} .${x}${s}bg-opq-lgt,
-.${r} .${x}${s}bg-opq-lgt-hvr:hover,
-.${r} .${x}${s}bg-opq-lgt-act.act {
+.${r} .${x}${s}${b}bg-opq-lgt,
+.${r} .${x}${s}${b}bg-opq-lgt-hvr:hover,
+.${r} .${x}${s}${b}bg-opq-lgt-act.act {
     background-color: rgba(0, 0, 0, 0.02);
 }
-.${r} .${x}${s}bg-opq-inv,
-.${r} .${x}${s}bg-opq-inv-hvr:hover,
-.${r} .${x}${s}bg-opq-inv-act.act {
+.${r} .${x}${s}${b}bg-opq-inv,
+.${r} .${x}${s}${b}bg-opq-inv-hvr:hover,
+.${r} .${x}${s}${b}bg-opq-inv-act.act {
     background-color: rgba(255, 255, 255, 0.2);
 }
