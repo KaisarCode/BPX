@@ -134,6 +134,7 @@
 }
 .${r} textarea {
   overflow: auto;
+  resize: vertical;
 }
 .${r} [type="checkbox"],
 .${r} [type="radio"] {
