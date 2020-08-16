@@ -1,5 +1,5 @@
 # BPX
-Breakpoint X - A complete CSS framework
+Breakpoint X - A complete CSS toolset
 
 ### Install
 ```
