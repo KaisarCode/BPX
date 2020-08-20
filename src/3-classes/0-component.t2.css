@@ -105,6 +105,7 @@ var txtc = 'wht'; ?>
     line-height: 1.5;
     overflow: hidden;
     padding: 0.25em 1em;
+    padding-right: 2em;
     display: inline-block;
     vertical-align: middle;
     text-overflow: ellipsis;
