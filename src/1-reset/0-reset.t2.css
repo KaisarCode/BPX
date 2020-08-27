@@ -351,3 +351,25 @@
 .${r} label {
   display: inline-block;
 }
+
+.${r} ::placeholder {
+  color: inherit;
+  opacity: 0.8;
+}
+.${r} :-ms-input-placeholder {
+  color: inherit;
+  opacity: 0.8;
+}
+.${r} ::-ms-input-placeholder {
+  color: inherit;
+  opacity: 0.8;
+}
+
+.${r} input:-webkit-autofill,
+.${r} input:-webkit-autofill:hover,
+.${r} input:-webkit-autofill:focus,
+.${r} input:-webkit-autofill:active {
+    transition: background-color
+    5000s ease-in-out 0s;
+    -webkit-box-shadow: 0;
+}
