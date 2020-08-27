@@ -3,8 +3,36 @@
 for (var i in clr) {
 ?>${setCSSColors('fc', i, 'color', clr[i], drk)}<?
 ?>${setCSSColors('bd', i, 'border-color', clr[i], drk)}<?
-?>${setCSSColors('bg', i, 'background-color', clr[i], drk)}<? }
+?>${setCSSColors('bg', i, 'background-color', clr[i], drk)}<?
+
 ?>
+.grad-${i}-x,
+.grad-${i}-x-hvr:hover,
+.grad-${i}-x-act.act {
+    ${cssGradX(clr[i], cssDarken(clr[i], drk))}
+}
+.grad-${i}-y,
+.grad-${i}-y-hvr:hover,
+.grad-${i}-y-act.act {
+    ${cssGradY(clr[i], cssDarken(clr[i], drk))}
+}
+.grad-${i}-c,
+.grad-${i}-c-hvr:hover,
+.grad-${i}-c-act.act {
+    ${cssGradC(cssDarken(clr[i], drk), clr[i])}
+}
+.gloss-${i}-x,
+.gloss-${i}-x-hvr:hover,
+.gloss-${i}-x-act.act {
+    ${cssGlossX(clr[i], cssDarken(clr[i], drk))}
+}
+.gloss-${i}-y,
+.gloss-${i}-y-hvr:hover,
+.gloss-${i}-y-act.act {
+    ${cssGlossY(clr[i], cssDarken(clr[i], drk))}
+}
+<?
+} ?>
 
 /*Opaque bg*/
 .${r} .${x}${s}${b}bg-opq,

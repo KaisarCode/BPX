@@ -1,11 +1,13 @@
 <?
-var r = 'app';
-var x = '';
-var s = '';
-var speed = 0.5;
-var maxw = 768;
-var minw = 320;
-var drk  = 30;
+var r = 'app'; // Root class
+var x = '';    // Selectors prefix
+var s = '';    // Selectors separator
+
+var maxw = 768;  // Max width
+var minw = 320;  // Min width
+var speed = 0.5; // Animation speed
+var drk  = 30;   // Darken rate (%)
+var rad  = 4;    // Border radius (px)
 
 /*Breakpoints*/
 var bps = [
@@ -15,20 +17,23 @@ var bps = [
 
 // Colors
 var clr = {
-    bgc: '#F5F5F5',
-    bdc: '#E6E6E6',
-    txt: '#606C76',
-    lnk: '#337AB7',
-    pnl: '#FFFFFF',
-    hdr: '#536878',
-    prm: '#536878',
-    sec: '#77838C',
-    inf: '#17A2B8',
-    scc: '#3AAA35',
-    wrn: '#FFC107',
-    dng: '#DC3545',
-    wht: '#FFFFFF',
-    blk: '#000000'
+    bgc: '#F5F5F5', // Bg color
+    bdc: '#E6E6E6', // Generic borders and system elements
+    txt: '#606C76', // Text
+    lnk: '#337AB7', // Links
+    pnl: '#FFFFFF', // Panels
+    hdr: '#536878', // Headers
+    htx: '#FFFFFF', // Header text
+    mnu: '#536878', // Menu
+    mtx: '#FFFFFF', // Menu text
+    prm: '#536878', // Primary
+    sec: '#77838C', // Secondary
+    inf: '#17A2B8', // Info
+    scc: '#3AAA35', // Success
+    wrn: '#FFC107', // Warning
+    dng: '#DC3545', // Danger
+    wht: '#FFFFFF', // White
+    blk: '#000000',  // Black
 };
 
 // Redefine variables

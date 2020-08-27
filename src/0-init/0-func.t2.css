@@ -85,7 +85,7 @@ function cssGradY(c1, c2) { return ?>
 <?};
 
 // Radial gradient
-function cssGradRad(c1, c2) { return ?>
+function cssGradC(c1, c2) { return ?>
     background: ${c1};
     background: -moz-radial-gradient(center, ellipse cover, ${c1} 0%, ${c2} 100%);
     background: -webkit-radial-gradient(center, ellipse cover, ${c1} 0%, ${c2} 100%);
@@ -94,6 +94,21 @@ function cssGradRad(c1, c2) { return ?>
     startColorstr='${c1}',
     endColorstr='${c2}',
     GradientType=1 );
+<?};
+
+// Horizontal gloss
+function cssGlossX(c1, c2) { return ?>
+    background: ${c1};
+    background: -webkit-gradient(linear, left top, right top,
+    from(${c1}),
+    color-stop(50%, ${c1}),
+    color-stop(50%, ${c2}),
+    to(${c2}));
+    background: linear-gradient(to right,
+    ${c1} 0%,
+    ${c1} 50%,
+    ${c2} 50%,
+    ${c2} 100%);
 <?};
 
 // Vertical gloss

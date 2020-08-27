@@ -7,10 +7,9 @@
 .${r} .${x}${s}btn {
     color: ${clr.txt};
     display: inline-block;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
+    -webkit-border-radius: ${rad}px;
+    border-radius: ${rad}px;
     background-color: ${clr.pnl};
-    border: 1px solid ${clr.bdc};
 }
 
 /*Panel styles*/
