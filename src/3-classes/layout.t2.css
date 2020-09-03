@@ -86,6 +86,9 @@ return ?>
     .${r} .${x}${s}${b}max-col12 { max-width: ${((100/12)*12)}%; }
     
     /*Flex*/
+    ${r} .${x}${s}${b}flex {
+        display: flex;
+    }
     .${r} .${x}${s}${b}col-flex {
         display: flex;
         flex-direction: column;
@@ -112,11 +115,19 @@ return ?>
     .${r} .${x}${s}${b}align-r-flex {
         justify-content: flex-end;
     }
-    .${r} .${x}${s}${b}align-a-flex {
+    .${r} .${x}${s}${b}spc-flex {
         justify-content: space-around;
     }
-    .${r} .${x}${s}${b}align-b-flex {
+    .${r} .${x}${s}${b}btw-flex {
         justify-content: space-between;
+    }
+    
+    /*Heights*/
+    .${r} .${x}${s}${b}hgt25 {
+        height: 25%;
+    }
+    .${r} .${x}${s}${b}hgt50 {
+        height: 50%;
     }
 
 <?});?>

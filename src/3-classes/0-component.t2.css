@@ -103,12 +103,17 @@ var txtc = 'wht'; ?>
     color: inherit;
     line-height: 1.5;
     overflow: hidden;
-    padding: 0.25em 1em;
-    padding-right: 2em;
+    padding: 0.25em 0.5em;
     display: inline-block;
     vertical-align: middle;
     text-overflow: ellipsis;
     background-color: transparent;
+}
+.${r} select.${x}${s}ipt {
+    padding-right: 2em;
+}
+.${r} ${x}${s}ipt[type="search"] {
+    padding-right: 2em;
 }
 .${r} .${x}${s}ipt[type="checkbox"],
 .${r} .${x}${s}ipt[type="radio"] {

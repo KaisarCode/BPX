@@ -17,7 +17,7 @@ var bps = [
 
 // Colors
 var clr = {
-    bgc: '#F5F5F5', // Bg color
+    bgc: '#E1E1E1', // Bg color
     bdc: '#E6E6E6', // Generic borders and system elements
     txt: '#606C76', // Text
     lnk: '#337AB7', // Links
