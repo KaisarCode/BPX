@@ -123,11 +123,22 @@ return ?>
     }
     
     /*Heights*/
-    .${r} .${x}${s}${b}hgt25 {
-        height: 25%;
-    }
-    .${r} .${x}${s}${b}hgt50 {
-        height: 50%;
-    }
+    .${r} .${x}${s}${b}hgt0 { height: 0; }
+    .${r} .${x}${s}${b}hgt25 { height: 25%; }
+    .${r} .${x}${s}${b}hgt50 { height: 50%; }
+    .${r} .${x}${s}${b}hgt75 { height: 75%; }
+    .${r} .${x}${s}${b}hgt100 { height: 100%; }
+    
+    .${r} .${x}${s}${b}min-hgt0 { min-height: 0; }
+    .${r} .${x}${s}${b}min-hgt25 { min-height: 25%; }
+    .${r} .${x}${s}${b}min-hgt50 { min-height: 50%; }
+    .${r} .${x}${s}${b}min-hgt75 { min-height: 75%; }
+    .${r} .${x}${s}${b}min-hgt100 { min-height: 100%; }
+    
+    .${r} .${x}${s}${b}max-hgt0 {  max-height: 0; }
+    .${r} .${x}${s}${b}max-hgt25 { max-height: 25%; }
+    .${r} .${x}${s}${b}max-hgt50 { max-height: 50%; }
+    .${r} .${x}${s}${b}max-hgt75 { max-height: 75%; }
+    .${r} .${x}${s}${b}max-hgt100 { max-height: 100%; }
 
 <?});?>
