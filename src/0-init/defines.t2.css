@@ -3,8 +3,9 @@ var r = 'app'; // Root class
 var x = '';    // Selectors prefix
 var s = '';    // Selectors separator
 
-var maxw = 768;  // Max width
-var minw = 320;  // Min width
+var fsz  = 18;  // Default font size (px)
+var maxw = 768;  // Max width (px)
+var minw = 320;  // Min width (px)
 var speed = 0.5; // Animation speed
 var drk  = 30;   // Darken rate (%)
 var rad  = 4;    // Border radius (px)
