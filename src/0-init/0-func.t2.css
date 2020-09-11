@@ -148,6 +148,8 @@ return ?>
 .${r} .${x}${s}${n}-${k}${m} { ${a}: ${cssDarken(c, d)}; }
 .${r} .${x}${s}${n}-${k}${m}-hvr:hover { ${a}: ${cssDarken(c, d)}; }
 .${r} .${x}${s}${n}-${k}${m}-fcs:focus { ${a}: ${cssDarken(c, d)}; }
+.${r} .${x}${s}${n}-${k}${m}-dsb[disabled] { ${a}: ${cssDarken(c, d)}; }
+.${r} .${x}${s}${n}-${k}${m}-rdo[readonly] { ${a}: ${cssDarken(c, d)}; }
 .${r} .${x}${s}${n}-${k}${m}-act.${x}${s}act { ${a}: ${cssDarken(c, d)}; }
 <?};
 function setCSSColors(n, k, a, c, d) {
