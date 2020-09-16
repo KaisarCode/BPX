@@ -19,7 +19,7 @@ var bps = [
 // Colors
 var clr = {
     bgc: '#E1E1E1', // Bg color
-    bdc: '#E6E6E6', // Generic borders and system elements
+    bdc: '#E1E1E1', // Borders
     txt: '#606C76', // Text
     lnk: '#337AB7', // Links
     pnl: '#FFFFFF', // Panels

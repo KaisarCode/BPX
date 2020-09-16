@@ -9,6 +9,7 @@
     display: inline-block;
     -webkit-border-radius: ${rad}px;
     border-radius: ${rad}px;
+    border-color: ${clr.bdc};
     background-color: ${clr.pnl};
 }
 
