@@ -30,11 +30,12 @@ var txtc = 'wht'; ?>
     display: inline-block;
     font-size: 1em;
     line-height: 1.5;
-    font-weight: normal;
+    font-weight: inherit;
     font-family: inherit;
     color: ${clr.wht};
     background-color: ${clr.bdc};
-    border-color: ${clr.bdc}; 
+    border-color: ${clr.bdc};
+    white-space: nowrap;
 }
 
 /*Label styles*/
