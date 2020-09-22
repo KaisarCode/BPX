@@ -100,7 +100,7 @@ return ?>
     .${r} .${x}${s}${b}full-flex {
         flex: auto;
     }
-    .${r} .${x}${s}${b}wrap-flex {
+    .${r} .${x}${s}${b}fall-flex {
         flex-wrap: wrap;
     }
     .${r} .${x}${s}${b}nowrap-flex {

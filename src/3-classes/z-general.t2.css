@@ -27,7 +27,8 @@ return ?>
     .${r} .${x}${s}${b}upper { text-transform: uppercase; }
     .${r} .${x}${s}${b}lower { text-transform: lowercase; }
     .${r} .${x}${s}${b}underline { text-decoration: underline; }
-    .${r} .${x}${s}${b}nowrap { white-space: nowrap; }
+    .${r} .${x}${s}${b}fall-no { white-space: nowrap; }
+    .${r} .${x}${s}${b}fall { white-space: normal; }
     .${r} .${x}${s}${b}ellipsis {
         max-width: 100%;
         overflow: hidden;
