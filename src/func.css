@@ -9,7 +9,7 @@ function setBPX(bps, cb) {
                 ${cb('bp'+b+'-')}
             }
             <?
-        } else { out += cb(b); }
+        } else { out += cb(''); }
     }); return out;
 }
 
