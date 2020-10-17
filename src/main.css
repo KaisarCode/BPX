@@ -1,0 +1,6 @@
+<?
+var OUT = '';
+OUT += normalize();
+OUT += customize();
+OUT;
+?>

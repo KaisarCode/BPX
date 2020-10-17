@@ -11,13 +11,14 @@
   },
   "homepage": "https://github.com/KaisarCode/BPX",
   "dependencies": {
-    "kc-dwalk": "^1.0.9",
-    "kc-fread": "^1.0.2",
-    "kc-fwalk": "^1.0.5",
-    "kc-fwrite": "^1.0.3",
-    "kc-rmcomm": "^1.0.2",
-    "kc-strmin": "^1.0.0",
-    "kc-watch": "^1.0.2",
-    "t2js": "^2.1.12"
+    "asbox": "^1.0.6",
+    "kc-dwalk": "^1.0.11",
+    "kc-fread": "^1.0.5",
+    "kc-fwalk": "^1.0.7",
+    "kc-fwrite": "^1.0.5",
+    "kc-hex2rgb": "^1.0.5",
+    "kc-rgb2hex": "^1.0.2",
+    "kc-watch": "^1.0.3",
+    "t2js": "^3.0.10"
   }
 }

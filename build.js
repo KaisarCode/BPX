@@ -1,36 +1,34 @@
-var fs = require('fs');
-var vm = require('vm');
 var t2js = require('t2js');
-var jrun = vm.runInNewContext;
+var asbox = require('asbox');
 var watch = require('kc-watch');
 var dwalk = require('kc-dwalk');
 var fwalk = require('kc-fwalk');
 var fread = require('kc-fread');
 var fwrite = require('kc-fwrite');
-var strmin = require('kc-strmin');
-var rmcomm = require('kc-rmcomm');
 
-var runCSS = function() {
+// Compile
+function compile() {
     var str = '';
-    fwalk('./').forEach(function(f){
-        if (f.match(/\.t2\.css$/ig)) {
-        str += fread(f); }
+    str += fread('node_modules/kc-hex2rgb/hex2rgb.js');
+    str += fread('node_modules/kc-rgb2hex/rgb2hex.js');
+    fwalk('src').forEach(function(f) {
+        if (f.match(/\.css$/)) {
+            str += fread(f);
+        }
     });
-    str = t2js(str, {
-        mode: 'tpl'
+    str = t2js(str,{mini:1});
+    fwrite('dist/bpx.js', str);
+    asbox(str, null, function(str){
+        fwrite('dist/bpx.css', str);
     });
-    str = rmcomm(str);
-    str = jrun(str);
-    str = strmin(str);
-    str = str.trim();
-    fwrite('dist/style.css', str);
-    console.log('CSS Compiled');
-}
+    console.log('Compiled.');
+} compile();
 
-runCSS();
-var dir = dwalk('./');
-watch(dir, function(d, f, e){
-    if (
-    f.match(/\.t2\.css$/ig)
-    ) { runCSS(); }
+// Watch
+var dir = dwalk('src');
+dir.unshift(dir);
+watch(dir, function(d, f){
+    if (f.match(/\.css$/)) {
+        compile();
+    }
 });
