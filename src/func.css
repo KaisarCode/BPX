@@ -1,4 +1,18 @@
 <?
+/* Set breakpoints */
+function setBPX(bps, cb) {
+    var out = '';
+    bps.forEach(function(m, b) {
+        if (b) {
+            out += ?>
+            @media (min-width: ${m}) {
+                ${cb('bp'+b+'-')}
+            }
+            <?
+        } else { out += cb(b); }
+    }); return out;
+}
+
 /* Darken color */
 function darken(hex, amn) {
     var rgb = hex2rgb(hex);
