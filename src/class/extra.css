@@ -26,12 +26,17 @@ function bbox(){r?>
 /*Classes*/
 function CLSExtra() { return
 setBPX(bps, function(b){r?>
-
+    
     .${r} .${x}${s}${b}pointer { ${pointer()} }
     .${r} .${x}${s}${b}unsel { ${unsel()} }
     .${r} .${x}${s}${b}sel { ${sel()} }
     .${r} .${x}${s}${b}cbox { ${cbox()} }
     .${r} .${x}${s}${b}bbox { ${bbox()} }
+    
+    /*Striped rows*/
+    .${r} .${x}${s}${b}strp > *:nth-of-type(even) {
+        background-color: rgba(0,0,0,0.05);
+    }
     
 <?});
 }?>

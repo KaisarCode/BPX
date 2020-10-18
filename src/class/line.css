@@ -3,28 +3,17 @@
 /*Functions*/
 function fallNo(){r?> white-space: nowrap; <?}
 function fall(){r?> white-space: normal; <?}
-function ellipsis(){r?>
-    max-width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-<?}
-
-function lnh0(){r?> line-height: 0; <?}
-function lnh05(){r?> line-height: 0.5; <?}
-function lnh1(){r?> line-height: 1; <?}
+function lnh(v){r?> line-height: ${v}; <?}
 
 /*Classes*/
 function CLSLine() { return
 setBPX(bps, function(b){r?>
     
-    .${r} .${x}${s}${b}fall-no { ${fallNo()} }
-    .${r} .${x}${s}${b}fall { ${fall()} }
-    .${r} .${x}${s}${b}ellipsis { ${ellipsis()} }
-    
-    .${r} .${x}${s}${b}lnh0  { ${lnh0()} }
-    .${r} .${x}${s}${b}lnh05 { ${lnh05()} }
-    .${r} .${x}${s}${b}lnh1  { ${lnh1()} }
+    /*.${r} .${x}${s}${b}fall-no { ${fallNo()} }
+    .${r} .${x}${s}${b}fall  { ${fall()} }
+    .${r} .${x}${s}${b}lnh0  { ${lnh(0)} }
+    .${r} .${x}${s}${b}lnh05 { ${lnh(0.5)} }
+    .${r} .${x}${s}${b}lnh1  { ${lnh(1)} }*/
     
 <?});
 }?>

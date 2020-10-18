@@ -1,0 +1,37 @@
+<?
+
+/*Functions*/
+function mask(){r?> overflow: hidden; <?}
+function maskX(){r?> overflow-x: hidden; <?}
+function maskY(){r?> overflow-y: hidden; <?}
+function scroll(){r?> overflow: auto; <?}
+function scrollX(){r?> overflow-x: auto; <?}
+function scrollY(){r?> overflow-y: auto; <?}
+function ellipsis(){r?>
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+<?}
+
+/*Classes*/
+function CLSOverflow() { return
+setBPX(bps, function(b){r?>
+    
+    .${r} .${x}${s}${b}mask { ${mask()} }
+    .${r} .${x}${s}${b}mask-x { ${maskX()} }
+    .${r} .${x}${s}${b}mask-y { ${maskY()} }
+    .${r} .${x}${s}${b}scroll { ${scroll()} }
+    .${r} .${x}${s}${b}scroll-x { ${scrollX()} }
+    .${r} .${x}${s}${b}scroll-y { ${scrollY()} }
+    .${r} .${x}${s}${b}ellipsis { ${ellipsis()} }
+    
+    .${r} .${x}${s}${b}swiper {
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .${r} .${x}${s}${b}swiper::-webkit-scrollbar { display: none; }
+    
+<?});
+}?>

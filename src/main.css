@@ -2,12 +2,26 @@
 var OUT = '';
 OUT += normalize();
 OUT += customize();
-OUT += CLSFont();
-OUT += CLSText();
+
+OUT += CLSAlign();
+OUT += CLSBorder();
+OUT += CLSCols();
 OUT += CLSDisplay();
+OUT += CLSFlex();
+OUT += CLSFont();
+OUT += CLSHeight();
 OUT += CLSLine();
+OUT += CLSOpacity();
+OUT += CLSOverflow();
 OUT += CLSPosition();
+OUT += CLSShadow();
 OUT += CLSSize();
+OUT += CLSText();
+OUT += CLSZindex();
+OUT += CLSBgImg();
+OUT += CLSAnim();
+OUT += CLSWrapper();
 OUT += CLSExtra();
+
 OUT;
 ?>

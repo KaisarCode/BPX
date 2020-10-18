@@ -1,0 +1,31 @@
+<?
+
+/*Functions*/
+function hgt(v){r?> height: ${v}; <?}
+function minHgt(v){r?> min-height: ${v}; <?}
+function maxHgt(v){r?> max-height: ${v}; <?}
+
+/*Classes*/
+function CLSHeight() { return
+setBPX(bps, function(b){r?>
+    
+    .${r} .${x}${s}${b}hgt0 { ${hgt(0)} }
+    .${r} .${x}${s}${b}hgt25 { ${hgt('25%')} }
+    .${r} .${x}${s}${b}hgt50 { ${hgt('50%')} }
+    .${r} .${x}${s}${b}hgt75 { ${hgt('75%')} }
+    .${r} .${x}${s}${b}hgt100 { ${hgt('100%')} }
+    
+    .${r} .${x}${s}${b}min-hgt0 { ${minHgt(0)} }
+    .${r} .${x}${s}${b}min-hgt25 { ${minHgt('25%')} }
+    .${r} .${x}${s}${b}min-hgt50 { ${minHgt('50%')} }
+    .${r} .${x}${s}${b}min-hgt75 { ${minHgt('75%')} }
+    .${r} .${x}${s}${b}min-hgt100 { ${minHgt('100%')} }
+    
+    .${r} .${x}${s}${b}max-hgt0 { ${maxHgt(0)} }
+    .${r} .${x}${s}${b}max-hgt25 { ${maxHgt('25%')} }
+    .${r} .${x}${s}${b}max-hgt50 { ${maxHgt('50%')} }
+    .${r} .${x}${s}${b}max-hgt75 { ${maxHgt('75%')} }
+    .${r} .${x}${s}${b}max-hgt100 { ${maxHgt('100%')} }
+    
+<?});
+}?>

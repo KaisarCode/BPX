@@ -1,0 +1,34 @@
+<?
+
+/*Functions*/
+function wrp(max, min){r?>
+    width: 100%;
+    margin: 0 auto;
+    max-width: ${max};
+    min-width: ${min};
+<?}
+function wrpMin(min){r?>
+    width: 100%;
+    margin: 0 auto;
+    min-width: ${min};
+<?}
+function wrpMax(max){r?>
+    width: 100%;
+    margin: 0 auto;
+    max-width: ${max};
+<?}
+function sameSz(max){r?>
+    table-layout: fixed;
+<?}
+
+/*Classes*/
+function CLSWrapper() { return
+setBPX(bps, function(b){r?>
+    
+    .${r} .${x}${s}${b}wrp { ${wrp(mxw+'px', mnw+'px')} }
+    .${r} .${x}${s}${b}wrp-min { ${wrpMin(mnw+'px')} }
+    .${r} .${x}${s}${b}wrp-max { ${wrpMax(mxw+'px')} }
+    .${r} .${x}${s}${b}same-sz { ${sameSz()} }
+    
+<?});
+}?>

@@ -1,0 +1,23 @@
+<?
+
+/*Functions*/
+function alignC(){r?> text-align: center; <?}
+function alignR(){r?> text-align: right; <?}
+function alignL(){r?> text-align: left; <?}
+function alignM(){r?> vertical-align: middle; <?}
+function alignB(){r?> vertical-align: bottom; <?}
+function alignT(){r?> vertical-align: top; <?}
+
+/*Classes*/
+function CLSAlign() { return
+setBPX(bps, function(b){r?>
+    
+    .${r} .${x}${s}${b}align-c { ${alignC()} }
+    .${r} .${x}${s}${b}align-r { ${alignR()} }
+    .${r} .${x}${s}${b}align-l { ${alignL()} }
+    .${r} .${x}${s}${b}align-m { ${alignM()} }
+    .${r} .${x}${s}${b}align-b { ${alignB()} }
+    .${r} .${x}${s}${b}align-t { ${alignT()} }
+    
+<?});
+}?>
