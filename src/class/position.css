@@ -1,0 +1,33 @@
+<?
+
+/*Functions*/
+function t0(){r?> top: 0; <?}
+function r0(){r?> right: 0; <?}
+function b0(){r?> bottom: 0; <?}
+function l0(){r?> left: 0; <?}
+function t100(){r?> top: 100%; <?}
+function r100(){r?> right: 100%; <?}
+function b100(){r?> bottom: 100%; <?}
+function l100(){r?> left: 100%; <?}
+
+function t01(){r?> top: 0.1em; <?}
+function t015(){r?> top: 0.15em; <?}
+
+/*Classes*/
+function CLSPosition() { return
+setBPX(bps, function(b){r?>
+    
+    .${r} .${x}${s}${b}t { ${t0()} }
+    .${r} .${x}${s}${b}r { ${r0()} }
+    .${r} .${x}${s}${b}b { ${b0()} }
+    .${r} .${x}${s}${b}l { ${l0()} }
+    .${r} .${x}${s}${b}t100 { ${t100()} }
+    .${r} .${x}${s}${b}r100 { ${r100()} }
+    .${r} .${x}${s}${b}b100 { ${b100()} }
+    .${r} .${x}${s}${b}l100 { ${l100()} }
+    
+    .${r} .${x}${s}${b}t01 { ${t01()} }
+    .${r} .${x}${s}${b}t015 { ${t015()} }
+    
+<?});
+}?>

@@ -2,6 +2,12 @@
 var OUT = '';
 OUT += normalize();
 OUT += customize();
-OUT += generalClasses();
+OUT += CLSFont();
+OUT += CLSText();
+OUT += CLSDisplay();
+OUT += CLSLine();
+OUT += CLSPosition();
+OUT += CLSSize();
+OUT += CLSExtra();
 OUT;
 ?>
