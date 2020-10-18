@@ -9,7 +9,6 @@ OUT += CLSCols();
 OUT += CLSDisplay();
 OUT += CLSFlex();
 OUT += CLSFont();
-OUT += CLSHeight();
 OUT += CLSLine();
 OUT += CLSOpacity();
 OUT += CLSOverflow();
