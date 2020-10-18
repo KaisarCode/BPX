@@ -22,7 +22,7 @@ function sameSz(max){r?>
 <?}
 
 /*Classes*/
-function CLSWrapper() { return
+function CLSWrapper(bps) { return
 setBPX(bps, function(b){r?>
     
     .${r} .${x}${s}${b}wrp { ${wrp(mxw+'px', mnw+'px')} }

@@ -16,7 +16,7 @@ function minHgt(v){r?> min-height: ${v}; <?}
 function maxHgt(v){r?> max-height: ${v}; <?}
 
 /*Classes*/
-function CLSSize() { return
+function CLSSize(bps) { return
 setBPX(bps, function(b){r?>
     
     .${r} .${x}${s}${b}full { ${full()} }

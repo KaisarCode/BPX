@@ -12,7 +12,7 @@ function lower(){r?> text-transform: lowercase; <?}
 function under(){r?> text-transform: underline; <?}
 
 /*Classes*/
-function CLSText() { return
+function CLSText(bps) { return
 setBPX(bps, function(b){r?>
     
     .${r} .${x}${s}${b}bolder { ${bolder()} }

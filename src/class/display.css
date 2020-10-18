@@ -11,7 +11,7 @@ function rel(){r?> position: relative; <?}
 function fix(){r?> position: fixed; <?}
 
 /*Classes*/
-function CLSDisplay() { return
+function CLSDisplay(bps) { return
 setBPX(bps, function(b){r?>
     
     .${r} .${x}${s}${b}block { ${block()} }

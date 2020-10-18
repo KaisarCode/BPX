@@ -3,24 +3,25 @@ var OUT = '';
 OUT += normalize();
 OUT += customize();
 
-OUT += CLSAlign();
-OUT += CLSBorder();
-OUT += CLSCols();
-OUT += CLSDisplay();
-OUT += CLSFlex();
-OUT += CLSFont();
-OUT += CLSLine();
-OUT += CLSOpacity();
-OUT += CLSOverflow();
-OUT += CLSPosition();
-OUT += CLSShadow();
-OUT += CLSSize();
-OUT += CLSText();
-OUT += CLSZindex();
-OUT += CLSBgImg();
-OUT += CLSAnim();
-OUT += CLSWrapper();
-OUT += CLSExtra();
+OUT += CLSAlign(bps);
+OUT += CLSAnim(bps);
+OUT += CLSBgImg(bps);
+OUT += CLSBorder(bps);
+OUT += CLSCols(bps);
+OUT += CLSDisplay(bps);
+OUT += CLSFlex(bps);
+OUT += CLSFont(bps);
+OUT += CLSLine(bps);
+OUT += CLSOpacity(bps);
+OUT += CLSOverflow(bps);
+OUT += CLSPosition(bps);
+OUT += CLSShadow(bps);
+OUT += CLSSize(bps);
+OUT += CLSText(bps);
+OUT += CLSWrapper(bps);
+OUT += CLSZindex(bps);
+
+OUT += CLSExtra(bps);
 
 OUT;
 ?>

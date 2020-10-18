@@ -52,7 +52,7 @@ function instant(){r?>
 <?}
 
 /*Classes*/
-function CLSAnim() { return
+function CLSAnim(bps) { return
 setBPX(bps, function(b){r?>
     
     .${r} .${x}${s}${b}ease { ${ease()} }

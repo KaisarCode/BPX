@@ -15,7 +15,7 @@ function ellipsis(){r?>
 <?}
 
 /*Classes*/
-function CLSOverflow() { return
+function CLSOverflow(bps) { return
 setBPX(bps, function(b){r?>
     
     .${r} .${x}${s}${b}mask { ${mask()} }

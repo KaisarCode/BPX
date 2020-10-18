@@ -16,7 +16,7 @@ function micro(){r?> font-size: 0.4em; <?}
 function h0(){r?> font-size: 0; <?}
 
 /*Classes*/
-function CLSFont() { return
+function CLSFont(bps) { return
 setBPX(bps, function(b){r?>
     
     .${r} .${x}${s}${b}jumbo { ${jumbo()} }

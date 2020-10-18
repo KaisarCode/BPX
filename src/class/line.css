@@ -6,7 +6,7 @@ function fall(){r?> white-space: normal; <?}
 function lnh(v){r?> line-height: ${v}; <?}
 
 /*Classes*/
-function CLSLine() { return
+function CLSLine(bps) { return
 setBPX(bps, function(b){r?>
     
     /*.${r} .${x}${s}${b}fall-no { ${fallNo()} }

@@ -23,7 +23,7 @@ function shadNO(){r?>
 <?}
 
 /*Classes*/
-function CLSShadow() { return
+function CLSShadow(bps) { return
 setBPX(bps, function(b){r?>
     
     .${r} .${x}${s}${b}shad,

@@ -25,7 +25,7 @@ function repeat(){r?>
 <?}
 
 /*Classes*/
-function CLSBgImg() { return
+function CLSBgImg(bps) { return
 setBPX(bps, function(b){r?>
     
     .${r} .${x}${s}${b}bg-img { ${bgImg()} }

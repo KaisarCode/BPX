@@ -4,7 +4,7 @@
 function opc(v){r?> opacity: ${v/100}; <?}
 
 /*Classes*/
-function CLSOpacity() { return
+function CLSOpacity(bps) { return
 setBPX(bps, function(b){r?>
     
     .${r} .${x}${s}${b}opc0 { ${opc(0)} }

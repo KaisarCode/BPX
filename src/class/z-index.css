@@ -4,7 +4,7 @@
 function idx(v){r?> z-index: ${v}; <?}
 
 /*Classes*/
-function CLSZindex() { return
+function CLSZindex(bps) { return
 setBPX(bps, function(b){r?>
     
     .${r} .${x}${s}${b}idx0 { ${idx(0)} }

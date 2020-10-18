@@ -14,7 +14,7 @@ function t01(){r?> top: 0.1em; <?}
 function t015(){r?> top: 0.15em; <?}
 
 /*Classes*/
-function CLSPosition() { return
+function CLSPosition(bps) { return
 setBPX(bps, function(b){r?>
     
     .${r} .${x}${s}${b}t { ${t0()} }

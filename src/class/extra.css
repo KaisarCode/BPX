@@ -24,7 +24,7 @@ function bbox(){r?>
 <?}
 
 /*Classes*/
-function CLSExtra() { return
+function CLSExtra(bps) { return
 setBPX(bps, function(b){r?>
     
     .${r} .${x}${s}${b}pointer { ${pointer()} }

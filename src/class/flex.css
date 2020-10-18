@@ -14,7 +14,7 @@ function arndFlex(){r?> justify-content: space-around; <?}
 function btwnFlex(){r?> justify-content: space-between; <?}
 
 /*Classes*/
-function CLSFlex() { return
+function CLSFlex(bps) { return
 setBPX(bps, function(b){r?>
     
     .${r} .${x}${s}${b}flex { ${flex()} }

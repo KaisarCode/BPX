@@ -41,7 +41,7 @@ function dashed(){r?>
 <?}
 
 /*Classes*/
-function CLSBorder() { return
+function CLSBorder(bps) { return
 setBPX(bps, function(b){r?>
     
     .${r} .${x}${s}${b}bd,

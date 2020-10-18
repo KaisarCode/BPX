@@ -9,7 +9,7 @@ function alignB(){r?> vertical-align: bottom; <?}
 function alignT(){r?> vertical-align: top; <?}
 
 /*Classes*/
-function CLSAlign() { return
+function CLSAlign(bps) { return
 setBPX(bps, function(b){r?>
     
     .${r} .${x}${s}${b}align-c { ${alignC()} }
