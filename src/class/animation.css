@@ -1,5 +1,5 @@
 <?
-/*Transitions*/
+// Transitions
 function ease(){r?>
     -webkit-transition: all ${spd}s cubic-bezier(0.25, 0.1, 0.25, 1);
     transition: all ${spd}s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -20,13 +20,13 @@ function spin(){r?>
     animation: ${x}spin ${spd}s 1 linear;
 <?}
 
-/*Iterations*/
+// Iterations
 function infinite(){r?>
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 <?}
 
-/*Speed*/
+// Speed
 function slow(){r?>
     -webkit-transition-duration: ${(spd*2)}s;
     transition-duration: ${(spd*2)}s;
@@ -58,10 +58,12 @@ function instant(){r?>
     animation-duration: 0s;
 <?}
 
-/*Classes*/
-function CLSAnim(bps) { return
-setBPX(bps, function(b){r?>
+// Classes
+function CLSAnim(bps) {
+    var out = '';
     
+    // General
+    out += setBPX(bps, function(b){r?>
     .${r} .${x}${s}${b}ease { ${ease()} }
     .${r} .${x}${s}${b}ease-out { ${easeOut()} }
     .${r} .${x}${s}${b}ease-out-back { ${easeOutBack()} }
@@ -71,33 +73,34 @@ setBPX(bps, function(b){r?>
     .${r} .${x}${s}${b}fast { ${fast()} }
     .${r} .${x}${s}${b}faster { ${faster()} }
     .${r} .${x}${s}${b}fastest { ${fastest()} }
-    .${r} .${x}${s}${b}instant { ${instant()} }
+    .${r} .${x}${s}${b}instant { ${instant()} }  
+    <?});
     
-    /*Keyframes*/
+    // Keyframes
+    out += ?>
+    
     @-webkit-keyframes ${x}spin {
-        0% {
-            -webkit-transform: rotate(0deg);
-            -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
-        }
-        100% {
-            -webkit-transform: rotate(359deg);
-            -ms-transform: rotate(359deg);
-            transform: rotate(359deg);
-        }
-    }
-    @keyframes ${x}spin {
-        0% {
-            -webkit-transform: rotate(0deg);
-            -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
-        }
-        100% {
-            -webkit-transform: rotate(359deg);
-            -ms-transform: rotate(359deg);
-            transform: rotate(359deg);
-        }
-    }
+    0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+    100% {
+    -webkit-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg); } }
     
-<?});
+    @keyframes ${x}spin {
+    0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+    100% {
+    -webkit-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+    
+    <?;
+    
+    // Return
+    return out;
 }?>

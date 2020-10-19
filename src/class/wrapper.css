@@ -1,18 +1,17 @@
 <?
-
-/*Functions*/
-function wrp(max, min){r?>
+// Functions
+function wrap(max, min){r?>
     width: 100%;
     margin: 0 auto;
     max-width: ${max};
     min-width: ${min};
 <?}
-function wrpMin(min){r?>
+function wrapMin(min){r?>
     width: 100%;
     margin: 0 auto;
     min-width: ${min};
 <?}
-function wrpMax(max){r?>
+function wrapMax(max){r?>
     width: 100%;
     margin: 0 auto;
     max-width: ${max};
@@ -21,14 +20,14 @@ function sameSz(max){r?>
     table-layout: fixed;
 <?}
 
-/*Classes*/
-function CLSWrapper(bps) { return
-setBPX(bps, function(b){r?>
-    
-    .${r} .${x}${s}${b}wrp { ${wrp(mxw+'px', mnw+'px')} }
-    .${r} .${x}${s}${b}wrp-min { ${wrpMin(mnw+'px')} }
-    .${r} .${x}${s}${b}wrp-max { ${wrpMax(mxw+'px')} }
-    .${r} .${x}${s}${b}same-sz { ${sameSz()} }
-    
-<?});
+// Classes
+function CLSWrapper(bps) {
+    return setBPX(bps, function(b){r?>
+        
+        .${r} .${x}${s}${b}wrap { ${wrap(mxw+'px', mnw+'px')} }
+        .${r} .${x}${s}${b}wrap-min { ${wrapMin(mnw+'px')} }
+        .${r} .${x}${s}${b}wrap-max { ${wrapMax(mxw+'px')} }
+        .${r} .${x}${s}${b}same-sz { ${sameSz()} }
+        
+    <?});
 }?>

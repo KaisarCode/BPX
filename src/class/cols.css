@@ -1,13 +1,11 @@
 <?
-
-/*Functions*/
-function sameSz(max){r?>
-    table-layout: fixed;
-<?}
+// Columns parent
 function cols(){r?>
     display: table;
     width: 100%;
 <?}
+
+// Single column
 function col(){r?>
     width: auto;
     float: none;
@@ -15,66 +13,57 @@ function col(){r?>
     display: table-cell;
     vertical-align: middle;
 <?}
+
+// Sizing
+function sameSz(){r?>
+    table-layout: fixed;
+<?}
+
 function colSz(v){r?>
     width: ${((100/12)*v)}%
 <?}
+
 function colMinSz(v){r?>
     min-width: ${((100/12)*v)}%
 <?}
+
 function colMaxSz(v){r?>
     max-width: ${((100/12)*v)}%
 <?}
 
 /*Classes*/
-function CLSCols(bps) { return
-setBPX(bps, function(b){r?>
+function CLSCols(bps) {
+    var out = '';
     
+    // General
+    out += setBPX(bps, function(b){ r?>
     .${r} .${x}${s}${b}same-sz { ${sameSz()} }
     .${r} .${x}${s}${b}cols { ${cols()} }
     .${r} .${x}${s}${b}col,
     .${r} .${x}${s}${b}cols > * { ${col()} }
+    <?});
     
-    .${r} .${x}${s}${b}col0 { ${colSz(0)} }
-    .${r} .${x}${s}${b}col1 { ${colSz(1)} }
-    .${r} .${x}${s}${b}col2 { ${colSz(2)} }
-    .${r} .${x}${s}${b}col3 { ${colSz(3)} }
-    .${r} .${x}${s}${b}col4 { ${colSz(4)} }
-    .${r} .${x}${s}${b}col5 { ${colSz(5)} }
-    .${r} .${x}${s}${b}col6 { ${colSz(6)} }
-    .${r} .${x}${s}${b}col7 { ${colSz(7)} }
-    .${r} .${x}${s}${b}col8 { ${colSz(8)} }
-    .${r} .${x}${s}${b}col9 { ${colSz(9)} }
-    .${r} .${x}${s}${b}col10 { ${colSz(10)} }
-    .${r} .${x}${s}${b}col11 { ${colSz(11)} }
-    .${r} .${x}${s}${b}col12 { ${colSz(12)} }
+    // Cols
+    out += setBPX(bps, function(b){
+    var out = '';
+    for (var i = 0; i <= 12; i++) {
+    out += ?>.${r} .${x}${s}${b}col${i} { ${colSz(i)} }<?
+    } return out; });
     
-    .${r} .${x}${s}${b}min-col0 { ${colMinSz(0)} }
-    .${r} .${x}${s}${b}min-col1 { ${colMinSz(1)} }
-    .${r} .${x}${s}${b}min-col2 { ${colMinSz(2)} }
-    .${r} .${x}${s}${b}min-col3 { ${colMinSz(3)} }
-    .${r} .${x}${s}${b}min-col4 { ${colMinSz(4)} }
-    .${r} .${x}${s}${b}min-col5 { ${colMinSz(5)} }
-    .${r} .${x}${s}${b}min-col6 { ${colMinSz(6)} }
-    .${r} .${x}${s}${b}min-col7 { ${colMinSz(7)} }
-    .${r} .${x}${s}${b}min-col8 { ${colMinSz(8)} }
-    .${r} .${x}${s}${b}min-col9 { ${colMinSz(9)} }
-    .${r} .${x}${s}${b}min-col10 { ${colMinSz(10)} }
-    .${r} .${x}${s}${b}min-col11 { ${colMinSz(11)} }
-    .${r} .${x}${s}${b}min-col12 { ${colMinSz(12)} }
+    // Min cols
+    out += setBPX(bps, function(b){
+    var out = '';
+    for (var i = 0; i <= 12; i++) {
+    out += ?>.${r} .${x}${s}${b}min-col${i} { ${colMinSz(i)} }<?
+    } return out; });
     
-    .${r} .${x}${s}${b}max-col0 { ${colMaxSz(0)} }
-    .${r} .${x}${s}${b}max-col1 { ${colMaxSz(1)} }
-    .${r} .${x}${s}${b}max-col2 { ${colMaxSz(2)} }
-    .${r} .${x}${s}${b}max-col3 { ${colMaxSz(3)} }
-    .${r} .${x}${s}${b}max-col4 { ${colMaxSz(4)} }
-    .${r} .${x}${s}${b}max-col5 { ${colMaxSz(5)} }
-    .${r} .${x}${s}${b}max-col6 { ${colMaxSz(6)} }
-    .${r} .${x}${s}${b}max-col7 { ${colMaxSz(7)} }
-    .${r} .${x}${s}${b}max-col8 { ${colMaxSz(8)} }
-    .${r} .${x}${s}${b}max-col9 { ${colMaxSz(9)} }
-    .${r} .${x}${s}${b}max-col10 { ${colMaxSz(10)} }
-    .${r} .${x}${s}${b}max-col11 { ${colMaxSz(11)} }
-    .${r} .${x}${s}${b}max-col12 { ${colMaxSz(12)} }
+    // Max cols
+    out += setBPX(bps, function(b){
+    var out = '';
+    for (var i = 0; i <= 12; i++) {
+    out += ?>.${r} .${x}${s}${b}max-col${i} { ${colMaxSz(i)} }<?
+    } return out; });
     
-<?});
+    // Return
+    return out;
 }?>

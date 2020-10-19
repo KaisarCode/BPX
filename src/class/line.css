@@ -1,19 +1,18 @@
 <?
-
-/*Functions*/
+// Functions
 function fallNo(){r?> white-space: nowrap; <?}
 function fall(){r?> white-space: normal; <?}
 function lnh(v){r?> line-height: ${v}; <?}
 
-/*Classes*/
-function CLSLine(bps) { return
-setBPX(bps, function(b){r?>
-    
-    /*.${r} .${x}${s}${b}fall-no { ${fallNo()} }
-    .${r} .${x}${s}${b}fall  { ${fall()} }
-    .${r} .${x}${s}${b}lnh0  { ${lnh(0)} }
-    .${r} .${x}${s}${b}lnh05 { ${lnh(0.5)} }
-    .${r} .${x}${s}${b}lnh1  { ${lnh(1)} }*/
-    
-<?});
+// Classes
+function CLSLine(bps) {
+    return setBPX(bps, function(b){r?>
+        
+        .${r} .${x}${s}${b}fall-no { ${fallNo()} }
+        .${r} .${x}${s}${b}fall  { ${fall()} }
+        .${r} .${x}${s}${b}lnh0  { ${lnh(0)} }
+        .${r} .${x}${s}${b}lnh05 { ${lnh(0.5)} }
+        .${r} .${x}${s}${b}lnh1  { ${lnh(1)} }
+        
+    <?});
 }?>

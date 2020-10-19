@@ -1,6 +1,5 @@
 <?
-
-/*Functions*/
+// Functions
 function flex(){r?> display: flex; <?}
 function colFlex(){r?> flex(); flex-direction: column; <?}
 function rowFlex(){r?> flex(); flex-direction: column; <?}
@@ -13,21 +12,21 @@ function alignRFlex(){r?> justify-content: flex-end; <?}
 function arndFlex(){r?> justify-content: space-around; <?}
 function btwnFlex(){r?> justify-content: space-between; <?}
 
-/*Classes*/
-function CLSFlex(bps) { return
-setBPX(bps, function(b){r?>
-    
-    .${r} .${x}${s}${b}flex { ${flex()} }
-    .${r} .${x}${s}${b}col-flex { ${colFlex()} }
-    .${r} .${x}${s}${b}row-flex { ${rowFlex()} }
-    .${r} .${x}${s}${b}full-flex { ${fullFlex()} }
-    .${r} .${x}${s}${b}fall-flex { ${fallFlex()} }
-    .${r} .${x}${s}${b}nowrap-flex { ${nowrapFlex()} }
-    .${r} .${x}${s}${b}align-l-flex { ${alignLFlex()} }
-    .${r} .${x}${s}${b}align-c-flex { ${alignCFlex()} }
-    .${r} .${x}${s}${b}align-r-flex { ${alignRFlex()} }
-    .${r} .${x}${s}${b}arnd-flex { ${arndFlex()} }
-    .${r} .${x}${s}${b}btwn-flex { ${btwnFlex()} }
-    
-<?});
+// Classes
+function CLSFlex(bps) {
+    return setBPX(bps, function(b){r?>
+        
+        .${r} .${x}${s}${b}flex { ${flex()} }
+        .${r} .${x}${s}${b}col-flex { ${colFlex()} }
+        .${r} .${x}${s}${b}row-flex { ${rowFlex()} }
+        .${r} .${x}${s}${b}full-flex { ${fullFlex()} }
+        .${r} .${x}${s}${b}fall-flex { ${fallFlex()} }
+        .${r} .${x}${s}${b}nowrap-flex { ${nowrapFlex()} }
+        .${r} .${x}${s}${b}align-l-flex { ${alignLFlex()} }
+        .${r} .${x}${s}${b}align-c-flex { ${alignCFlex()} }
+        .${r} .${x}${s}${b}align-r-flex { ${alignRFlex()} }
+        .${r} .${x}${s}${b}arnd-flex { ${arndFlex()} }
+        .${r} .${x}${s}${b}btwn-flex { ${btwnFlex()} }
+        
+    <?});
 }?>

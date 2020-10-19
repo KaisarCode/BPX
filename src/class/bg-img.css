@@ -1,5 +1,5 @@
 <?
-/*BG Image*/
+// BG Image
 function bgImg(img){
 img = img || '';
 if (img) img = ?>background-image: url('${img}');<?;
@@ -10,7 +10,7 @@ r?>
     ${img}
 <?}
 
-/*BG size*/
+// BG size
 function bgSz(v){r?>
     background-size: ${v}%;
 <?}
@@ -21,30 +21,30 @@ function contain(){r?>
     background-size: contain;
 <?}
 
-/*BG Repeat*/
+// BG Repeat
 function repeat(){r?>
     background-repeat: repeat;
 <?}
 
-/*Classes*/
-function CLSBgImg(bps) { return
-setBPX(bps, function(b){r?>
-    
-    .${r} .${x}${s}${b}bg-img { ${bgImg()} }
-    .${r} .${x}${s}${b}bg-sz0  { ${bgSz(0)} }
-    .${r} .${x}${s}${b}bg-sz10 { ${bgSz(10)} }
-    .${r} .${x}${s}${b}bg-sz20 { ${bgSz(20)} }
-    .${r} .${x}${s}${b}bg-sz30 { ${bgSz(30)} }
-    .${r} .${x}${s}${b}bg-sz40 { ${bgSz(40)} }
-    .${r} .${x}${s}${b}bg-sz50 { ${bgSz(50)} }
-    .${r} .${x}${s}${b}bg-sz60 { ${bgSz(60)} }
-    .${r} .${x}${s}${b}bg-sz70 { ${bgSz(70)} }
-    .${r} .${x}${s}${b}bg-sz80 { ${bgSz(80)} }
-    .${r} .${x}${s}${b}bg-sz90 { ${bgSz(90)} }
-    .${r} .${x}${s}${b}bg-sz100 { ${bgSz(100)} }
-    .${r} .${x}${s}${b}cover { ${cover()} }
-    .${r} .${x}${s}${b}contain { ${contain()} }
-    .${r} .${x}${s}${b}repeat { ${repeat()} }
-    
-<?});
+// Classes
+function CLSBgImg(bps) {
+    return setBPX(bps, function(b){r?>
+        
+        .${r} .${x}${s}${b}bg-img { ${bgImg()} }
+        .${r} .${x}${s}${b}bg-sz0  { ${bgSz(0)} }
+        .${r} .${x}${s}${b}bg-sz10 { ${bgSz(10)} }
+        .${r} .${x}${s}${b}bg-sz20 { ${bgSz(20)} }
+        .${r} .${x}${s}${b}bg-sz30 { ${bgSz(30)} }
+        .${r} .${x}${s}${b}bg-sz40 { ${bgSz(40)} }
+        .${r} .${x}${s}${b}bg-sz50 { ${bgSz(50)} }
+        .${r} .${x}${s}${b}bg-sz60 { ${bgSz(60)} }
+        .${r} .${x}${s}${b}bg-sz70 { ${bgSz(70)} }
+        .${r} .${x}${s}${b}bg-sz80 { ${bgSz(80)} }
+        .${r} .${x}${s}${b}bg-sz90 { ${bgSz(90)} }
+        .${r} .${x}${s}${b}bg-sz100 { ${bgSz(100)} }
+        .${r} .${x}${s}${b}cover { ${cover()} }
+        .${r} .${x}${s}${b}contain { ${contain()} }
+        .${r} .${x}${s}${b}repeat { ${repeat()} }
+        
+    <?});
 }?>

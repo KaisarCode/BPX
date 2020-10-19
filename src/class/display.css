@@ -1,6 +1,5 @@
 <?
-
-/*Functions*/
+// Functions
 function block(){r?> display: block; <?}
 function inl(){r?> display: inline-block; <?}
 function cell(){r?> display: table-cell; <?}
@@ -10,18 +9,18 @@ function abs(){r?> position: absolute; <?}
 function rel(){r?> position: relative; <?}
 function fix(){r?> position: fixed; <?}
 
-/*Classes*/
-function CLSDisplay(bps) { return
-setBPX(bps, function(b){r?>
-    
-    .${r} .${x}${s}${b}block { ${block()} }
-    .${r} .${x}${s}${b}inl  { ${inl()} }
-    .${r} .${x}${s}${b}cell { ${cell()} }
-    .${r} .${x}${s}${b}hide { ${hide()} }
-    .${r} .${x}${s}${b}none { ${none()} }
-    .${r} .${x}${s}${b}abs  { ${abs()} }
-    .${r} .${x}${s}${b}rel  { ${rel()} }
-    .${r} .${x}${s}${b}fix  { ${fix()} }
-    
-<?});
+// Classes
+function CLSDisplay(bps) {
+    return setBPX(bps, function(b){r?>
+        
+        .${r} .${x}${s}${b}block { ${block()} }
+        .${r} .${x}${s}${b}inl  { ${inl()} }
+        .${r} .${x}${s}${b}cell { ${cell()} }
+        .${r} .${x}${s}${b}hide { ${hide()} }
+        .${r} .${x}${s}${b}none { ${none()} }
+        .${r} .${x}${s}${b}abs  { ${abs()} }
+        .${r} .${x}${s}${b}rel  { ${rel()} }
+        .${r} .${x}${s}${b}fix  { ${fix()} }
+        
+    <?});
 }?>

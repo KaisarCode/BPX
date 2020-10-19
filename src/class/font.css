@@ -1,6 +1,5 @@
 <?
-
-/*Functions*/
+// Functions
 function jumbo(){r?> font-size: 2.6em; <?}
 function bigger(){r?> font-size: 2.4em; <?}
 function big(){r?> font-size: 2.2em; <?}
@@ -15,23 +14,23 @@ function smaller(){r?> font-size: 0.6em; <?}
 function micro(){r?> font-size: 0.4em; <?}
 function h0(){r?> font-size: 0; <?}
 
-/*Classes*/
-function CLSFont(bps) { return
-setBPX(bps, function(b){r?>
-    
-    .${r} .${x}${s}${b}jumbo { ${jumbo()} }
-    .${r} .${x}${s}${b}bigger { ${bigger()} }
-    .${r} .${x}${s}${b}big { ${big()} }
-    .${r} .${x}${s}${b}h1 { ${h1()} }
-    .${r} .${x}${s}${b}h2 { ${h2()} }
-    .${r} .${x}${s}${b}h3 { ${h3()} }
-    .${r} .${x}${s}${b}h4 { ${h4()} }
-    .${r} .${x}${s}${b}h5 { ${h5()} }
-    .${r} .${x}${s}${b}h6 { ${h6()} }
-    .${r} .${x}${s}${b}small { ${small()} }
-    .${r} .${x}${s}${b}smaller { ${smaller()} }
-    .${r} .${x}${s}${b}micro { ${micro()} }
-    .${r} .${x}${s}${b}h0 { ${h0()} }
-    
-<?});
+// Classes
+function CLSFont(bps) {
+    return setBPX(bps, function(b){r?>
+        
+        .${r} .${x}${s}${b}jumbo { ${jumbo()} }
+        .${r} .${x}${s}${b}bigger { ${bigger()} }
+        .${r} .${x}${s}${b}big { ${big()} }
+        .${r} .${x}${s}${b}h1 { ${h1()} }
+        .${r} .${x}${s}${b}h2 { ${h2()} }
+        .${r} .${x}${s}${b}h3 { ${h3()} }
+        .${r} .${x}${s}${b}h4 { ${h4()} }
+        .${r} .${x}${s}${b}h5 { ${h5()} }
+        .${r} .${x}${s}${b}h6 { ${h6()} }
+        .${r} .${x}${s}${b}small { ${small()} }
+        .${r} .${x}${s}${b}smaller { ${smaller()} }
+        .${r} .${x}${s}${b}micro { ${micro()} }
+        .${r} .${x}${s}${b}h0 { ${h0()} }
+        
+    <?});
 }?>

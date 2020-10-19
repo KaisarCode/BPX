@@ -1,26 +1,25 @@
 <?
-
-/*Functions*/
+// Functions
 function idx(v){r?> z-index: ${v}; <?}
 
-/*Classes*/
-function CLSZindex(bps) { return
-setBPX(bps, function(b){r?>
-    
-    .${r} .${x}${s}${b}idx0 { ${idx(0)} }
-    .${r} .${x}${s}${b}idx1 { ${idx(1)} }
-    .${r} .${x}${s}${b}idx2 { ${idx(2)} }
-    .${r} .${x}${s}${b}idx3 { ${idx(3)} }
-    .${r} .${x}${s}${b}idx10 { ${idx(10)} }
-    .${r} .${x}${s}${b}idx20 { ${idx(20)} }
-    .${r} .${x}${s}${b}idx30 { ${idx(30)} }
-    .${r} .${x}${s}${b}idx100 { ${idx(100)} }
-    .${r} .${x}${s}${b}idx200 { ${idx(200)} }
-    .${r} .${x}${s}${b}idx300 { ${idx(300)} }
-    .${r} .${x}${s}${b}idx1000 { ${idx(1000)} }
-    .${r} .${x}${s}${b}idx2000 { ${idx(2000)} }
-    .${r} .${x}${s}${b}idx3000 { ${idx(3000)} }
-    .${r} .${x}${s}${b}on-top { ${idx(9999999999999)} }
-    
-<?});
+// Classes
+function CLSZindex(bps) {
+    return setBPX(bps, function(b){r?>
+        
+        .${r} .${x}${s}${b}idx0 { ${idx(0)} }
+        .${r} .${x}${s}${b}idx1 { ${idx(1)} }
+        .${r} .${x}${s}${b}idx2 { ${idx(2)} }
+        .${r} .${x}${s}${b}idx3 { ${idx(3)} }
+        .${r} .${x}${s}${b}idx10 { ${idx(10)} }
+        .${r} .${x}${s}${b}idx20 { ${idx(20)} }
+        .${r} .${x}${s}${b}idx30 { ${idx(30)} }
+        .${r} .${x}${s}${b}idx100 { ${idx(100)} }
+        .${r} .${x}${s}${b}idx200 { ${idx(200)} }
+        .${r} .${x}${s}${b}idx300 { ${idx(300)} }
+        .${r} .${x}${s}${b}idx1000 { ${idx(1000)} }
+        .${r} .${x}${s}${b}idx2000 { ${idx(2000)} }
+        .${r} .${x}${s}${b}idx3000 { ${idx(3000)} }
+        .${r} .${x}${s}${b}on-top { ${idx(9999999999999)} }
+        
+    <?});
 }?>

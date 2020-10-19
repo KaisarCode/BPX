@@ -1,6 +1,5 @@
 <?
-
-/*Functions*/
+// Functions
 function shad(){r?>
 -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
         box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
@@ -22,16 +21,16 @@ function shadNO(){r?>
         box-shadow: none;
 <?}
 
-/*Classes*/
-function CLSShadow(bps) { return
-setBPX(bps, function(b){r?>
-    
-    .${r} .${x}${s}${b}shad,
-    .${r} .${x}${s}${b}shad-sm { ${shad()} }
-    .${r} .${x}${s}${b}shad-md { ${shadMD()} }
-    .${r} .${x}${s}${b}shad-lg { ${shadLG()} }
-    .${r} .${x}${s}${b}shad-xl { ${shadXL()} }
-    .${r} .${x}${s}${b}shad-no { ${shadNO} }
-    
-<?});
+// Classes
+function CLSShadow(bps) {
+    return setBPX(bps, function(b){r?>
+        
+        .${r} .${x}${s}${b}shad,
+        .${r} .${x}${s}${b}shad-sm { ${shad()} }
+        .${r} .${x}${s}${b}shad-md { ${shadMD()} }
+        .${r} .${x}${s}${b}shad-lg { ${shadLG()} }
+        .${r} .${x}${s}${b}shad-xl { ${shadXL()} }
+        .${r} .${x}${s}${b}shad-no { ${shadNO} }
+        
+    <?});
 }?>
