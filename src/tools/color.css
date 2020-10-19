@@ -1,4 +1,8 @@
 <?
+function FC(v) {r?> color: ${v}; <?}
+function BDC(v) {r?> border-color: ${v}; <?}
+function BGC(v) {r?> background-color: ${v}; <?}
+
 /* Color builder
 n: selector prefix (e.g: bg)
 k: color class key (e.g: prm)
