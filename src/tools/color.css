@@ -1,0 +1,93 @@
+<?
+/* Color builder
+n: selector prefix (e.g: bg)
+k: color class key (e.g: prm)
+m: modifier name (e.g: lgt)
+a: property name (e.g: border-color)
+c: color (e.g: #fff)
+d: darken rate (e.g: 30)
+*/
+function colorsBase(n, k, m, a, c, d) {r?>
+    .${r} .${x}${s}${n}-${k}${m} { ${a}: ${darken(c, d)}; }
+    .${r} .${x}${s}${n}-${k}${m}-hvr:hover { ${a}: ${darken(c, d)}; }
+    .${r} .${x}${s}${n}-${k}${m}-fcs:focus { ${a}: ${darken(c, d)}; }
+    .${r} .${x}${s}${n}-${k}${m}-dsb[disabled] { ${a}: ${darken(c, d)}; }
+    .${r} .${x}${s}${n}-${k}${m}-rdo[readonly] { ${a}: ${darken(c, d)}; }
+    .${r} .${x}${s}${n}-${k}${m}-act.${x}${s}act { ${a}: ${darken(c, d)}; }
+<?};
+function setColors(n, k, a, c, d) {
+    var vrts = '';
+    vrts += colorsBase(n, k, '', a, c, 0);
+    vrts += colorsBase(n, k, '-lgt', a, c, -d);
+    vrts += colorsBase(n, k, '-drk', a, c,  d);
+    return vrts;
+};
+
+// Classes
+function CLSColor(bps) {
+    var out = '';
+    
+    // Set color variations
+    out += setBPX(bps, function(b){
+        var out = '';
+        for (var i in clr) {
+            out += setColors('fc', i, 'color', clr[i], drk);
+            out += setColors('bd', i, 'border-color', clr[i], drk);
+            out += setColors('bg', i, 'background-color', clr[i], drk);
+        } return out;
+    });
+    
+    out += setBPX(bps, function(b){r?>
+        
+        /*No border*/
+        .${r} .${x}${s}${b}bd-no,
+        .${r} .${x}${s}${b}bd-no-hvr:hover,
+        .${r} .${x}${s}${b}bd-no-fcs:focus,
+        .${r} .${x}${s}${b}bd-no-dsb[disabled],
+        .${r} .${x}${s}${b}bd-no-rdo[readonly],
+        .${r} .${x}${s}${b}bd-no-act.${x}${s}act {
+            border-color: transparent;
+        }
+
+        /*No background*/
+        .${r} .${x}${s}${b}bg-no,
+        .${r} .${x}${s}${b}bg-no-hvr:hover,
+        .${r} .${x}${s}${b}bg-no-fcs:focus,
+        .${r} .${x}${s}${b}bg-no-dsb[disabled],
+        .${r} .${x}${s}${b}bg-no-rdo[readonly],
+        .${r} .${x}${s}${b}bg-no-act.${x}${s}act {
+            background-color: transparent;
+            background-image: none;
+        }
+
+        /*Opaque bg*/
+        .${r} .${x}${s}${b}bg-opq,
+        .${r} .${x}${s}${b}bg-opq-hvr:hover,
+        .${r} .${x}${s}${b}bg-opq-fcs:focus,
+        .${r} .${x}${s}${b}bg-opq-dsb[disabled],
+        .${r} .${x}${s}${b}bg-opq-rdo[readonly],
+        .${r} .${x}${s}${b}bg-opq-act.act {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        .${r} .${x}${s}${b}bg-opq-lgt,
+        .${r} .${x}${s}${b}bg-opq-lgt-hvr:hover,
+        .${r} .${x}${s}${b}bg-opq-lgt-fcs:focus,
+        .${r} .${x}${s}${b}bg-opq-lgt-dsb[disabled],
+        .${r} .${x}${s}${b}bg-opq-lgt-rdo[readonly],
+        .${r} .${x}${s}${b}bg-opq-lgt-act.act {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+        .${r} .${x}${s}${b}bg-opq-inv,
+        .${r} .${x}${s}${b}bg-opq-inv-hvr:hover,
+        .${r} .${x}${s}${b}bg-opq-inv-fcs:focus,
+        .${r} .${x}${s}${b}bg-opq-inv-dsb[disabled],
+        .${r} .${x}${s}${b}bg-opq-inv-rdo[readonly],
+        .${r} .${x}${s}${b}bg-opq-inv-act.act {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+    <?});
+    
+    // Return
+    return out;
+}?>

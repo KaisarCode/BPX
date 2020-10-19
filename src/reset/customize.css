@@ -136,10 +136,10 @@ function customize(){r?>
 .${r} [type="checkbox"]:checked:before {
     content: '';
     width: 0.45em;
-    height: 0.45em;
+    height: 0.44em;
     position: absolute;
-    margin-top: -0.25em;
-    margin-left: -0.25em;
+    margin-top: -0.22em;
+    margin-left: -0.22em;
     border-radius: 9999em;
     display: inline-block;
     background-color: ${clr.txt};

@@ -87,4 +87,5 @@ function glossY(c1, c2) { return ?>
     background: linear-gradient(to bottom,
     ${c1} 0%,${c1} 50%,${c2} 50%,${c2} 100%);
 <?};
+
 ?>

@@ -7,20 +7,24 @@ OUT += CLSAlign(bps);
 OUT += CLSAnim(bps);
 OUT += CLSBgImg(bps);
 OUT += CLSBorder(bps);
+OUT += CLSColor(bps);
 OUT += CLSCols(bps);
 OUT += CLSDisplay(bps);
 OUT += CLSFlex(bps);
 OUT += CLSFont(bps);
 OUT += CLSLine(bps);
+OUT += CLSMargin(bps);
 OUT += CLSOpacity(bps);
 OUT += CLSOverflow(bps);
+OUT += CLSPadding(bps);
 OUT += CLSPosition(bps);
+OUT += CLSRadius(bps);
 OUT += CLSShadow(bps);
 OUT += CLSSize(bps);
 OUT += CLSText(bps);
+OUT += CLSTransform(bps);
 OUT += CLSWrapper(bps);
 OUT += CLSZindex(bps);
-
 OUT += CLSExtra(bps);
 
 OUT;
