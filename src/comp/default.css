@@ -17,6 +17,8 @@ function CMPDefault(bps) {
         ${BDC(darken(clr.pnl, drk))}
         ${BGC(clr.pnl)}
     }
+    
+    /*Labels and buttons*/
     .${r} .${x}${s}${b}lbl,
     .${r} .${x}${s}${b}btn {
         ${h6()}
@@ -40,6 +42,8 @@ function CMPDefault(bps) {
         ${BGC(darken(clr.bdc,drk))}
         ${BDC(darken(clr.bdc,drk))}
     }
+    
+    /*Badges and tags*/
     .${r} .${x}${s}${b}bdg,
     .${r} .${x}${s}${b}tag {
         ${lnh(0)}
@@ -50,6 +54,8 @@ function CMPDefault(bps) {
     .${r} .${x}${s}${b}bdg {
         ${circ()}
     }
+    
+    /*Inputs*/
     .${r} .${x}${s}${b}ipt {
         ${inl()}
         ${fullX()}
@@ -69,6 +75,8 @@ function CMPDefault(bps) {
     .${r} .${x}${s}ipt:focus {
         ${BDC(darken(clr.pnl, drk*2))};
     }
+    
+    /*Circled pictures*/
     .${r} .${x}${s}pic {
         ${inl()}
         ${circ()}
