@@ -76,7 +76,7 @@ function customize(){r?>
   border: 0;
   height: 1px;
   margin: 1em 0;
-  background-color: #CCCCCC;
+  background-color: ${clr.bdc};
 }
 .${r} label {
   display: inline-block;
@@ -93,7 +93,7 @@ function customize(){r?>
   font-family: sans-serif;
   font-size: 1em;
   line-height: 1.5;
-  border: 1px solid #CCCCCC;
+  border: 1px solid ${clr.bdc};
   padding: 0.25em 1em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -102,7 +102,7 @@ function customize(){r?>
 .${r} input,
 .${r} select,
 .${r} textarea {
-  background-color: #FFFFFF;
+  background-color: ${clr.wht};
 }
 .${r} input,
 .${r} select,
@@ -132,8 +132,16 @@ function customize(){r?>
     -webkit-border-radius: 99999999px;
     border-radius: 99999999px;
 }
-.${r} [type="radio"]:checked,
-.${r} [type="checkbox"]:checked {
+.${r} [type="radio"]:checked:before,
+.${r} [type="checkbox"]:checked:before {
+    content: '';
+    width: 0.45em;
+    height: 0.45em;
+    position: absolute;
+    margin-top: -0.25em;
+    margin-left: -0.25em;
+    border-radius: 9999em;
+    display: inline-block;
     background-color: ${clr.txt};
 }
 .${r} select,
@@ -143,7 +151,7 @@ function customize(){r?>
 }
 .${r} button,
 .${r} input[type="submit"] {
-  background-color: #CCCCCC;
+  background-color: ${clr.bdc};
 }
 .${r} button::-moz-focus-inner,
 .${r} a::-moz-focus-inner {

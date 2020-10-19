@@ -1,15 +1,16 @@
 <?
-
-/*Functions*/
+/*BG Image*/
 function bgImg(img){
 img = img || '';
 if (img) img = ?>background-image: url('${img}');<?;
 r?>
-    background-position: 50%;
     background-size: 100%;
+    background-position: 50%;
     background-repeat: no-repeat;
     ${img}
 <?}
+
+/*BG size*/
 function bgSz(v){r?>
     background-size: ${v}%;
 <?}
@@ -19,8 +20,9 @@ function cover(){r?>
 function contain(){r?>
     background-size: contain;
 <?}
+
+/*BG Repeat*/
 function repeat(){r?>
-    background-size: auto;
     background-repeat: repeat;
 <?}
 

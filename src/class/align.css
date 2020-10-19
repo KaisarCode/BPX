@@ -1,5 +1,4 @@
 <?
-
 /*Functions*/
 function alignC(){r?> text-align: center; <?}
 function alignR(){r?> text-align: right; <?}

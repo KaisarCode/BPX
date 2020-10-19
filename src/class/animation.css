@@ -1,9 +1,12 @@
 <?
-
-/*Functions*/
+/*Transitions*/
 function ease(){r?>
     -webkit-transition: all ${spd}s cubic-bezier(0.25, 0.1, 0.25, 1);
     transition: all ${spd}s cubic-bezier(0.25, 0.1, 0.25, 1);
+<?}
+function easeOut(){r?>
+    -webkit-transition: all ${spd}s cubic-bezier(0, 0, 0.58, 1);
+    transition: all ${spd}s cubic-bezier(0, 0, 0.58, 1);
 <?}
 function easeOutBack(){r?>
     -webkit-transition: all ${spd}s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -16,10 +19,14 @@ function spin(){r?>
     -webkit-animation: ${x}spin ${spd}s 1 linear;
     animation: ${x}spin ${spd}s 1 linear;
 <?}
+
+/*Iterations*/
 function infinite(){r?>
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 <?}
+
+/*Speed*/
 function slow(){r?>
     -webkit-transition-duration: ${(spd*2)}s;
     transition-duration: ${(spd*2)}s;
@@ -56,6 +63,7 @@ function CLSAnim(bps) { return
 setBPX(bps, function(b){r?>
     
     .${r} .${x}${s}${b}ease { ${ease()} }
+    .${r} .${x}${s}${b}ease-out { ${easeOut()} }
     .${r} .${x}${s}${b}ease-out-back { ${easeOutBack()} }
     .${r} .${x}${s}${b}spin { ${spin()} }
     .${r} .${x}${s}${b}infinite { ${infinite()} }
