@@ -1,0 +1,26 @@
+<?
+
+// Functions
+function rotate(v){R?>
+    -webkit-transform: rotate(${v}deg);
+    -ms-transform: rotate(${v}deg);
+    transform: rotate(${v}deg);
+<?}
+
+// Build CSS
+O?><?
+setBPX(bps, function(b){R?>
+    
+    .${r} .${x}${s}${b}rotate0 { ${rotate(0)} }
+    .${r} .${x}${s}${b}rotate45 { ${rotate(45)} }
+    .${r} .${x}${s}${b}rotate90 { ${rotate(90)} }
+    .${r} .${x}${s}${b}rotate135 { ${rotate(135)} }
+    .${r} .${x}${s}${b}rotate180 { ${rotate(180)} }
+    .${r} .${x}${s}${b}rotate225 { ${rotate(225)} }
+    .${r} .${x}${s}${b}rotate270 { ${rotate(270)} }
+    .${r} .${x}${s}${b}rotate315 { ${rotate(315)} }
+    .${r} .${x}${s}${b}rotate360 { ${rotate(360)} }
+    
+<?});
+
+?>

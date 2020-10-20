@@ -1,0 +1,16 @@
+<?
+
+// Functions
+function mirror(v){R?>
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+<?}
+
+// Build CSS
+O?><?
+setBPX(bps, function(b){R?>
+    .${r} .${x}${s}${b}mirror { ${mirror()} }
+<?});
+
+?>
