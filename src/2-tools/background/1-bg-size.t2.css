@@ -1,4 +1,5 @@
 <?
+
 // Functions
 function bgSz(v){R?>
     background-size: ${v}%;
@@ -26,4 +27,6 @@ setBPX(bps, function(b){R?>
     .${r} .${x}${s}${b}bg-sz100 { ${bgSz(100)} }
     .${r} .${x}${s}${b}cover { ${cover()} }
     .${r} .${x}${s}${b}contain { ${contain()} }
-<?});?>
+<?});
+
+?>

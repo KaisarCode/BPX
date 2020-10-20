@@ -1,4 +1,5 @@
 <?
+
 // Functions
 function bgImg(img){
 img = img || '';
@@ -14,4 +15,6 @@ R?>
 O?><?
 setBPX(bps, function(b){R?>
     .${r} .${x}${s}${b}bg-img { ${bgImg()} }
-<?});?>
+<?});
+
+?>

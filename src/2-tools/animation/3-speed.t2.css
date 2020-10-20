@@ -1,4 +1,5 @@
 <?
+
 // Functions
 function slow(){R?>
     -webkit-transition-duration: ${(spd*2)}s;
@@ -39,4 +40,6 @@ setBPX(bps, function(b){R?>
     .${r} .${x}${s}${b}faster { ${faster()} }
     .${r} .${x}${s}${b}fastest { ${fastest()} }
     .${r} .${x}${s}${b}instant { ${instant()} }
-<?});?>
+<?});
+
+?>

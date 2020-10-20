@@ -1,4 +1,5 @@
 <?
+
 // Functions
 function spin(){R?>
     display: inline-block;
@@ -36,3 +37,5 @@ setBPX([0], function(b){R?>
     -ms-transform: rotate(359deg);
     transform: rotate(359deg); } }
 <?});
+
+?>

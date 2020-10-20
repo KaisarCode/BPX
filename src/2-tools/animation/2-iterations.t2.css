@@ -1,4 +1,5 @@
 <?
+
 // Functions
 function infinite(){R?>
     -webkit-animation-iteration-count: infinite;
@@ -9,4 +10,6 @@ function infinite(){R?>
 O?><?
 setBPX(bps, function(b){R?>
     .${r} .${x}${s}${b}infinite { ${infinite()} }
-<?});?>
+<?});
+
+?>
