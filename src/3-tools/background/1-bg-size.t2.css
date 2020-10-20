@@ -14,6 +14,7 @@ function contain(){R?>
 // Build CSS
 O?><?
 setBPX(bps, function(b){R?>
+    
     .${r} .${x}${s}${b}bg-sz0  { ${bgSz(0)} }
     .${r} .${x}${s}${b}bg-sz10 { ${bgSz(10)} }
     .${r} .${x}${s}${b}bg-sz20 { ${bgSz(20)} }
@@ -27,6 +28,7 @@ setBPX(bps, function(b){R?>
     .${r} .${x}${s}${b}bg-sz100 { ${bgSz(100)} }
     .${r} .${x}${s}${b}cover { ${cover()} }
     .${r} .${x}${s}${b}contain { ${contain()} }
+    
 <?});
 
 ?>

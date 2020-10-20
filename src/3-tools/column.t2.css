@@ -28,18 +28,22 @@ function colMaxSz(v){R?>
 // Build CSS
 O?><?
 setBPX(bps, function(b){R?>
+    
     .${r} .${x}${s}${b}same-sz { ${sameSz()} }
     .${r} .${x}${s}${b}cols { ${cols()} }
     .${r} .${x}${s}${b}col,
     .${r} .${x}${s}${b}cols > * { ${col()} }
+    
 <?});
 
 for (var i = 0; i <= 12; i++) {
 O?><?
 setBPX(bps, function(b){R?>
+    
     .${r} .${x}${s}${b}col${i} { ${colSz(i)} }
     .${r} .${x}${s}${b}min-col${i} { ${colMinSz(i)} }
     .${r} .${x}${s}${b}max-col${i} { ${colMaxSz(i)} }
+    
 <?});}
 
 ?>

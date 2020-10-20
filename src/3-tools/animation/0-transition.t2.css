@@ -16,9 +16,11 @@ function easeOutBack(){R?>
 
 O?><?// Build CSS
 setBPX(bps, function(b){R?>
+    
     .${r} .${x}${s}${b}ease { ${ease()} }
     .${r} .${x}${s}${b}ease-out { ${easeOut()} }
     .${r} .${x}${s}${b}ease-out-back { ${easeOutBack()} }
+    
 <?});
 
 ?>

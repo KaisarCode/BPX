@@ -11,12 +11,14 @@ function alignT(){R?> vertical-align: top; <?}
 // Build CSS
 O?><?
 setBPX(bps, function(b){R?>
+    
     .${r} .${x}${s}${b}align-c { ${alignC()} }
     .${r} .${x}${s}${b}align-r { ${alignR()} }
     .${r} .${x}${s}${b}align-l { ${alignL()} }
     .${r} .${x}${s}${b}align-m { ${alignM()} }
     .${r} .${x}${s}${b}align-b { ${alignB()} }
     .${r} .${x}${s}${b}align-t { ${alignT()} }
+    
 <?});
 
 ?>

@@ -18,6 +18,7 @@ function h0(){R?> font-size: 0; <?}
 // Build CSS
 O?><?
 setBPX(bps, function(b){R?>
+    
     .${r} .${x}${s}${b}jumbo { ${jumbo()} }
     .${r} .${x}${s}${b}bigger { ${bigger()} }
     .${r} .${x}${s}${b}big { ${big()} }
@@ -31,6 +32,7 @@ setBPX(bps, function(b){R?>
     .${r} .${x}${s}${b}smaller { ${smaller()} }
     .${r} .${x}${s}${b}micro { ${micro()} }
     .${r} .${x}${s}${b}h0 { ${h0()} }
+    
 <?});
 
 ?>

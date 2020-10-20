@@ -16,6 +16,7 @@ function btwnFlex(){R?> justify-content: space-between; <?}
 // Build CSS
 O?><?
 setBPX(bps, function(b){R?>
+    
     .${r} .${x}${s}${b}flex { ${flex()} }
     .${r} .${x}${s}${b}col-flex { ${colFlex()} }
     .${r} .${x}${s}${b}row-flex { ${rowFlex()} }
@@ -27,6 +28,7 @@ setBPX(bps, function(b){R?>
     .${r} .${x}${s}${b}align-r-flex { ${alignRFlex()} }
     .${r} .${x}${s}${b}arnd-flex { ${arndFlex()} }
     .${r} .${x}${s}${b}btwn-flex { ${btwnFlex()} }
+    
 <?});
 
 ?>

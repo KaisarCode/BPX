@@ -35,11 +35,13 @@ function instant(){R?>
 // Build CSS
 O?><?
 setBPX(bps, function(b){R?>
+    
     .${r} .${x}${s}${b}slow { ${slow()} }
     .${r} .${x}${s}${b}fast { ${fast()} }
     .${r} .${x}${s}${b}faster { ${faster()} }
     .${r} .${x}${s}${b}fastest { ${fastest()} }
     .${r} .${x}${s}${b}instant { ${instant()} }
+    
 <?});
 
 ?>
