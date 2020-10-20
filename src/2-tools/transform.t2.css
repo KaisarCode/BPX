@@ -1,0 +1,107 @@
+<?
+
+// Functions
+function outT(){R?>
+    webkit-transform: translateY(-150%);
+    -ms-transform: translateY(-150%);
+    transform: translateY(-150%);
+<?}
+function outR(){R?>
+    webkit-transform: translateX(150%);
+    -ms-transform: translateX(150%);
+    transform: translateX(150%);
+<?}
+function outB(){R?>
+    webkit-transform: translateY(150%);
+    -ms-transform: translateY(150%);
+    transform: translateY(150%);
+<?}
+function outL(){R?>
+    webkit-transform: translateX(-150%);
+    -ms-transform: translateX(-150%);
+    transform: translateX(-150%);
+<?}
+function outNo(){R?>
+    webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+<?}
+
+function grow(v){
+    v = 1 + v / 100; R?>
+    -webkit-transform: scale(${v});
+    -ms-transform: scale(${v});
+    transform: scale(${v});
+<?}
+
+function shrink(v){
+    v = v / 100; R?>
+    -webkit-transform: scale(${v});
+    -ms-transform: scale(${v});
+    transform: scale(${v});
+<?}
+
+function rotate(v){R?>
+    -webkit-transform: rotate(${v}deg);
+    -ms-transform: rotate(${v}deg);
+    transform: rotate(${v}deg);
+<?}
+
+function mirror(v){R?>
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+<?}
+
+// Build CSS
+O?><?
+setBPX(bps, function(b){R?>
+    
+    .${r} .${x}${s}${b}out-t { ${outT()} }
+    .${r} .${x}${s}${b}out-r { ${outR()} }
+    .${r} .${x}${s}${b}out-b { ${outB()} }
+    .${r} .${x}${s}${b}out-l { ${outL()} }
+    .${r} .${x}${s}${b}out-no { ${outNo()} }
+    
+    .${r} .${x}${s}${b}grow10 { ${grow(10)} }
+    .${r} .${x}${s}${b}grow20 { ${grow(20)} }
+    .${r} .${x}${s}${b}grow30 { ${grow(30)} }
+    .${r} .${x}${s}${b}grow40 { ${grow(40)} }
+    .${r} .${x}${s}${b}grow50 { ${grow(50)} }
+    .${r} .${x}${s}${b}grow60 { ${grow(60)} }
+    .${r} .${x}${s}${b}grow70 { ${grow(70)} }
+    .${r} .${x}${s}${b}grow80 { ${grow(80)} }
+    .${r} .${x}${s}${b}grow90 { ${grow(90)} }
+    .${r} .${x}${s}${b}grow100 { ${grow(100)} }
+    .${r} .${x}${s}${b}grow0 { ${grow(0)} }
+    
+    .${r} .${x}${s}${b}shrink100 { ${shrink(100)} }
+    .${r} .${x}${s}${b}shrink90 { ${shrink(90)} }
+    .${r} .${x}${s}${b}shrink80 { ${shrink(80)} }
+    .${r} .${x}${s}${b}shrink70 { ${shrink(70)} }
+    .${r} .${x}${s}${b}shrink60 { ${shrink(60)} }
+    .${r} .${x}${s}${b}shrink50 { ${shrink(50)} }
+    .${r} .${x}${s}${b}shrink40 { ${shrink(40)} }
+    .${r} .${x}${s}${b}shrink30 { ${shrink(30)} }
+    .${r} .${x}${s}${b}shrink20 { ${shrink(20)} }
+    .${r} .${x}${s}${b}shrink10 { ${shrink(10)} }
+    .${r} .${x}${s}${b}shrink0 { ${shrink(0)} }
+    
+    .${r} .${x}${s}${b}rotate0 { ${rotate(0)} }
+    .${r} .${x}${s}${b}rotate45 { ${rotate(45)} }
+    .${r} .${x}${s}${b}rotate90 { ${rotate(90)} }
+    .${r} .${x}${s}${b}rotate135 { ${rotate(135)} }
+    .${r} .${x}${s}${b}rotate180 { ${rotate(180)} }
+    .${r} .${x}${s}${b}rotate225 { ${rotate(225)} }
+    .${r} .${x}${s}${b}rotate270 { ${rotate(270)} }
+    .${r} .${x}${s}${b}rotate315 { ${rotate(315)} }
+    .${r} .${x}${s}${b}rotate360 { ${rotate(360)} }
+    
+    .${r} .${x}${s}${b}mirror { ${mirror()} }
+    
+<?});
+
+?>

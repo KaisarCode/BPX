@@ -1,0 +1,30 @@
+<?
+
+// Functions
+function bolder(){R?> font-weight: 800; <?}
+function bold(){R?> font-weight: 600; <?}
+function regular(){R?> font-weight: 400; <?}
+function thin(){R?> font-weight: 300; <?}
+function thinner(){R?> font-weight: 200; <?}
+function italic(){R?> font-style: italic; <?}
+function upper(){R?> text-transform: uppercase; <?}
+function lower(){R?> text-transform: lowercase; <?}
+function under(){R?> text-transform: underline; <?}
+
+// Build CSS
+O?><?
+setBPX(bps, function(b){R?>
+    
+    .${r} .${x}${s}${b}bolder { ${bolder()} }
+    .${r} .${x}${s}${b}bold { ${bold()} }
+    .${r} .${x}${s}${b}regular { ${regular()} }
+    .${r} .${x}${s}${b}thin { ${thin} }
+    .${r} .${x}${s}${b}thinner { ${thinner()} }
+    .${r} .${x}${s}${b}italic { ${italic()} }
+    .${r} .${x}${s}${b}upper { ${upper()} }
+    .${r} .${x}${s}${b}lower { ${lower()} }
+    .${r} .${x}${s}${b}underline { ${under()} }
+    
+<?});
+
+?>

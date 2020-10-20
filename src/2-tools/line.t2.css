@@ -1,0 +1,18 @@
+<?
+
+// Functions
+function fall(){R?> white-space: normal; <?}
+function fallNo(){R?> white-space: nowrap; <?}
+function lnh(v){R?> line-height: ${v}; <?}
+
+// Build CSS
+O?><?
+setBPX(bps, function(b){R?>
+    .${r} .${x}${s}${b}fall  { ${fall()} }
+    .${r} .${x}${s}${b}fall-no { ${fallNo()} }
+    .${r} .${x}${s}${b}lnh0  { ${lnh(0)} }
+    .${r} .${x}${s}${b}lnh05 { ${lnh(0.5)} }
+    .${r} .${x}${s}${b}lnh1  { ${lnh(1)} }
+<?});
+
+?>

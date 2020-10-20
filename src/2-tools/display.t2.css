@@ -13,6 +13,7 @@ function fix(){R?> position: fixed; <?}
 // Build CSS
 O?><?
 setBPX(bps, function(b){R?>
+
     .${r} .${x}${s}${b}block { ${block()} }
     .${r} .${x}${s}${b}inl  { ${inl()} }
     .${r} .${x}${s}${b}cell { ${cell()} }
@@ -21,6 +22,7 @@ setBPX(bps, function(b){R?>
     .${r} .${x}${s}${b}abs  { ${abs()} }
     .${r} .${x}${s}${b}rel  { ${rel()} }
     .${r} .${x}${s}${b}fix  { ${fix()} }
+    
 <?});
 
 ?>

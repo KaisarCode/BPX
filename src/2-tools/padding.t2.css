@@ -1,0 +1,80 @@
+<?
+
+// Functions
+function pad(v){R?>
+    padding: ${v};
+<?}
+function padX(v){R?>
+    padding-left: ${v};
+    padding-right: ${v};
+<?}
+function padY(v){R?>
+    padding-top: ${v};
+    padding-bottom: ${v};
+<?}
+function padT(v){R?>
+    padding-top: ${v};
+<?}
+function padR(v){R?>
+    padding-right: ${v};
+<?}
+function padB(v){R?>
+    padding-bottom: ${v};
+<?}
+function padL(v){R?>
+    padding-left: ${v};
+<?}
+
+// Build CSS
+O?><?
+setBPX(bps, function(b){
+var vsm = '0.25em';
+var vmd = '0.75em';
+var vlg = '1em';
+R?>
+    
+    .${r} .${x}${s}${b}pad { ${pad(vmd)} }
+    .${r} .${x}${s}${b}pad-sm { ${pad(vsm)} }
+    .${r} .${x}${s}${b}pad-md { ${pad(vmd)} }
+    .${r} .${x}${s}${b}pad-lg { ${pad(vlg)} }
+    .${r} .${x}${s}${b}pad-no { ${pad(0)} }
+    
+    .${r} .${x}${s}${b}pad-x { ${padX(vmd)} }
+    .${r} .${x}${s}${b}pad-x-sm { ${padX(vsm)} }
+    .${r} .${x}${s}${b}pad-x-md { ${padX(vmd)} }
+    .${r} .${x}${s}${b}pad-x-lg { ${padX(vlg)} }
+    .${r} .${x}${s}${b}pad-x-no { ${padX(0)} }
+    
+    .${r} .${x}${s}${b}pad-y { ${padY(vmd)} }
+    .${r} .${x}${s}${b}pad-y-sm { ${padY(vsm)} }
+    .${r} .${x}${s}${b}pad-y-md { ${padY(vmd)} }
+    .${r} .${x}${s}${b}pad-y-lg { ${padY(vlg)} }
+    .${r} .${x}${s}${b}pad-y-no { ${padY(0)} }
+    
+    .${r} .${x}${s}${b}pad-t { ${padT(vmd)} }
+    .${r} .${x}${s}${b}pad-t-sm { ${padT(vsm)} }
+    .${r} .${x}${s}${b}pad-t-md { ${padT(vmd)} }
+    .${r} .${x}${s}${b}pad-t-lg { ${padT(vlg)} }
+    .${r} .${x}${s}${b}pad-t-no { ${padT(0)} }
+    
+    .${r} .${x}${s}${b}pad-r { ${padR(vmd)} }
+    .${r} .${x}${s}${b}pad-r-sm { ${padR(vsm)} }
+    .${r} .${x}${s}${b}pad-r-md { ${padR(vmd)} }
+    .${r} .${x}${s}${b}pad-r-lg { ${padR(vlg)} }
+    .${r} .${x}${s}${b}pad-r-no { ${padR(0)} }
+    
+    .${r} .${x}${s}${b}pad-b { ${padB(vmd)} }
+    .${r} .${x}${s}${b}pad-b-sm { ${padB(vsm)} }
+    .${r} .${x}${s}${b}pad-b-md { ${padB(vmd)} }
+    .${r} .${x}${s}${b}pad-b-lg { ${padB(vlg)} }
+    .${r} .${x}${s}${b}pad-b-no { ${padB(0)} }
+    
+    .${r} .${x}${s}${b}pad-l { ${padL(vmd)} }
+    .${r} .${x}${s}${b}pad-l-sm { ${padL(vsm)} }
+    .${r} .${x}${s}${b}pad-l-md { ${padL(vmd)} }
+    .${r} .${x}${s}${b}pad-l-lg { ${padL(vlg)} }
+    .${r} .${x}${s}${b}pad-l-no { ${padL(0)} }
+    
+<?});
+
+?>
