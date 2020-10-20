@@ -5,7 +5,7 @@ function BDC(v, drk) {R?> border-color: ${v}; <?}
 function BGC(v, drk) {R?> background-color: ${v}; <?}
 
 // Build CSS selector
-function csel(b, k, h) {R?>
+function clrSel(b, k, h) {R?>
     .${r} .${x}${s}${b}${k}-${c}${h}
     .${r} .${x}${s}${b}${k}-${c}${h}-hvr:hover,
     .${r} .${x}${s}${b}${k}-${c}${h}-act.act
@@ -15,19 +15,19 @@ function csel(b, k, h) {R?>
 for (var c in clr) {
 O?><?setBPX(bps, function(b){R?>
     
-    ${csel(b, 'fc', '')} { ${FC(clr[c])} }
-    ${csel(b, 'fc', '-drk')} { ${FC(darken(clr[c],drk))} }
-    ${csel(b, 'fc', '-lgt')} { ${FC(darken(clr[c],-drk))} }
+    ${clrSel(b, 'fc', '')} { ${FC(clr[c])} }
+    ${clrSel(b, 'fc', '-drk')} { ${FC(darken(clr[c],drk))} }
+    ${clrSel(b, 'fc', '-lgt')} { ${FC(darken(clr[c],-drk))} }
     
-    ${csel(b, 'bd', '')} { ${BDC(clr[c])} }
-    ${csel(b, 'bd', '-drk')} { ${BDC(darken(clr[c],drk))} }
-    ${csel(b, 'bd', '-lgt')} { ${BDC(darken(clr[c],-drk))} }
+    ${clrSel(b, 'bd', '')} { ${BDC(clr[c])} }
+    ${clrSel(b, 'bd', '-drk')} { ${BDC(darken(clr[c],drk))} }
+    ${clrSel(b, 'bd', '-lgt')} { ${BDC(darken(clr[c],-drk))} }
     
-    ${csel(b, 'bg', '')} { ${BGC(clr[c])} }
-    ${csel(b, 'bg', '-drk')} { ${BGC(darken(clr[c],drk))} }
-    ${csel(b, 'bg', '-lgt')} { ${BGC(darken(clr[c],-drk))} }
+    ${clrSel(b, 'bg', '')} { ${BGC(clr[c])} }
+    ${clrSel(b, 'bg', '-drk')} { ${BGC(darken(clr[c],drk))} }
+    ${clrSel(b, 'bg', '-lgt')} { ${BGC(darken(clr[c],-drk))} }
     
-    ${csel(b, 'bd', '-no')} { ${BDC('transparent')} }
-    ${csel(b, 'bg', '-no')} { ${BGC('transparent')} background-image: none; }
+    ${clrSel(b, 'bd', '-no')} { ${BDC('transparent')} }
+    ${clrSel(b, 'bg', '-no')} { ${BGC('transparent')} background-image: none; }
     
 <?});}

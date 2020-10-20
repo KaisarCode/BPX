@@ -16,7 +16,7 @@ var bps = ['0','768px'];
 // Colors
 var clr = {
     bgc: '#E1E1E1', // Bg
-    bdc: '#CCCCCC', // Bd
+    sys: '#CCCCCC', // System
     txt: '#606C76', // Text
     lnk: '#337AB7', // Links
     pnl: '#FFFFFF', // Panels

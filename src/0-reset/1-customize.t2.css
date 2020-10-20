@@ -75,7 +75,7 @@
   border: 0;
   height: 1px;
   margin: 1em 0;
-  background-color: ${clr.bdc};
+  background-color: ${clr.sys};
 }
 .${r} label {
   display: inline-block;
@@ -92,7 +92,7 @@
   font-family: sans-serif;
   font-size: 1em;
   line-height: 1.5;
-  border: 1px solid ${clr.bdc};
+  border: 1px solid ${clr.sys};
   padding: 0.25em 1em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -150,7 +150,7 @@
 }
 .${r} button,
 .${r} input[type="submit"] {
-  background-color: ${clr.bdc};
+  background-color: ${clr.sys};
 }
 .${r} button::-moz-focus-inner,
 .${r} a::-moz-focus-inner {
