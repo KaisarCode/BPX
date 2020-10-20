@@ -1,0 +1,21 @@
+<?
+// Functions
+function ease(){R?>
+    -webkit-transition: all ${spd}s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: all ${spd}s cubic-bezier(0.25, 0.1, 0.25, 1);
+<?}
+function easeOut(){R?>
+    -webkit-transition: all ${spd}s cubic-bezier(0, 0, 0.58, 1);
+    transition: all ${spd}s cubic-bezier(0, 0, 0.58, 1);
+<?}
+function easeOutBack(){R?>
+    -webkit-transition: all ${spd}s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all ${spd}s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+<?}
+
+O?><?// Build CSS
+setBPX(bps, function(b){R?>
+    .${r} .${x}${s}${b}ease { ${ease()} }
+    .${r} .${x}${s}${b}ease-out { ${easeOut()} }
+    .${r} .${x}${s}${b}ease-out-back { ${easeOutBack()} }
+<?});?>

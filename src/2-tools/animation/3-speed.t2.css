@@ -1,0 +1,42 @@
+<?
+// Functions
+function slow(){R?>
+    -webkit-transition-duration: ${(spd*2)}s;
+    transition-duration: ${(spd*2)}s;
+    -webkit-animation-duration: ${(spd*2)}s;
+    animation-duration: ${(spd*2)}s;
+<?}
+function fast(){R?>
+    -webkit-transition-duration: ${(spd/2)}s;
+    transition-duration: ${(spd/2)}s;
+    -webkit-animation-duration: ${(spd/2)}s;
+    animation-duration: ${(spd/2)}s;
+<?}
+function faster(){R?>
+    -webkit-transition-duration: ${(spd/4)}s;
+    transition-duration: ${(spd/4)}s;
+    -webkit-animation-duration: ${(spd/4)}s;
+    animation-duration: ${(spd/4)}s;
+<?}
+function fastest(){R?>
+    -webkit-transition-duration: ${(spd/6)}s;
+    transition-duration: ${(spd/6)}s;
+    -webkit-animation-duration: ${(spd/6)}s;
+    animation-duration: ${(spd/6)}s;
+<?}
+function instant(){R?>
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+    -webkit-animation-duration: 0s;
+    animation-duration: 0s;
+<?}
+
+// Build CSS
+O?><?
+setBPX(bps, function(b){R?>
+    .${r} .${x}${s}${b}slow { ${slow()} }
+    .${r} .${x}${s}${b}fast { ${fast()} }
+    .${r} .${x}${s}${b}faster { ${faster()} }
+    .${r} .${x}${s}${b}fastest { ${fastest()} }
+    .${r} .${x}${s}${b}instant { ${instant()} }
+<?});?>

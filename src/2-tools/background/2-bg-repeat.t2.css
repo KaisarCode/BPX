@@ -1,0 +1,11 @@
+<?
+// Functions
+function repeat(){R?>
+    background-repeat: repeat;
+<?}
+
+// Build CSS
+O?><?
+setBPX(bps, function(b){R?>
+    .${r} .${x}${s}${b}repeat { ${repeat()} }
+<?});?>

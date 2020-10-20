@@ -1,0 +1,12 @@
+<?
+// Functions
+function infinite(){R?>
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+<?}
+
+// Build CSS
+O?><?
+setBPX(bps, function(b){R?>
+    .${r} .${x}${s}${b}infinite { ${infinite()} }
+<?});?>

@@ -20,7 +20,6 @@ var clr = {
     txt: '#606C76', // Text
     lnk: '#337AB7', // Links
     pnl: '#FFFFFF', // Panels
-    hdr: '#536878', // Headers
     prm: '#536878', // Primary
     sec: '#77838C', // Secondary
     inf: '#17A2B8', // Info
