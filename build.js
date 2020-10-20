@@ -5,30 +5,47 @@ var dwalk = require('kc-dwalk');
 var fwalk = require('kc-fwalk');
 var fread = require('kc-fread');
 var fwrite = require('kc-fwrite');
+var regexp = /\.css$|\.js$/;
 
 // Compile
 function compile() {
     var str = '';
+    
+    // Include libs
     str += fread('node_modules/kc-hex2rgb/hex2rgb.js');
     str += fread('node_modules/kc-rgb2hex/rgb2hex.js');
+    
+    // Read TPLs
     fwalk('src').forEach(function(f) {
-        if (f.match(/\.css$/)) {
-            str += fread(f);
-        }
-    });
-    str = t2js(str,{mini:1});
+    if (f.match(regexp)) {
+    str += fread(f); } });
+    
+    // Compile to JS
+    str = t2js(str,{ mini:1 });
+    
+    // Save JS
     fwrite('dist/bpx.js', str);
+    
+    // Eval JS
     asbox(str, null, function(str){
+        
+        // Save CSS
         fwrite('dist/bpx.css', str);
     });
+    
+    // Done
     console.log('Compiled.');
+    
 } compile();
 
 // Watch
 var dir = dwalk('src');
-dir.unshift(dir);
-watch(dir, function(d, f){
-    if (f.match(/\.css$/)) {
-        compile();
-    }
+dir.unshift('src');
+dir.forEach(function(d){
+    watch(d, function(d, f){
+        if (f.match(regexp)) {
+            compile();
+        }
+    });
 });
+

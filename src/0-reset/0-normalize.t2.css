@@ -3,7 +3,8 @@
  * Based on Necolas Gallagher's normalize.css
  * http://necolas.github.io/normalize.css/
  */
-function normalize(){r?>
+O?>
+
 .${r} {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -182,4 +183,3 @@ function normalize(){r?>
 .${r} [hidden] {
   display: none;
 }
-<?}?>

@@ -1,6 +1,5 @@
-<?
+<?O?>
 /* Customize default browser styles */
-function customize(){r?>
 .${r} {
   font-size: ${fsz};
   color: ${clr.txt};
@@ -177,4 +176,3 @@ function customize(){r?>
     5000s ease-in-out 0s;
     -webkit-box-shadow: 0;
 }
-<?}?>
