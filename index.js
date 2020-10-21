@@ -30,18 +30,18 @@ module.exports = function(opt, cb) {
     if (!is.def(opt.cfg.rad)) opt.cfg.rad = 4; // Border radius (px)
     
     opt.cfg.clr = opt.cfg.clr || {}; // Color scheme
-    if (!is.def(opt.cfg.clr.bgc)) opt.cfg.clr.bgc || '#E1E1E1'; // Bg
-    if (!is.def(opt.cfg.clr.sys)) opt.cfg.clr.sys || '#CCCCCC'; // System
-    if (!is.def(opt.cfg.clr.sys)) opt.cfg.clr.txt || '#606C76'; // Text
-    if (!is.def(opt.cfg.clr.lnk)) opt.cfg.clr.lnk || '#337AB7'; // Links
-    if (!is.def(opt.cfg.clr.pnl)) opt.cfg.clr.pnl || '#FFFFFF'; // Panels
-    if (!is.def(opt.cfg.clr.prm)) opt.cfg.clr.prm || '#536878'; // Primary
-    if (!is.def(opt.cfg.clr.sec)) opt.cfg.clr.sec || '#77838C'; // Secondary
-    if (!is.def(opt.cfg.clr.inf)) opt.cfg.clr.inf || '#17A2B8'; // Info
-    if (!is.def(opt.cfg.clr.scc)) opt.cfg.clr.scc || '#3AAA35'; // Success
-    if (!is.def(opt.cfg.clr.dng)) opt.cfg.clr.dng || '#DC3545'; // Danger
-    if (!is.def(opt.cfg.clr.wht)) opt.cfg.clr.wht || '#FFFFFF'; // White
-    if (!is.def(opt.cfg.clr.blk)) opt.cfg.clr.blk || '#000000'; // Black
+    opt.cfg.clr.bgc = opt.cfg.clr.bgc || '#E1E1E1'; // Bg
+    opt.cfg.clr.sys = opt.cfg.clr.sys || '#CCCCCC'; // System
+    opt.cfg.clr.sys = opt.cfg.clr.txt || '#606C76'; // Text
+    opt.cfg.clr.lnk = opt.cfg.clr.lnk || '#337AB7'; // Links
+    opt.cfg.clr.pnl = opt.cfg.clr.pnl || '#FFFFFF'; // Panels
+    opt.cfg.clr.prm = opt.cfg.clr.prm || '#536878'; // Primary
+    opt.cfg.clr.sec = opt.cfg.clr.sec || '#77838C'; // Secondary
+    opt.cfg.clr.inf = opt.cfg.clr.inf || '#17A2B8'; // Info
+    opt.cfg.clr.scc = opt.cfg.clr.scc || '#3AAA35'; // Success
+    opt.cfg.clr.dng = opt.cfg.clr.dng || '#DC3545'; // Danger
+    opt.cfg.clr.wht = opt.cfg.clr.wht || '#FFFFFF'; // White
+    opt.cfg.clr.blk = opt.cfg.clr.blk || '#000000'; // Black
     
     // Callback
     cb = cb || function(){};
