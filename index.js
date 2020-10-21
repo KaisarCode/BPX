@@ -1,3 +1,4 @@
+var is = require('kc-is');
 var t2js = require('t2js');
 var asbox = require('asbox');
 var dwalk = require('kc-dwalk');
@@ -5,26 +6,53 @@ var fwalk = require('kc-fwalk');
 var fread = require('kc-fread');
 var regesc = require('kc-regesc');
 
-module.exports = function(cfg, cb) {
+module.exports = function(opt, cb) {
     var rx; var str = '';
     
     // Config
-    cfg = cfg || {};
-    cfg.lib = cfg.lib || [];
-    cfg.src = cfg.src || [];
-    cfg.min = cfg.min || false;
-    cfg.ext = cfg.ext || '.t2.css';
+    opt = opt || {};
+    opt.lib = opt.lib || [];
+    opt.src = opt.src || [];
+    opt.ext = opt.ext || '.css';
+    opt.min = opt.min || false;
+    
+    // Default CSS config
+    opt.cfg = opt.cfg || {};
+    opt.cfg.r = opt.cfg.r || 'bpx'; // Root class
+    opt.cfg.bps = opt.cfg.bps || ['0']; // Breakpoints
+    if (!is.def(opt.cfg.x)) opt.cfg.x = ''; // Selectors prefix
+    if (!is.def(opt.cfg.s)) opt.cfg.s = ''; // Selectors separator
+    if (!is.def(opt.cfg.fsz)) opt.cfg.fsz = '18px'; // Font size
+    if (!is.def(opt.cfg.mxw)) opt.cfg.mxw = 768; // Max width (px)
+    if (!is.def(opt.cfg.mnw)) opt.cfg.mnw = 320; // Min width (px)
+    if (!is.def(opt.cfg.spd)) opt.cfg.spd = 0.5; // Animation speed (s)
+    if (!is.def(opt.cfg.drk)) opt.cfg.drk = 30; // Darken rate (%)
+    if (!is.def(opt.cfg.rad)) opt.cfg.rad = 4; // Border radius (px)
+    
+    opt.cfg.clr = opt.cfg.clr || {}; // Color scheme
+    if (!is.def(opt.cfg.clr.bgc)) opt.cfg.clr.bgc || '#E1E1E1'; // Bg
+    if (!is.def(opt.cfg.clr.sys)) opt.cfg.clr.sys || '#CCCCCC'; // System
+    if (!is.def(opt.cfg.clr.sys)) opt.cfg.clr.txt || '#606C76'; // Text
+    if (!is.def(opt.cfg.clr.lnk)) opt.cfg.clr.lnk || '#337AB7'; // Links
+    if (!is.def(opt.cfg.clr.pnl)) opt.cfg.clr.pnl || '#FFFFFF'; // Panels
+    if (!is.def(opt.cfg.clr.prm)) opt.cfg.clr.prm || '#536878'; // Primary
+    if (!is.def(opt.cfg.clr.sec)) opt.cfg.clr.sec || '#77838C'; // Secondary
+    if (!is.def(opt.cfg.clr.inf)) opt.cfg.clr.inf || '#17A2B8'; // Info
+    if (!is.def(opt.cfg.clr.scc)) opt.cfg.clr.scc || '#3AAA35'; // Success
+    if (!is.def(opt.cfg.clr.dng)) opt.cfg.clr.dng || '#DC3545'; // Danger
+    if (!is.def(opt.cfg.clr.wht)) opt.cfg.clr.wht || '#FFFFFF'; // White
+    if (!is.def(opt.cfg.clr.blk)) opt.cfg.clr.blk || '#000000'; // Black
     
     // Callback
     cb = cb || function(){};
     
     // Parse config
-    if (typeof cfg.lib == 'string')
-    cfg.lib = [cfg.lib]; lib = cfg.lib;
-    if (typeof cfg.src == 'string')
-    cfg.src = [cfg.src]; src = cfg.src;
-    if (typeof cfg.ext == 'string')
-    cfg.ext = [cfg.ext]; ext = cfg.ext;
+    if (typeof opt.lib == 'string')
+    opt.lib = [opt.lib]; lib = opt.lib;
+    if (typeof opt.src == 'string')
+    opt.src = [opt.src]; src = opt.src;
+    if (typeof opt.ext == 'string')
+    opt.ext = [opt.ext]; ext = opt.ext;
     
     // Load core libs
     str += fread('node_modules/kc-hex2rgb/hex2rgb.js');
@@ -53,7 +81,7 @@ module.exports = function(cfg, cb) {
     });
     
     // Compile
-    str = t2js(str, {
-    mini: cfg.min });
-    asbox(str, null, cb);
+    str = t2js(str,{
+    mini: opt.min });
+    asbox(str, opt.cfg, cb);
 }

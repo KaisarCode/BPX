@@ -17,6 +17,7 @@
     "kc-fwalk": "^1.0.7",
     "kc-fwrite": "^1.0.5",
     "kc-hex2rgb": "^1.0.5",
+    "kc-is": "^1.0.9",
     "kc-regesc": "^1.0.3",
     "kc-rgb2hex": "^1.0.2",
     "kc-watch": "^1.0.3",
