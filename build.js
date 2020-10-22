@@ -12,11 +12,7 @@ function compile() {
 } compile();
 
 // Watch
-var dir = dwalk(dn+'/src');
-dir.unshift(dn+'/src');
-dir.forEach(function(d){
-    watch(d, function(d, f){
+watch(dn+'/src', function(d, f){
     var rx = /\.css$|\.js$/;
     if (f.match(rx)) compile();
-    });
 });
