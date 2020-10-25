@@ -7,7 +7,7 @@ function BGC(v, drk) {R?> background-color: ${v}; <?}
 
 // Build CSS selector
 function clrSel(b, k, h) {R?>
-    .${r} .${x}${s}${b}${k}-${c}${h}
+    .${r} .${x}${s}${b}${k}-${c}${h},
     .${r} .${x}${s}${b}${k}-${c}${h}-hvr:hover,
     .${r} .${x}${s}${b}${k}-${c}${h}-act.act
 <?}
