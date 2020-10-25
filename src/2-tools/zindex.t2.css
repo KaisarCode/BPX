@@ -2,6 +2,7 @@
 
 // Functions
 function idx(v){R?> z-index: ${v}; <?}
+function onTop(v){R?> z-index: 9999999999999; <?}
 
 // Build CSS
 O?><?
@@ -20,7 +21,7 @@ setBPX(bps, function(b){R?>
     .${r} .${x}${s}${b}idx1000 { ${idx(1000)} }
     .${r} .${x}${s}${b}idx2000 { ${idx(2000)} }
     .${r} .${x}${s}${b}idx3000 { ${idx(3000)} }
-    .${r} .${x}${s}${b}on-top { ${idx(9999999999999)} }
+    .${r} .${x}${s}${b}on-top { ${onTop()} }
     
 <?});
 
