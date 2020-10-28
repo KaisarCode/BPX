@@ -22,7 +22,7 @@ function radiusR(v){ return radiusTR(v)+radiusBR(v);}
 function radiusB(v){ return radiusBL(v)+radiusBR(v);}
 function radiusL(v){ return radiusTL(v)+radiusBL(v);}
 function radius(v) { return radiusT(v) + radiusB(v);}
-function circ(){ var v = '99999px'; return radius(v);}
+function circ(){ var v = '50%'; return radius(v);}
 
 // Build CSS
 O?><?
