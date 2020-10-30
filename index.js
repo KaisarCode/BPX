@@ -25,6 +25,7 @@ module.exports = function(opt, cb) {
     if (!is.def(opt.cfg.fsz)) opt.cfg.fsz = '18px'; // Font size
     if (!is.def(opt.cfg.mxw)) opt.cfg.mxw = 768; // Max width (px)
     if (!is.def(opt.cfg.mnw)) opt.cfg.mnw = 320; // Min width (px)
+    if (!is.def(opt.cfg.spc)) opt.cfg.spc = 0.5; // Spacing base (em)
     if (!is.def(opt.cfg.spd)) opt.cfg.spd = 0.5; // Animation speed (s)
     if (!is.def(opt.cfg.drk)) opt.cfg.drk = 30; // Darken rate (%)
     if (!is.def(opt.cfg.rad)) opt.cfg.rad = 4; // Border radius (px)

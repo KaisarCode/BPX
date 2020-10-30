@@ -1,36 +1,56 @@
 <?
 
 // Functions
-function mar(v){R?>
-    margin: ${v};
+function mar(v){
+typeof v == 'undefined'?
+v = 1:''; R?>
+    margin: ${spc*v}em;
 <?}
-function marX(v){R?>
-    margin-left: ${v};
-    margin-right: ${v};
+
+function marX(v){
+typeof v == 'undefined'?
+v = 1:''; R?>
+    margin-left: ${spc*v}em;
+    margin-right: ${spc*v}em;
 <?}
-function marY(v){R?>
-    margin-top: ${v};
-    margin-bottom: ${v};
+
+function marY(v){
+typeof v == 'undefined'?
+v = 1:''; R?>
+    margin-top: ${spc*v}em;
+    margin-bottom: ${spc*v}em;
 <?}
-function marT(v){R?>
-    margin-top: ${v};
+
+function marT(v){
+typeof v == 'undefined'?
+v = 1:''; R?>
+    margin-top: ${spc*v}em;
 <?}
-function marR(v){R?>
-    margin-right: ${v};
+
+function marR(v){
+typeof v == 'undefined'?
+v = 1:''; R?>
+    margin-right: ${spc*v}em;
 <?}
-function marB(v){R?>
-    margin-bottom: ${v};
+
+function marB(v){
+typeof v == 'undefined'?
+v = 1:''; R?>
+    margin-bottom: ${spc*v}em;
 <?}
-function marL(v){R?>
-    margin-left: ${v};
+
+function marL(v){
+typeof v == 'undefined'?
+v = 1:''; R?>
+    margin-left: ${spc*v}em;
 <?}
 
 // Build CSS
 O?><?
 setBPX(bps, function(b){
-var vsm = '0.5em';
-var vmd = '0.1em';
-var vlg = '1.5em';
+var vsm = 1;
+var vmd = 2;
+var vlg = 3;
 R?>
     
     .${r} .${x}${s}${b}mar { ${mar(vsm)} }

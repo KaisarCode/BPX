@@ -1,36 +1,56 @@
 <?
 
 // Functions
-function pad(v){R?>
-    padding: ${v};
+function pad(v){
+typeof v == 'undefined'?
+v = 1:''; R?>
+    padding: ${spc*v}em;
 <?}
-function padX(v){R?>
-    padding-left: ${v};
-    padding-right: ${v};
+
+function padX(v){
+typeof v == 'undefined'?
+v = 1:''; R?>
+    padding-left: ${spc*v}em;
+    padding-right: ${spc*v}em;
 <?}
-function padY(v){R?>
-    padding-top: ${v};
-    padding-bottom: ${v};
+
+function padY(v){
+typeof v == 'undefined'?
+v = 1:''; R?>
+    padding-top: ${spc*v}em;
+    padding-bottom: ${spc*v}em;
 <?}
-function padT(v){R?>
-    padding-top: ${v};
+
+function padT(v){
+typeof v == 'undefined'?
+v = 1:''; R?>
+    padding-top: ${spc*v}em;
 <?}
-function padR(v){R?>
-    padding-right: ${v};
+
+function padR(v){
+typeof v == 'undefined'?
+v = 1:''; R?>
+    padding-right: ${spc*v}em;
 <?}
-function padB(v){R?>
-    padding-bottom: ${v};
+
+function padB(v){
+typeof v == 'undefined'?
+v = 1:''; R?>
+    padding-bottom: ${spc*v}em;
 <?}
-function padL(v){R?>
-    padding-left: ${v};
+
+function padL(v){
+typeof v == 'undefined'?
+v = 1:''; R?>
+    padding-left: ${spc*v}em;
 <?}
 
 // Build CSS
 O?><?
 setBPX(bps, function(b){
-var vsm = '0.5em';
-var vmd = '1em';
-var vlg = '1.5em';
+var vsm = 1;
+var vmd = 2;
+var vlg = 3;
 R?>
     
     .${r} .${x}${s}${b}pad { ${pad(vsm)} }
