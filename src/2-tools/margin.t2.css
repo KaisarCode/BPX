@@ -28,48 +28,48 @@ function marL(v){R?>
 // Build CSS
 O?><?
 setBPX(bps, function(b){
-var vsm = '0.25em';
-var vmd = '0.75em';
-var vlg = '1em';
+var vsm = '0.5em';
+var vmd = '0.1em';
+var vlg = '1.5em';
 R?>
     
-    .${r} .${x}${s}${b}mar { ${mar(vmd)} }
+    .${r} .${x}${s}${b}mar { ${mar(vsm)} }
     .${r} .${x}${s}${b}mar-sm { ${mar(vsm)} }
     .${r} .${x}${s}${b}mar-md { ${mar(vmd)} }
     .${r} .${x}${s}${b}mar-lg { ${mar(vlg)} }
     .${r} .${x}${s}${b}mar-no { ${mar(0)} }
     
-    .${r} .${x}${s}${b}mar-x { ${marX(vmd)} }
+    .${r} .${x}${s}${b}mar-x { ${marX(vsm)} }
     .${r} .${x}${s}${b}mar-x-sm { ${marX(vsm)} }
     .${r} .${x}${s}${b}mar-x-md { ${marX(vmd)} }
     .${r} .${x}${s}${b}mar-x-lg { ${marX(vlg)} }
     .${r} .${x}${s}${b}mar-x-no { ${marX(0)} }
     
-    .${r} .${x}${s}${b}mar-y { ${marY(vmd)} }
+    .${r} .${x}${s}${b}mar-y { ${marY(vsm)} }
     .${r} .${x}${s}${b}mar-y-sm { ${marY(vsm)} }
     .${r} .${x}${s}${b}mar-y-md { ${marY(vmd)} }
     .${r} .${x}${s}${b}mar-y-lg { ${marY(vlg)} }
     .${r} .${x}${s}${b}mar-y-no { ${marY(0)} }
     
-    .${r} .${x}${s}${b}mar-t { ${marT(vmd)} }
+    .${r} .${x}${s}${b}mar-t { ${marT(vsm)} }
     .${r} .${x}${s}${b}mar-t-sm { ${marT(vsm)} }
     .${r} .${x}${s}${b}mar-t-md { ${marT(vmd)} }
     .${r} .${x}${s}${b}mar-t-lg { ${marT(vlg)} }
     .${r} .${x}${s}${b}mar-t-no { ${marT(0)} }
     
-    .${r} .${x}${s}${b}mar-r { ${marR(vmd)} }
+    .${r} .${x}${s}${b}mar-r { ${marR(vsm)} }
     .${r} .${x}${s}${b}mar-r-sm { ${marR(vsm)} }
     .${r} .${x}${s}${b}mar-r-md { ${marR(vmd)} }
     .${r} .${x}${s}${b}mar-r-lg { ${marR(vlg)} }
     .${r} .${x}${s}${b}mar-r-no { ${marR(0)} }
     
-    .${r} .${x}${s}${b}mar-b { ${marB(vmd)} }
+    .${r} .${x}${s}${b}mar-b { ${marB(vsm)} }
     .${r} .${x}${s}${b}mar-b-sm { ${marB(vsm)} }
     .${r} .${x}${s}${b}mar-b-md { ${marB(vmd)} }
     .${r} .${x}${s}${b}mar-b-lg { ${marB(vlg)} }
     .${r} .${x}${s}${b}mar-b-no { ${marB(0)} }
     
-    .${r} .${x}${s}${b}mar-l { ${marL(vmd)} }
+    .${r} .${x}${s}${b}mar-l { ${marL(vsm)} }
     .${r} .${x}${s}${b}mar-l-sm { ${marL(vsm)} }
     .${r} .${x}${s}${b}mar-l-md { ${marL(vmd)} }
     .${r} .${x}${s}${b}mar-l-lg { ${marL(vlg)} }
