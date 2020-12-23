@@ -1,0 +1,92 @@
+<?/*Override component*/O?>
+.${x} .${x}-btn {
+    ${padY()}
+    ${upper()}
+    ${bd('md')}
+    ${shadTxt()}
+    ${fntTitle()}
+}
+.${x} .${x}-btn > .${x}-ttl,
+.${x} .${x}-btn > .${x}-txt {
+    ${rel()}
+    ${t01()}
+}
+
+<?/*Override colors*/
+for (var c in cfg.clr) {O?>
+.${x} .${x}-btn-${c} {
+    ${glossY(
+        cfg.clr[c],
+        darken(cfg.clr[c], cfg.drk)
+    )}  ${bdColor(c)}
+}
+.${x} .${x}-btn-${c}.${x}-act,
+.${x} .${x}-btn-${c}:hover {
+    ${glossY(darken(
+        cfg.clr[c], cfg.drk),
+        darken(cfg.clr[c], cfg.drk*2)
+    )}  ${bdColor(c, cfg.drk)}
+}<?}?>
+
+<?/*Primary button is special*/O?>
+.${x} .${x}-btn-prm {
+    ${glossY(
+        cfg.clr.prm,
+        cfg.clr.sec
+    )}  ${bdColor('prm')}
+}
+.${x} .${x}-btn-prm.${x}-act,
+.${x} .${x}-btn-prm:hover {
+    ${glossY(
+        darken(cfg.clr.prm, cfg.drk),
+        darken(cfg.clr.sec, cfg.drk)
+    )}  ${bdColor('prm', cfg.drk)}
+}
+
+/*Big button*/
+.${x} .${x}-btn-big {
+    ${h2()}
+    ${shad()}
+    ${fullX()}
+}
+.${x} .${x}-btn-big .${x}-img {
+    ${pad()}
+    ${bgImg()}
+    ${contain()}
+}
+.${x} .${x}-btn-big .${x}-img,
+.${x} .${x}-btn-big .${x}-ico {
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+}
+
+/*Box button*/
+.${x} .${x}-btn-box {
+    ${rel()}
+    ${shad()}
+    ${padY('md')}
+}
+.${x} .${x}-btn-box > * {
+    ${abs()}
+    transform: translate(-50%, -50%);
+}
+.${x} .${x}-btn-box > .${x}-pic {
+    ${bgSz('60%')}
+}
+.${x} .${x}-btn-box > .${x}-ico {
+    transform: translate(-50%, -45%);
+}
+.${x} .${x}-btn-box > .${x}-ttl,
+.${x} .${x}-btn-box > .${x}-txt {
+    top: 1.1em;
+}
+
+/*Ico button*/
+.${x} .${x}-btn-ico {
+    ${inl()}
+    ${pad()}
+    ${circ()}
+    ${bgImg()}
+    ${cover()}
+    ${bd('md')}
+}

@@ -1,0 +1,20 @@
+<?
+/*Functions*/
+function rotate(v){R?>
+    -webkit-transform: rotate(${v}deg);
+    -ms-transform: rotate(${v}deg);
+    transform: rotate(${v}deg);
+<?}
+
+/*Export classes to CSS*/
+function useClassRotate() { O?>
+    .${x} .${x}-rotate0 { ${rotate(0)} }
+    .${x} .${x}-rotate45 { ${rotate(45)} }
+    .${x} .${x}-rotate90 { ${rotate(90)} }
+    .${x} .${x}-rotate135 { ${rotate(135)} }
+    .${x} .${x}-rotate180 { ${rotate(180)} }
+    .${x} .${x}-rotate225 { ${rotate(225)} }
+    .${x} .${x}-rotate270 { ${rotate(270)} }
+    .${x} .${x}-rotate315 { ${rotate(315)} }
+    .${x} .${x}-rotate360 { ${rotate(360)} }
+<?}?>

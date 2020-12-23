@@ -1,0 +1,20 @@
+<?
+/*Functions*/
+function unsel(){ R?>
+    -ms-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+<?}
+function sel(){ R?>
+    -ms-user-select: auto;
+    user-select: auto;
+    -moz-user-select: auto;
+    -webkit-user-select: auto;
+<?}
+
+/*Export classes to CSS*/
+function useClassSelectable() { O?>
+    .${x} .${x}-unsel { ${unsel()} }
+    .${x} .${x}-sel { ${sel()} }
+<?}?>

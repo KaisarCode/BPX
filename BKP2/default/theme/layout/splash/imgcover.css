@@ -1,0 +1,10 @@
+<?O?>
+.${x} .${x}-spl-cover {
+    ${ease()}
+    ${opc(0)}
+    ${bgImg()}
+    ${cover()}
+}
+.${x} .${x}-spl-cover.${x}-act {
+    ${opc(100)}
+}

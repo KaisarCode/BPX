@@ -1,0 +1,49 @@
+<?
+/*Functions*/
+function slow(s){
+!isdef(s)?s=cfg.spd:'';
+R?>
+    -webkit-transition-duration: ${s*2}s;
+    transition-duration: ${s*2}s;
+    -webkit-animation-duration: ${s*2}s;
+    animation-duration: ${s*2}s;
+<?}
+function fast(s){
+!isdef(s)?s=cfg.spd:'';
+R?>
+    -webkit-transition-duration: ${s/2}s;
+    transition-duration: ${s/2}s;
+    -webkit-animation-duration: ${(s/2)}s;
+    animation-duration: ${s/2}s;
+<?}
+function faster(s){
+!isdef(s)?s=cfg.spd:'';
+R?>
+    -webkit-transition-duration: ${s/4}s;
+    transition-duration: ${s/4}s;
+    -webkit-animation-duration: ${s/4}s;
+    animation-duration: ${s/4}s;
+<?}
+function fastest(s){
+!isdef(s)?s=cfg.spd:'';
+R?>
+    -webkit-transition-duration: ${s/6}s;
+    transition-duration: ${s/6}s;
+    -webkit-animation-duration: ${s/6}s;
+    animation-duration: ${s/6}s;
+<?}
+function instant(){R?>
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+    -webkit-animation-duration: 0s;
+    animation-duration: 0s;
+<?}
+
+/*Export classes to CSS*/
+function useClassSpeed() { O?>
+    .${x} .${x}-slow { ${slow()} }
+    .${x} .${x}-fast { ${fast()} }
+    .${x} .${x}-faster { ${faster()} }
+    .${x} .${x}-fastest { ${fastest()} }
+    .${x} .${x}-instant { ${instant()} }
+<?}?>

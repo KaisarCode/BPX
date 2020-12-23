@@ -1,0 +1,8 @@
+<?
+/*Functions*/
+function pointer(){R?> cursor: pointer; <?}
+
+/*Export classes to CSS*/
+function useClassCursor() { O?>
+    .${x} .${x}-pointer { ${pointer()} }
+<?}?>

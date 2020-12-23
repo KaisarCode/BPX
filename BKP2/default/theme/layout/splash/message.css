@@ -1,0 +1,24 @@
+<?O?>
+.${x} .${x}-spl-mesg {
+    ${ease()}
+    ${opc(0)}
+    ${smaller()}
+    ${upper()}
+    ${fntTitle()}
+    top: 17em;
+}
+.${x}.${x}-conn-err .${x}-spl-mesg {
+    top: 0;
+    ${fColor('dng')}
+}
+.${x}.${x}-conn-err .${x}-spl-mesg > * {
+    -webkit-animation: none;
+    animation: none;
+}
+.${x} .${x}-spl-mesg > * {
+    ${beat()}
+    ${infinite()}
+}
+.${x} .${x}-spl-mesg.${x}-act {
+    ${opc(100)}
+}

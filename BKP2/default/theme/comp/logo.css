@@ -1,0 +1,21 @@
+<?O?>
+.${x} .${x}-logo {
+    ${inl()}
+    ${rel()}
+    ${small()}
+    ${alignC()}
+    ${fntLogo()}
+    left: 0.1em;
+}
+.${x} .${x}-logo > span {
+    ${h5()}
+    ${rel()}
+    ${block()}
+    letter-spacing: 0.1em;
+}
+.${x} .${x}-logo > span + span {
+    ${micro()}
+    top: 0.25em;
+    left: 0.3em;
+    letter-spacing: 0.8em;
+}

@@ -1,0 +1,15 @@
+<?O?>
+.${x}-ui-panel .${x}-page-home {
+    ${padY('sm')}
+    ${padX('xl')}
+    ${alignC()}
+    ${outNo()}
+}
+
+.${x}-ui-panel .${x}-page-home .${x}-btn-home {
+    ${ease()}
+    ${faster()}
+}
+.${x}-ui-panel .${x}-page-home .${x}-btn-home:hover {
+    ${grow(10)}
+}

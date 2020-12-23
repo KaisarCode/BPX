@@ -1,0 +1,37 @@
+<?/*Tool classes*/
+function useClassTools() {
+    useClassAlign();
+    useClassBeat();
+    useClassBgImg();
+    useClassBgSize();
+    useClassBorder();
+    useClassCbox();
+    useClassColor();
+    useClassColumn();
+    useClassCursor();
+    useClassDisplay();
+    useClassFilter();
+    useClassFlex();
+    useClassFont();
+    useClassGrow();
+    useClassIteration();
+    useClassLine();
+    useClassMargin();
+    useClassMirror();
+    useClassOpacity();
+    useClassOutScreen();
+    useClassOverflow();
+    useClassPadding();
+    useClassPosition();
+    useClassRadius();
+    useClassRotate();
+    useClassSelectable();
+    useClassShadow();
+    useClassShrink();
+    useClassSize();
+    useClassSpeed();
+    useClassSpin();
+    useClassText();
+    useClassTransition();
+    useClassZindex();
+}?>

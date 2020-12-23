@@ -1,0 +1,22 @@
+<?
+/*Functions*/
+function tag(fc, bdc, bgc){
+!isdef(fc)?fc='wht':'';
+!isdef(bdc)?bdc='sys':'';
+!isdef(bgc)?bgc='sys':'';R?>
+    ${lbl(fc,bdc,bgc)}
+    ${lnh(0)}
+    ${smaller()}
+    padding: 0.6em 0.35em;
+<?}
+
+/*Export classes to CSS*/
+function useClassTag() { O?>
+    .${x} .${x}-tag { ${bdg()} }
+    <?for (var c in cfg.clr) {O?>
+        .${x} .${x}-tag-${c} {
+            ${bdColor(c)}
+            ${bgColor(c)}
+        }
+    <?}
+}?>

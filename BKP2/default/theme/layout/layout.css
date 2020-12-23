@@ -1,0 +1,27 @@
+<?O?>
+.${x}-layout {
+    ${t()}
+    ${l()}
+    ${fix()}
+    ${idx(1)}
+    ${full()}
+    ${opc(0)}
+    ${ease()}
+    ${fast()}
+    ${scroll()}
+}
+.${x}-layout.${x}-off {
+    ${none()}
+}
+.${x}-layout.${x}-act {
+    ${idx(2)}
+    ${opc(100)}
+}
+.${x}-ui-wrap {
+    ${rel()}
+    ${wrap()}
+    ${oflow()}
+    ${fullY()}
+    ${colFlex()}
+    min-height: ${cfg.max}px;
+}

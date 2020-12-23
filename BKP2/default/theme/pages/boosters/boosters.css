@@ -1,0 +1,22 @@
+<?O?>
+/*Page*/
+.${x}-ui-panel .${x}-page-boosters {
+    ${padY('sm')}
+    ${padX('xl')}
+    ${alignC()}
+}
+
+/*Button booster*/
+.${x}-page-play .${x}-btn-bst {
+    ${ease()}
+    ${faster()}
+    background-color: transparent;
+}
+.${x}-page-play .${x}-btn-bst:hover {
+    ${grow(10)}
+}
+
+.${x}-ui-game .${x}-btn-bst.${x}-no-quantity {
+    ${grayscale()}
+    ${opc(40)}
+}

@@ -1,0 +1,43 @@
+<?
+/*Functions*/
+function outT(v){
+!isdef(v)?v=150:'';R?>
+    webkit-transform: translateY(-${v}%);
+    -ms-transform: translateY(-${v}%);
+    transform: translateY(-${v}%);
+<?}
+function outR(v){
+!isdef(v)?v=150:'';R?>
+    webkit-transform: translateX(${v}%);
+    -ms-transform: translateX(${v}%);
+    transform: translateX(${v}%);
+<?}
+function outB(v){
+!isdef(v)?v=150:'';R?>
+    webkit-transform: translateY(${v}%);
+    -ms-transform: translateY(${v}%);
+    transform: translateY(${v}%);
+<?}
+function outL(v){
+!isdef(v)?v=150:'';R?>
+    webkit-transform: translateX(-${v}%);
+    -ms-transform: translateX(-${v}%);
+    transform: translateX(-${v}%);
+<?}
+function outNo(){R?>
+    webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+<?}
+
+/*Export classes to CSS*/
+function useClassOutScreen() { O?>
+    .${x} .${x}-out-t { ${outT()} }
+    .${x} .${x}-out-r { ${outR()} }
+    .${x} .${x}-out-b { ${outB()} }
+    .${x} .${x}-out-l { ${outL()} }
+    .${x} .${x}-out-no { ${outNo()} }
+<?}?>

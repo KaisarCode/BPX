@@ -1,0 +1,8 @@
+<?O?>
+.${x} .${x}-ttl-main {
+    ${rel()}
+    ${alignC()}
+    ${upper()}
+    ${fntTitle()}
+    ${fColor('cl2')}
+}

@@ -1,0 +1,45 @@
+<?O?>
+/**
+ * Game layer:
+ * This layer is special. It is always visible,
+ * but its height is 0. it is used to position
+ * the game controllers over the game.
+ */
+.${x} .${x}-ui-game,
+.${x} .${x}-ui-game .${x}-ui-wrap,
+.${x} .${x}-ui-game .${x}-ui-game-body {
+    height: 0;
+    opacity: 1;
+    min-height: 0;
+    display: block!important;
+    overflow: visible!important;
+}
+
+/*Game buttons*/
+.${x}-ui-game .${x}-gmb {
+    ${inl()}
+}
+.${x}-ui-game .${x}-gmb .${x}-btn {
+    ${h6()}
+    ${mar('xs')}
+}
+
+/*Layout 1*/
+.${x}-ui-game.${x}-layout1 .${x}-box1,
+.${x}-ui-game.${x}-layout1 .${x}-box2 {
+    ${t()}
+    ${l()}
+    ${fix()}
+    ${fullX()}
+    height: 0;
+}
+.${x}-ui-game.${x}-layout1 .${x}-box2 {
+    top: 100%;
+    margin-top: -3.7em;
+}
+.${x}-ui-game.${x}-layout1 .${x}-box1 > *,
+.${x}-ui-game.${x}-layout1 .${x}-box2 > * {
+    height: 0;
+    ${rowFlex()}
+    ${btwnFlex()}
+}

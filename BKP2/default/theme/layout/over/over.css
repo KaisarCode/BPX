@@ -1,0 +1,26 @@
+<?O?>
+.${x}-ui-over {
+    ${bgAlpha('ovr', 0.8)}
+}
+.${x}-ui-over-body {
+    ${full()}
+}
+.${x}-ui-over .${x}-page {
+    ${t()}
+    ${l()}
+    ${abs()}
+    ${full()}
+    ${opc(0)}
+    ${outT(50)}
+    ${pad('xl')}
+    ${midFlex()}
+    ${easeOutBack()}
+}
+.${x}-ui-over .${x}-page.${x}-act {
+    ${idx(2)}
+    ${outNo()}
+    ${opc(100)}
+}
+.${x}-ui-over .${x}-bdy {
+    min-height: 5em;
+}

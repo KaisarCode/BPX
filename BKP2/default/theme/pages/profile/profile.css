@@ -1,0 +1,10 @@
+<?O?>
+.${x}-page-profile .${x}-bdy {
+    ${gradC(
+        cfg.clr.bg2,
+        cfg.clr.bg1,
+        IMGDIR+'/pat.png'
+    )}
+    ${bgImg()}
+    ${repeat()}
+}

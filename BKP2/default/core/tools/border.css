@@ -1,0 +1,151 @@
+<?
+var BDXS = 0.5;
+var BDSM = 1;
+var BDMD = 2;
+var BDLG = 4;
+var BDXL = 8;
+
+/*Functions*/
+function bd(v){
+    !isdef(v)?v=BDSM:'';
+    v == 'xs'?v=BDXS:'';
+    v == 'sm'?v=BDSM:'';
+    v == 'md'?v=BDMD:'';
+    v == 'lg'?v=BDLG:'';
+    v == 'xl'?v=BDXL:'';R?>
+    border-width: ${v}px;
+    border-style: solid;
+<?}
+function bdX(v){
+    !isdef(v)?v=BDSM:'';
+    v == 'xs'?v=BDXS:'';
+    v == 'sm'?v=BDSM:'';
+    v == 'md'?v=BDMD:'';
+    v == 'lg'?v=BDLG:'';
+    v == 'xl'?v=BDXL:'';R?>
+    border-left-width: ${v}px;
+    border-right-width: ${v}px;
+    border-left-style: solid;
+    border-right-style: solid;
+<?}
+function bdY(v){
+    !isdef(v)?v=BDSM:'';
+    v == 'xs'?v=BDXS:'';
+    v == 'sm'?v=BDSM:'';
+    v == 'md'?v=BDMD:'';
+    v == 'lg'?v=BDLG:'';
+    v == 'xl'?v=BDXL:'';R?>
+    border-top-width: ${v}px;
+    border-bottom-width: ${v}px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+<?}
+function bdT(v){
+    !isdef(v)?v=BDSM:'';
+    v == 'xs'?v=BDXS:'';
+    v == 'sm'?v=BDSM:'';
+    v == 'md'?v=BDMD:'';
+    v == 'lg'?v=BDLG:'';
+    v == 'xl'?v=BDXL:'';R?>
+    border-top-width: ${v}px;
+    border-top-style: solid;
+<?}
+function bdR(v){
+    !isdef(v)?v=BDSM:'';
+    v == 'xs'?v=BDXS:'';
+    v == 'sm'?v=BDSM:'';
+    v == 'md'?v=BDMD:'';
+    v == 'lg'?v=BDLG:'';
+    v == 'xl'?v=BDXL:'';R?>
+    border-right-width: ${v}px;
+    border-right-style: solid;
+<?}
+function bdB(v){
+    !isdef(v)?v=BDSM:'';
+    v == 'xs'?v=BDXS:'';
+    v == 'sm'?v=BDSM:'';
+    v == 'md'?v=BDMD:'';
+    v == 'lg'?v=BDLG:'';
+    v == 'xl'?v=BDXL:'';R?>
+    border-bottom-width: ${v}px;
+    border-bottom-style: solid;
+<?}
+function bdL(v){
+    !isdef(v)?v=BDSM:'';
+    v == 'xs'?v=BDXS:'';
+    v == 'sm'?v=BDSM:'';
+    v == 'md'?v=BDMD:'';
+    v == 'lg'?v=BDLG:'';
+    v == 'xl'?v=BDXL:'';R?>
+    border-left-width: ${v}px;
+    border-left-style: solid;
+<?}
+function dotted(){R?>
+    border-style: dotted;
+<?}
+function dashed(){R?>
+    border-style: dashed;
+<?}
+
+/*Export classes to CSS*/
+function useClassBorder() { O?>
+    
+    .${x} .${x}-bd { ${bd('sm')} }
+    .${x} .${x}-bd-xs { ${bd('xs')} }
+    .${x} .${x}-bd-sm { ${bd('sm')} }
+    .${x} .${x}-bd-md { ${bd('md')} }
+    .${x} .${x}-bd-lg { ${bd('lg')} }
+    .${x} .${x}-bd-xl { ${bd('xl')} }
+    .${x} .${x}-bd-no { ${bd(0)} }
+    
+    .${x} .${x}-bd-x { ${bdX('sm')} }
+    .${x} .${x}-bd-x-xs { ${bdX('xs')} }
+    .${x} .${x}-bd-x-sm { ${bdX('sm')} }
+    .${x} .${x}-bd-x-md { ${bdX('md')} }
+    .${x} .${x}-bd-x-lg { ${bdX('lg')} }
+    .${x} .${x}-bd-x-xl { ${bdX('xl')} }
+    .${x} .${x}-bd-x-no { ${bdX(0)} }
+    
+    .${x} .${x}-bd-y { ${bdY('sm')} }
+    .${x} .${x}-bd-y-xs { ${bdY('xs')} }
+    .${x} .${x}-bd-y-sm { ${bdY('sm')} }
+    .${x} .${x}-bd-y-md { ${bdY('md')} }
+    .${x} .${x}-bd-y-lg { ${bdY('lg')} }
+    .${x} .${x}-bd-y-xl { ${bdY('xl')} }
+    .${x} .${x}-bd-y-no { ${bdY(0)} }
+    
+    .${x} .${x}-bd-t { ${bdT('sm')} }
+    .${x} .${x}-bd-t-xs { ${bdT('xs')} }
+    .${x} .${x}-bd-t-sm { ${bdT('sm')} }
+    .${x} .${x}-bd-t-md { ${bdT('md')} }
+    .${x} .${x}-bd-t-lg { ${bdT('lg')} }
+    .${x} .${x}-bd-t-xl { ${bdT('xl')} }
+    .${x} .${x}-bd-t-no { ${bdT(0)} }
+    
+    .${x} .${x}-bd-r { ${bdR('sm')} }
+    .${x} .${x}-bd-r-sm { ${bdR('sm')} }
+    .${x} .${x}-bd-r-xs { ${bdR('xs')} }
+    .${x} .${x}-bd-r-md { ${bdR('md')} }
+    .${x} .${x}-bd-r-lg { ${bdR('lg')} }
+    .${x} .${x}-bd-r-xl { ${bdR('xl')} }
+    .${x} .${x}-bd-r-no { ${bdR(0)} }
+    
+    .${x} .${x}-bd-b { ${bdB('sm')} }
+    .${x} .${x}-bd-b-xs { ${bdB('xs')} }
+    .${x} .${x}-bd-b-sm { ${bdB('sm')} }
+    .${x} .${x}-bd-b-md { ${bdB('md')} }
+    .${x} .${x}-bd-b-lg { ${bdB('lg')} }
+    .${x} .${x}-bd-b-xl { ${bdB('xl')} }
+    .${x} .${x}-bd-b-no { ${bdB(0)} }
+    
+    .${x} .${x}-bd-l { ${bdL('sm')} }
+    .${x} .${x}-bd-l-xs { ${bdL('xs')} }
+    .${x} .${x}-bd-l-sm { ${bdL('sm')} }
+    .${x} .${x}-bd-l-md { ${bdL('md')} }
+    .${x} .${x}-bd-l-lg { ${bdL('lg')} }
+    .${x} .${x}-bd-l-xl { ${bdL('xl')} }
+    .${x} .${x}-bd-l-no { ${bdL(0)} }
+    
+    .${x} .${x}-dotted { ${dotted()} }
+    .${x} .${x}-dashed { ${dashed()} }
+<?}?>

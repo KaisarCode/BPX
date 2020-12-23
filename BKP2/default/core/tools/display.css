@@ -1,0 +1,16 @@
+<?
+/*Functions*/
+function block(){R?> display: block; <?}
+function inl(){R?> display: inline-block; <?}
+function cell(){R?> display: table-cell; <?}
+function hide(){R?> visibility: hidden; <?}
+function none(){R?> display: none; <?}
+
+/*Export classes to CSS*/
+function useClassDisplay() { O?>
+    .${x} .${x}-block { ${block()} }
+    .${x} .${x}-inl  { ${inl()} }
+    .${x} .${x}-cell { ${cell()} }
+    .${x} .${x}-hide { ${hide()} }
+    .${x} .${x}-none { ${none()} }
+<?}?>

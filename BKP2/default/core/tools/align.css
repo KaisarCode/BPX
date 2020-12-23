@@ -1,0 +1,18 @@
+<?
+/*Functions*/
+function alignC(){R?> text-align: center; <?}
+function alignR(){R?> text-align: right; <?}
+function alignL(){R?> text-align: left; <?}
+function alignM(){R?> vertical-align: middle; <?}
+function alignB(){R?> vertical-align: bottom; <?}
+function alignT(){R?> vertical-align: top; <?}
+
+/*Export classes to CSS*/
+function useClassAlign() { O?>
+    .${x} .${x}-align-c { ${alignC()} }
+    .${x} .${x}-align-r { ${alignR()} }
+    .${x} .${x}-align-l { ${alignL()} }
+    .${x} .${x}-align-m { ${alignM()} }
+    .${x} .${x}-align-b { ${alignB()} }
+    .${x} .${x}-align-t { ${alignT()} }
+<?}?>

@@ -1,0 +1,58 @@
+<?// Vars
+IMGDIR = '../../img/default/';
+FNTDIR = '../../font/';
+
+// Reset
+useNormalize();
+useCustomize();
+
+// Components
+useClassComp();
+?>
+
+/*Includes*/
+@{src/css/default/theme/ui.css}
+@{src/css/default/theme/fonts.css}
+
+@{src/css/default/theme/comp/logo.css}
+@{src/css/default/theme/comp/title.css}
+@{src/css/default/theme/comp/spinner.css}
+@{src/css/default/theme/comp/modal.css}
+@{src/css/default/theme/comp/panel.css}
+@{src/css/default/theme/comp/button.css}
+@{src/css/default/theme/comp/badge.css}
+@{src/css/default/theme/comp/icon.css}
+
+@{src/css/default/theme/layout/layout.css}
+@{src/css/default/theme/layout/splash/splash.css}
+@{src/css/default/theme/layout/splash/imgcover.css}
+@{src/css/default/theme/layout/splash/logo.css}
+@{src/css/default/theme/layout/splash/message.css}
+@{src/css/default/theme/layout/splash/percentage.css}
+@{src/css/default/theme/layout/splash/spinner.css}
+@{src/css/default/theme/layout/panel/panel.css}
+@{src/css/default/theme/layout/panel/head.css}
+@{src/css/default/theme/layout/panel/menu.css}
+@{src/css/default/theme/layout/game/game.css}
+@{src/css/default/theme/layout/over/over.css}
+
+@{src/css/default/theme/pages/home/home.css}
+@{src/css/default/theme/pages/dummy/dummy.css}
+@{src/css/default/theme/pages/play/play.css}
+@{src/css/default/theme/pages/play/bet-selector.css}
+@{src/css/default/theme/pages/profile/profile.css}
+@{src/css/default/theme/pages/boosters/boosters.css}
+@{src/css/default/theme/pages/boosters/buy-booster.css}
+@{src/css/default/theme/pages/tournaments/tournaments.css}
+@{src/css/default/theme/pages/achievements/achievements.css}
+@{src/css/default/theme/pages/matches/matches.css}
+@{src/css/default/theme/pages/matching/matching.css}
+@{src/css/default/theme/pages/game-over/game-over.css}
+@{src/css/default/theme/pages/new-results/new-results.css}
+@{src/css/default/theme/pages/howto/howto.css}
+@{src/css/default/theme/pages/about-pow/about-pow.css}
+@{src/css/default/theme/pages/about-coins/about-coins.css}
+
+<?// Tools
+useClassTools();
+?>

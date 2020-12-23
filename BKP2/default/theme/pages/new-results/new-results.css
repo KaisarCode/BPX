@@ -1,0 +1,15 @@
+<?O?>
+/*Page*/
+.${x}-ui-panel .${x}-page-new-results {
+    ${padY('sm')}
+    ${padX('xl')}
+    ${alignC()}
+    ${outNo()}
+    ${opc(0)}
+    ${shrink(100)}
+    ${faster()}
+}
+.${x}-ui-panel .${x}-page-new-results.${x}-act {
+    ${opc(100)}
+    ${shrink(0)}
+}

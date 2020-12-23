@@ -1,4 +1,5 @@
 var wtc = require('kc-watch');
+var mkd = require('kc-mkdir');
 var dwk = require('kc-dwalk');
 var fwk = require('kc-fwalk');
 var frd = require('kc-fread');
@@ -16,12 +17,13 @@ function build(dir) {
     
     // Source
     thm = dir.split('/').pop();
-    str = frd(dir+'/app.css');
+    str = frd(dir+'/index.css');
     str = tgf(str, '@{', '}', function(c){
         return frd(c);
     }); 
     
     // Compile
+    mkd('app');
     str = t2j(str);
     run(str, null, function(str){
         str = rmc(str);

@@ -1,0 +1,40 @@
+<?
+/*Functions*/
+function flex(){R?> display: flex; <?}
+function colFlex(){R?> ${flex()} flex-direction: column; <?}
+function rowFlex(){R?> ${flex()} flex-direction: row; <?}
+function fullFlex(){R?> flex: auto; <?}
+function fallFlex(){R?> flex-wrap: wrap; <?}
+function fallFlexNo(){R?> flex-wrap: nowrap; <?}
+function justLFlex(){R?> justify-content: flex-start; <?}
+function justCFlex(){R?> justify-content: center; <?}
+function justRFlex(){R?> justify-content: flex-end; <?}
+function alignLFlex(){R?> align-items: flex-start; <?}
+function alignCFlex(){R?> align-items: center; <?}
+function alignRFlex(){R?> align-items: flex-end; <?}
+function midFlex(){R?>
+    display: flex;
+    align-items: center;
+    justify-content: center;
+<?}
+function arndFlex(){R?> justify-content: space-around; <?}
+function btwnFlex(){R?> justify-content: space-between; <?}
+
+/*Export classes to CSS*/
+function useClassFlex() { O?>
+    .${x} .${x}-flex { ${flex()} }
+    .${x} .${x}-col-flex { ${colFlex()} }
+    .${x} .${x}-row-flex { ${rowFlex()} }
+    .${x} .${x}-full-flex { ${fullFlex()} }
+    .${x} .${x}-fall-flex { ${fallFlex()} }
+    .${x} .${x}-fall-flex-no { ${fallFlexNo()} }
+    .${x} .${x}-just-l-flex { ${justLFlex()} }
+    .${x} .${x}-just-c-flex { ${justCFlex()} }
+    .${x} .${x}-just-r-flex { ${justRFlex()} }
+    .${x} .${x}-align-l-flex { ${alignLFlex()} }
+    .${x} .${x}-align-c-flex { ${alignCFlex()} }
+    .${x} .${x}-align-r-flex { ${alignRFlex()} }
+    .${x} .${x}-mid-flex { ${midFlex()} }
+    .${x} .${x}-arnd-flex { ${arndFlex()} }
+    .${x} .${x}-btwn-flex { ${btwnFlex()} }
+<?}?>

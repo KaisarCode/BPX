@@ -1,0 +1,22 @@
+<?O?>
+/*Page*/
+.${x}-ui-panel .${x}-page-matches {
+    ${padY('sm')}
+    ${padX('xl')}
+    ${alignC()}
+}
+.${x}-ui-panel .${x}-page-matches .${x}-btn-big.${x}-act {
+    ${glossY(
+        darken(cfg.clr.cl2, 0),
+        darken(cfg.clr.cl2, cfg.drk)
+    )}
+    ${bdColor('cl2')}
+    ${fColor('bg0')}
+}
+.${x}-ui-panel .${x}-page-matches .${x}-tabc {
+    ${padT()}
+    display: none;
+}
+.${x}-ui-panel .${x}-page-matches .${x}-tabc.${x}-act {
+    display: block;
+}

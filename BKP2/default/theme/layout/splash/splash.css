@@ -1,0 +1,13 @@
+<?O?>
+.${x} .${x}-ui-splash {
+    ${bgImg(IMGDIR+'pat.png', 'bg0')}
+    ${repeat()}
+    ${idx(2)}
+}
+.${x} .${x}-spl-elem {
+    ${l()}
+    ${t()}
+    ${abs()}
+    ${full()}
+    ${midFlex()}
+}

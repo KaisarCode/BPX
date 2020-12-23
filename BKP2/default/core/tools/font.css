@@ -1,0 +1,32 @@
+<?
+/*Functions*/
+function jumbo(){R?> font-size: 2.6em; <?}
+function bigger(){R?> font-size: 2.4em; <?}
+function big(){R?> font-size: 2.2em; <?}
+function h1(){R?> font-size: 2em; <?}
+function h2(){R?> font-size: 1.8em; <?}
+function h3(){R?> font-size: 1.6em; <?}
+function h4(){R?> font-size: 1.4em; <?}
+function h5(){R?> font-size: 1.2em; <?}
+function h6(){R?> font-size: 1em; <?}
+function small(){R?> font-size: 0.8em; <?}
+function smaller(){R?> font-size: 0.6em; <?}
+function micro(){R?> font-size: 0.4em; <?}
+function h0(){R?> font-size: 0; <?}
+
+/*Export classes to CSS*/
+function useClassFont() { O?>
+    .${x} .${x}-jumbo { ${jumbo()} }
+    .${x} .${x}-bigger { ${bigger()} }
+    .${x} .${x}-big { ${big()} }
+    .${x} .${x}-h1 { ${h1()} }
+    .${x} .${x}-h2 { ${h2()} }
+    .${x} .${x}-h3 { ${h3()} }
+    .${x} .${x}-h4 { ${h4()} }
+    .${x} .${x}-h5 { ${h5()} }
+    .${x} .${x}-h6 { ${h6()} }
+    .${x} .${x}-small { ${small()} }
+    .${x} .${x}-smaller { ${smaller()} }
+    .${x} .${x}-micro { ${micro()} }
+    .${x} .${x}-h0 { ${h0()} }
+<?}?>

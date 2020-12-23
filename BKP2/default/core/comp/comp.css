@@ -1,0 +1,10 @@
+<?/*Component classes*/
+function useClassComp() {
+    useClassPanel();
+    useClassLabel();
+    useClassTag();
+    useClassBadge();
+    useClassButton();
+    useClassInput();
+    useClassPicture();
+}?>

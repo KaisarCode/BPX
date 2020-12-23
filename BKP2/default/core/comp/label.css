@@ -1,0 +1,27 @@
+<?
+/*Functions*/
+function lbl(fc, bdc, bgc){
+!isdef(fc)?fc='wht':'';
+!isdef(bdc)?bdc='sys':'';
+!isdef(bgc)?bgc='sys':'';R?>
+    ${pnl(fc,bdc,bgc)}
+    ${h6()}
+    ${mar(0)}
+    ${lnh(1.5)}
+    ${alignM()}
+    padding: 0.25em 1em;
+    white-space: nowrap;
+    font-weight: inherit;
+    font-family: inherit;
+<?}
+
+/*Export classes to CSS*/
+function useClassLabel() { O?>
+    .${x} .${x}-lbl { ${lbl()} }
+    <?for (var c in cfg.clr) {O?>
+        .${x} .${x}-lbl-${c} {
+            ${bdColor(c)}
+            ${bgColor(c)}
+        }
+    <?}
+}?>

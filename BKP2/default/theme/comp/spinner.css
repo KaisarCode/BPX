@@ -1,0 +1,10 @@
+<?O?>
+.${x} .${x}-spinner { ${inl()} }
+.${x} .${x}-spinner > div {
+    ${inl()}
+    ${pad()}
+    ${spinCCW()}
+    ${infinite()}
+    ${bgImg(IMGDIR+'spinner2.png')}
+    ${cover()}
+}
