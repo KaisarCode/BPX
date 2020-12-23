@@ -3,7 +3,7 @@
  * over normalize.css
  */O?>
 
-.${x} {
+.${r} {
     font-size: ${cfg.fsz}px;
     color: ${cfg.clr.txt};
     font-family: sans-serif;
@@ -11,100 +11,100 @@
 }
 
 .${x},
-.${x} * {
+.${r} * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
 }
 
-.${x} a, .${x} abbr, .${x} acronym, .${x} b,
-.${x} bdo, .${x} big, .${x} br, .${x} button,
-.${x} cite, .${x} code, .${x} dfn, .${x} em,
-.${x} i, .${x} img, .${x} input, .${x} kbd,
-.${x} label, .${x} map, .${x} object, .${x} output,
-.${x} q, .${x} samp, .${x} select, .${x} small,
-.${x} span, .${x} strong, .${x} sub, .${x} sup,
-.${x} textarea, .${x} time, .${x} tt, .${x} var
+.${r} a, .${r} abbr, .${r} acronym, .${r} b,
+.${r} bdo, .${r} big, .${r} br, .${r} button,
+.${r} cite, .${r} code, .${r} dfn, .${r} em,
+.${r} i, .${r} img, .${r} input, .${r} kbd,
+.${r} label, .${r} map, .${r} object, .${r} output,
+.${r} q, .${r} samp, .${r} select, .${r} small,
+.${r} span, .${r} strong, .${r} sub, .${r} sup,
+.${r} textarea, .${r} time, .${r} tt, .${r} var
 { display: inline-block; vertical-align:middle; }
 
-.${x} a {
+.${r} a {
     color: inherit;
     text-decoration: none;
 }
 
-.${x} ul,
-.${x} ol,
-.${x} p,
-.${x} blockquote,
-.${x} code,
-.${x} h1,
-.${x} h2,
-.${x} h3,
-.${x} h4,
-.${x} h5,
-.${x} h6 {
+.${r} ul,
+.${r} ol,
+.${r} p,
+.${r} blockquote,
+.${r} code,
+.${r} h1,
+.${r} h2,
+.${r} h3,
+.${r} h4,
+.${r} h5,
+.${r} h6 {
     margin-top: 0;
     margin-bottom: 1em;
     font-weight: normal;
 }
 
-.${x} h1 {
+.${r} h1 {
     font-size: 2em;
 }
-.${x} h2 {
+.${r} h2 {
     font-size: 1.8em;
 }
-.${x} h3 {
+.${r} h3 {
     font-size: 1.6em;
 }
-.${x} h4 {
+.${r} h4 {
     font-size: 1.4em;
 }
-.${x} h5 {
+.${r} h5 {
     font-size: 1.2em;
 }
-.${x} h6 {
+.${r} h6 {
     font-size: 1em;
 }
 
-.${x} small,
-.${x} sup,
-.${x} sub {
+.${r} small,
+.${r} sup,
+.${r} sub {
     font-size: 0.8em;
 }
 
-.${x} table {
+.${r} table {
     width: 100%;
     border-collapse: collapse;
 }
-.${x} th {
+.${r} th {
     text-align: left;
     font-weight: normal;
 }
-.${x} th,
-.${x} td {
+.${r} th,
+.${r} td {
     padding: 0;
     vertical-align: middle;
 }
 
-.${x} br {
+.${r} br {
     line-height: 1em;
 }
-.${x} hr {
+.${r} hr {
     border: 0;
     height: 1px;
     margin: 1em 0;
     background-color: ${cfg.clr.sys};
 }
 
-.${x} label {
+.${r} label {
     display: inline-block;
 }
-.${x} input,
-.${x} select,
-.${x} textarea,
-.${x} button {
+.${r} input,
+.${r} select,
+.${r} textarea,
+.${r} button {
     display: inline-block;
     vertical-align: middle;
     -webkit-appearance: none;
@@ -119,42 +119,42 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.${x} input,
-.${x} select,
-.${x} textarea {
+.${r} input,
+.${r} select,
+.${r} textarea {
     background-color: ${cfg.clr.wht};
 }
-.${x} input,
-.${x} select,
-.${x} textarea,
-.${x} button,
-.${x} input:focus,
-.${x} select:focus,
-.${x} textarea:focus,
-.${x} button:focus {
+.${r} input,
+.${r} select,
+.${r} textarea,
+.${r} button,
+.${r} input:focus,
+.${r} select:focus,
+.${r} textarea:focus,
+.${r} button:focus {
     outline: none;
 }
-.${x} option {
+.${r} option {
     color: ${cfg.clr.txt};
 }
-.${x} input::-ms-expand,
-.${x} select::-ms-expand,
-.${x} textarea::-ms-expand,
-.${x} button::-ms-expand {
+.${r} input::-ms-expand,
+.${r} select::-ms-expand,
+.${r} textarea::-ms-expand,
+.${r} button::-ms-expand {
     display: none;
 }
 
-.${x} [type="radio"],
-.${x} [type="checkbox"] {
+.${r} [type="radio"],
+.${r} [type="checkbox"] {
     display: inline-block;
     padding: 0.5em;
 }
-.${x} [type="radio"] {
+.${r} [type="radio"] {
     -webkit-border-radius: 50%;
     border-radius: 50%;
 }
-.${x} [type="radio"]:checked:before,
-.${x} [type="checkbox"]:checked:before {
+.${r} [type="radio"]:checked:before,
+.${r} [type="checkbox"]:checked:before {
     content: '';
     width: 0.45em;
     height: 0.44em;
@@ -167,35 +167,35 @@
     border-radius: 50%;
 }
 
-.${x} select,
-.${x} button,
-.${x} input[type="submit"] {
+.${r} select,
+.${r} button,
+.${r} input[type="submit"] {
     cursor: pointer;
 }
-.${x} button,
-.${x} input[type="submit"] {
+.${r} button,
+.${r} input[type="submit"] {
     background-color: ${cfg.clr.sys};
 }
-.${x} button::-moz-focus-inner,
-.${x} a::-moz-focus-inner {
+.${r} button::-moz-focus-inner,
+.${r} a::-moz-focus-inner {
     border: 0;
 }
-.${x} ::placeholder {
+.${r} ::placeholder {
     color: inherit;
     opacity: 0.8;
 }
-.${x} :-ms-input-placeholder {
+.${r} :-ms-input-placeholder {
     color: inherit;
     opacity: 0.8;
 }
-.${x} ::-ms-input-placeholder {
+.${r} ::-ms-input-placeholder {
     color: inherit;
     opacity: 0.8;
 }
-.${x} input:-webkit-autofill,
-.${x} input:-webkit-autofill:hover,
-.${x} input:-webkit-autofill:focus,
-.${x} input:-webkit-autofill:active {
+.${r} input:-webkit-autofill,
+.${r} input:-webkit-autofill:hover,
+.${r} input:-webkit-autofill:focus,
+.${r} input:-webkit-autofill:active {
     transition: background-color
     5000s ease-in-out 0s;
     -webkit-box-shadow: 0;

@@ -1,5 +1,6 @@
 <?
-var x = 'app';
+var r = 'app';
+var x = '';
 var cfg = {
     
     "fsz": 18,  // Font size (px)
@@ -9,6 +10,14 @@ var cfg = {
     "spd": 0.5, // Speed (sec)
     "drk": 30,  // Darken rate (%)
     "rad": 4,   // Radius (px)
+    
+    /*Breakpoints*/
+    "bps": [
+        "0",
+        "768",
+        "1024",
+        "1280"
+    ],
     
     /*Font weights*/
     "fwt": {

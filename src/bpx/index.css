@@ -1,0 +1,12 @@
+@{src/bpx/conf.css}
+@{src/bpx/util.css}
+@{src/bpx/reset/normalize.css}
+@{src/bpx/reset/customize.css}
+@{src/bpx/tools/align.css}
+@{src/bpx/tools/column.css}
+<?
+ClassAlign(cfg.bps);
+ClassColumn(cfg.bps);
+ClassColumnMin(cfg.bps);
+ClassColumnMax(cfg.bps);
+?>

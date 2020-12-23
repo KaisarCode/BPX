@@ -1,4 +1,16 @@
 <?
+/*Set breakpoints*/
+function BPX(bps, cb) {
+    var out = '';
+    bps.forEach(function(s, i){
+        if (s > 0) {
+        out += ?>
+        @media (min-width: ${s}px) {
+            ${cb('bp'+i+'-')} 
+        }<? } else { out += cb(''); }
+    }); O?><? out;
+}
+
 /*Is defined*/
 function isdef(v) {
     return typeof v

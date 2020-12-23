@@ -1,0 +1,80 @@
+<?
+/*Functions*/
+function cols(){ R?>
+    display: table;
+    width: 100%;
+<?}
+function col(){ R?>
+    width: auto;
+    float: none;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+<?}
+function same(){ R?>table-layout: fixed;<?}
+function colW(v){ R?>width: ${((100/12)*v)}%<?}
+function colMin(v){ R?>min-width: ${((100/12)*v)}%<?}
+function colMax(v){ R?>max-width: ${((100/12)*v)}%<?}
+
+/*Export classes to CSS*/
+function ClassColumn(bps) {
+    BPX(bps, function(b){R?>
+    
+    .${r} .${x}${b}same { ${same()} }
+    .${r} .${x}${b}cols { ${cols()} }
+    .${r} .${x}${b}col,
+    .${r} .${x}${b}cols > * { ${col()} }
+    .${r} .${x}${b}strp > :nth-of-type(2n){
+    background-color: rgba(0,0,0,0.2); }
+    
+    .${r} .${x}${b}col1 { colW(1) }
+    .${r} .${x}${b}col2 { colW(2) }
+    .${r} .${x}${b}col3 { colW(3) }
+    .${r} .${x}${b}col4 { colW(4) }
+    .${r} .${x}${b}col5 { colW(5) }
+    .${r} .${x}${b}col6 { colW(6) }
+    .${r} .${x}${b}col7 { colW(7) }
+    .${r} .${x}${b}col8 { colW(8) }
+    .${r} .${x}${b}col9 { colW(9) }
+    .${r} .${x}${b}col10 { colW(10) }
+    .${r} .${x}${b}col11 { colW(11) }
+    .${r} .${x}${b}col12 { colW(12) }
+    
+    <?});
+}
+
+function ClassColumnMin(bps) {
+    BPX(bps, function(b){R?>
+    .${r} .${x}${b}col1-min { colMin(1) }
+    .${r} .${x}${b}col2-min { colMin(2) }
+    .${r} .${x}${b}col3-min { colMin(3) }
+    .${r} .${x}${b}col4-min { colMin(4) }
+    .${r} .${x}${b}col5-min { colMin(5) }
+    .${r} .${x}${b}col6-min { colMin(6) }
+    .${r} .${x}${b}col7-min { colMin(7) }
+    .${r} .${x}${b}col8-min { colMin(8) }
+    .${r} .${x}${b}col9-min { colMin(9) }
+    .${r} .${x}${b}col10-min { colMin(10) }
+    .${r} .${x}${b}col11-min { colMin(11) }
+    .${r} .${x}${b}col12-min { colMin(12) }
+    <?});
+}
+
+function ClassColumnMax(bps) {
+    BPX(bps, function(b){R?>
+    .${r} .${x}${b}col1-max { colMax(1) }
+    .${r} .${x}${b}col2-max { colMax(2) }
+    .${r} .${x}${b}col3-max { colMax(3) }
+    .${r} .${x}${b}col4-max { colMax(4) }
+    .${r} .${x}${b}col5-max { colMax(5) }
+    .${r} .${x}${b}col6-max { colMax(6) }
+    .${r} .${x}${b}col7-max { colMax(7) }
+    .${r} .${x}${b}col8-max { colMax(8) }
+    .${r} .${x}${b}col9-max { colMax(9) }
+    .${r} .${x}${b}col10-max { colMax(10) }
+    .${r} .${x}${b}col11-max { colMax(11) }
+    .${r} .${x}${b}col12-max { colMax(12) }
+    <?});
+}
+
+?>
