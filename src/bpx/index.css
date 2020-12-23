@@ -4,9 +4,11 @@
 @{src/bpx/reset/customize.css}
 @{src/bpx/tools/align.css}
 @{src/bpx/tools/column.css}
+@{src/bpx/tools/display.css}
 <?
 ClassAlign(cfg.bps);
 ClassColumn(cfg.bps);
 ClassColumnMin(cfg.bps);
 ClassColumnMax(cfg.bps);
+ClassDisplay(cfg.bps);
 ?>
