@@ -1,33 +1,34 @@
-var wtc = require('./lib/watch');
-var run = require('./lib/asbox');
-var mkd = require('./lib/mkdir');
-var dwk = require('./lib/dwalk');
-var fwk = require('./lib/fwalk');
-var frd = require('./lib/fread');
-var fwt = require('./lib/fwrite');
-var f2m = require('./lib/fun2mod');
-var t2j = f2m('./lib/t2js.js', 't2js');
-var stm = f2m('./lib/strmin.js', 'strmin');
-var rmc = f2m('./lib/rmcomm.js', 'rmcomm');
-var tgf = f2m('./lib/tagfun.js', 'tagfun');
+var wtc = require('kc-watch');
+var dwk = require('kc-dwalk');
+var fwk = require('kc-fwalk');
+var frd = require('kc-fread');
+var fwt = require('kc-fwrite');
+var stm = require('kc-strmin');
+var rmc = require('kc-rmcomm');
+var tgf = require('kc-tagfun');
+var t2j = require('t2js');
+var run = require('asbox');
 
 // build CSS
 function build(dir) {
     var str = '';
-    var thm = dir.split('/').pop();
-    fwk(dir,1).forEach(function(f){
-        str += frd(f);
-    });
+    var thm = '';
     
-    str = rmc(str);
-    str = stm(str);
+    // Source
+    thm = dir.split('/').pop();
+    str = frd(dir+'/app.css');
+    str = tgf(str, '@{', '}', function(c){
+        return frd(c);
+    }); 
     
+    // Compile
     str = t2j(str);
-    mkd('dist/'+thm);
-    run(str, prm, function(str){
-        console.log(thm+' compiled.');
-        fwt('dist/'+thm+'/style.css',str);
-    }); fwt('dist/'+thm+'/style.js', str);
+    run(str, null, function(str){
+        str = rmc(str);
+        str = stm(str);
+        fwt('app/'+thm+'.css',str);
+        console.log(thm+' theme built.');
+    });
 }
 
 // Watch file changes
