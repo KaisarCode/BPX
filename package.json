@@ -1,6 +1,6 @@
 {
   "name": "bpx",
-  "version": "2.1.14",
+  "version": "2.1.15",
   "description": "Breakpoint X - A CSS toolset",
   "main": "build.js",
   "author": "KaisarCode",
