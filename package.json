@@ -2,7 +2,7 @@
   "name": "bpx",
   "version": "2.1.15",
   "description": "Breakpoint X - A CSS toolset",
-  "main": "build.js",
+  "main": "index.js",
   "author": "KaisarCode",
   "license": "ISC",
   "scripts": {
@@ -15,15 +15,12 @@
   "homepage": "https://github.com/KaisarCode/BPX",
   "dependencies": {
     "asbox": "^1.0.8",
-    "kc-dwalk": "^1.0.15",
     "kc-fread": "^1.0.7",
-    "kc-fwalk": "^1.0.10",
     "kc-fwrite": "^1.0.6",
-    "kc-mkdir": "^1.0.3",
+    "kc-obj-merge": "^1.0.2",
     "kc-rmcomm": "^1.0.9",
     "kc-strmin": "^1.0.3",
     "kc-tagfun": "^1.2.6",
-    "kc-watch": "^1.0.7",
     "t2js": "^4.0.1"
   }
 }

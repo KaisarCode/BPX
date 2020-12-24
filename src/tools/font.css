@@ -1,0 +1,35 @@
+<?
+/*Functions*/
+function jumbo(){R?> font-size: 2.6em; <?}
+function bigger(){R?> font-size: 2.4em; <?}
+function big(){R?> font-size: 2.2em; <?}
+function h1(){R?> font-size: 2em; <?}
+function h2(){R?> font-size: 1.8em; <?}
+function h3(){R?> font-size: 1.6em; <?}
+function h4(){R?> font-size: 1.4em; <?}
+function h5(){R?> font-size: 1.2em; <?}
+function h6(){R?> font-size: 1em; <?}
+function small(){R?> font-size: 0.8em; <?}
+function smaller(){R?> font-size: 0.6em; <?}
+function micro(){R?> font-size: 0.4em; <?}
+function h0(){R?> font-size: 0; <?}
+
+/*Export classes to CSS*/
+function CoreFont(bps) {
+    BPX(bps, function(b){R?>
+    .${r} .${x}${b}jumbo { ${jumbo()} }
+    .${r} .${x}${b}bigger { ${bigger()} }
+    .${r} .${x}${b}big { ${big()} }
+    .${r} .${x}${b}h1 { ${h1()} }
+    .${r} .${x}${b}h2 { ${h2()} }
+    .${r} .${x}${b}h3 { ${h3()} }
+    .${r} .${x}${b}h4 { ${h4()} }
+    .${r} .${x}${b}h5 { ${h5()} }
+    .${r} .${x}${b}h6 { ${h6()} }
+    .${r} .${x}${b}small { ${small()} }
+    .${r} .${x}${b}smaller { ${smaller()} }
+    .${r} .${x}${b}micro { ${micro()} }
+    .${r} .${x}${b}h0 { ${h0()} }
+    <?});
+}
+?>

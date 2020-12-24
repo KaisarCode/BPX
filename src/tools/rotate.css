@@ -1,0 +1,23 @@
+<?
+/*Functions*/
+function rotate(v){R?>
+    -webkit-transform: rotate(${v}deg);
+    -ms-transform: rotate(${v}deg);
+    transform: rotate(${v}deg);
+<?}
+
+/*Export classes to CSS*/
+function CoreRotate(bps) {
+    BPX(bps, function(b){R?>
+    .${r} .${x}${b}rotate0 { ${rotate(0)} }
+    .${r} .${x}${b}rotate45 { ${rotate(45)} }
+    .${r} .${x}${b}rotate90 { ${rotate(90)} }
+    .${r} .${x}${b}rotate135 { ${rotate(135)} }
+    .${r} .${x}${b}rotate180 { ${rotate(180)} }
+    .${r} .${x}${b}rotate225 { ${rotate(225)} }
+    .${r} .${x}${b}rotate270 { ${rotate(270)} }
+    .${r} .${x}${b}rotate315 { ${rotate(315)} }
+    .${r} .${x}${b}rotate360 { ${rotate(360)} }
+    <?});
+}
+?>

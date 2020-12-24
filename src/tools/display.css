@@ -1,0 +1,19 @@
+<?
+/*Functions*/
+function block(){R?> display: block; <?}
+function inl(){R?> display: inline-block; <?}
+function cell(){R?> display: table-cell; <?}
+function hide(){R?> visibility: hidden; <?}
+function none(){R?> display: none; <?}
+
+/*Export classes to CSS*/
+function CoreDisplay(bps) {
+    BPX(bps, function(b){R?>
+    .${r} .${x}${b}block { ${block()} }
+    .${r} .${x}${b}inl  { ${inl()} }
+    .${r} .${x}${b}cell { ${cell()} }
+    .${r} .${x}${b}hide { ${hide()} }
+    .${r} .${x}${b}none { ${none()} }
+    <?});
+}
+?>

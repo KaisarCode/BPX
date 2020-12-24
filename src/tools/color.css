@@ -1,0 +1,100 @@
+<?
+/*Functions*/
+function fColor(c, d) {
+    !isdef(d)?d=0:'';
+    isdef(cfg.clr[c])?
+    c = darken(cfg.clr[c],d):'';
+    R?>color: ${c};
+<?}
+function fAlpha(c, a) {
+    !isdef(a)?a=1:'';
+    isdef(cfg.clr[c])?
+    c = alpha(cfg.clr[c],a):'';
+    R?>color: ${c};
+<?}
+function bdColor(c, d) {
+    !isdef(d)?d=0:'';
+    isdef(cfg.clr[c])?
+    c = darken(cfg.clr[c],d):'';
+    R?>border-color: ${c};
+<?}
+function bdAlpha(c, a) {
+    !isdef(a)?a=1:'';
+    isdef(cfg.clr[c])?
+    c = alpha(cfg.clr[c],a):'';
+    R?>border-color: ${c};
+<?}
+function bgColor(c, d) {
+    !isdef(d)?d=0:'';
+    isdef(cfg.clr[c])?
+    c = darken(cfg.clr[c],d):'';
+    R?>background-color: ${c};
+<?}
+function bgAlpha(c, a) {
+    !isdef(a)?a=1:'';
+    isdef(cfg.clr[c])?
+    c = alpha(cfg.clr[c],a):'';
+    R?>background-color: ${c};
+<?}
+
+/*Export classes to CSS*/
+function CoreColor(bps) {
+    for (var c in cfg.clr){
+        BPX(bps, function(b){R?>
+        
+        /*Font*/
+        .${r} .${x}${b}fc-${c},
+        .${r} .${x}${b}fc-${c}-hvr:hover,
+        .${r} .${x}${b}fc-${c}-act.act { ${fColor(c)} }
+        
+        .${r} .${x}${b}fc-${c}-drk,
+        .${r} .${x}${b}fc-${c}-drk-hvr:hover,
+        .${r} .${x}${b}fc-${c}-drk-act.act { ${fColor(c, cfg.drk)} }
+        
+        .${r} .${x}${b}fc-${c}-lgt,
+        .${r} .${x}${b}fc-${c}-lgt-hvr:hover,
+        .${r} .${x}${b}fc-${c}-lgt-act.act { ${fColor(c, -cfg.drk)} }
+        
+        .${r} .${x}${b}fc-${c}-no,
+        .${r} .${x}${b}fc-${c}-no-hvr:hover,
+        .${r} .${x}${b}fc-${c}-no-act.act { color: transparent; }
+        
+        /*Border*/
+        .${r} .${x}${b}bd-${c},
+        .${r} .${x}${b}bd-${c}-hvr:hover,
+        .${r} .${x}${b}bd-${c}-act.act { ${bdColor(c)} }
+        
+        .${r} .${x}${b}bd-${c}-drk,
+        .${r} .${x}${b}bd-${c}-drk-hvr:hover,
+        .${r} .${x}${b}bd-${c}-drk-act.act { ${bdColor(c, cfg.drk)} }
+        
+        .${r} .${x}${b}bd-${c}-lgt,
+        .${r} .${x}${b}bd-${c}-lgt-hvr:hover,
+        .${r} .${x}${b}bd-${c}-lgt-act.act { ${bdColor(c, -cfg.drk)} }
+        
+        .${r} .${x}${b}bd-${c}-no,
+        .${r} .${x}${b}bd-${c}-no-hvr:hover,
+        .${r} .${x}${b}bd-${c}-no-act.act { border-color: transparent; }
+        
+        /*Background*/
+        .${r} .${x}${b}bg-${c},
+        .${r} .${x}${b}bg-${c}-hvr:hover,
+        .${r} .${x}${b}bg-${c}-act.act { ${bgColor(c)} }
+        
+        .${r} .${x}${b}bg-${c}-drk,
+        .${r} .${x}${b}bg-${c}-drk-hvr:hover,
+        .${r} .${x}${b}bg-${c}-drk-act.act { ${bgColor(c, cfg.drk)} }
+        
+        .${r} .${x}${b}bg-${c}-lgt,
+        .${r} .${x}${b}bg-${c}-lgt-hvr:hover,
+        .${r} .${x}${b}bg-${c}-lgt-act.act { ${bgColor(c, -cfg.drk)} }
+        
+        .${r} .${x}${b}bg-${c}-no,
+        .${r} .${x}${b}bg-${c}-no-hvr:hover,
+        .${r} .${x}${b}bg-${c}-no-act.act {
+            background-image: none;
+            background-color: transparent;
+        }
+        <?});
+    }
+}?>
