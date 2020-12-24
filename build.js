@@ -17,7 +17,7 @@ function build(dir) {
     
     // Source
     thm = dir.split('/').pop();
-    str = frd(dir+'/index.css');
+    str = frd(dir+'/init.css');
     str = tgf(str, '@{', '}', function(c){
         return frd(c);
     }); 
