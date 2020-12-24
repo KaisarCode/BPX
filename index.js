@@ -13,7 +13,6 @@ module.exports = function(opt, cb){
     opt.cfg = opt.cfg || {};
     opt.src = opt.src || '';
     opt.out = opt.out || 'build.css';
-    opt.wtc = opt.wtc || false;
     cb = cb || function(){};
     var str = '';
     
