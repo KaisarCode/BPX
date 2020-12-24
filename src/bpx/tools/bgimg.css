@@ -1,0 +1,40 @@
+<?
+/*Functions*/
+function bgImg(img, clr){
+    img = img || '';
+    clr = clr || '';
+    clr?clr=','+cfg.clr[clr]:'';
+    img?img=?>background:url('${img}')${clr}<?:'';
+    R?>${img}; background-position: 50%;
+    background-repeat: no-repeat;
+<?}
+function repeat(){R?>background-repeat: repeat;<?}
+function cover(){R?>background-size: cover;<?}
+function contain(){R?>background-size: contain;<?}
+function bgSz(v){R?>background-size: ${v};<?}
+
+/*Export classes to CSS*/
+function ClassBgImg(bps) {
+    BPX(bps, function(b){R?>
+    .${r} .${x}${b}bgimg { ${bgImg()} }
+    .${r} .${x}${b}repeat { ${repeat()} }
+    .${r} .${x}${b}cover { ${cover()} }
+    .${r} .${x}${b}contain { ${contain()} }
+    <?});
+}
+function ClassBgSize(bps) {
+    BPX(bps, function(b){R?>
+    .${r} .${x}${b}bgsz0 { ${bgSz(0)} }
+    .${r} .${x}${b}bgsz10 { ${bgSz('10%')} }
+    .${r} .${x}${b}bgsz20 { ${bgSz('20%')} }
+    .${r} .${x}${b}bgsz30 { ${bgSz('30%')} }
+    .${r} .${x}${b}bgsz40 { ${bgSz('40%')} }
+    .${r} .${x}${b}bgsz50 { ${bgSz('50%')} }
+    .${r} .${x}${b}bgsz60 { ${bgSz('60%')} }
+    .${r} .${x}${b}bgsz70 { ${bgSz('70%')} }
+    .${r} .${x}${b}bgsz80 { ${bgSz('80%')} }
+    .${r} .${x}${b}bgsz90 { ${bgSz('90%')} }
+    .${r} .${x}${b}bgsz100{ ${bgSz('100%')} }
+    <?});
+}
+?>

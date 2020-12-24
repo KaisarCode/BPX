@@ -1,0 +1,136 @@
+<?
+var MARXS = 0.5;
+var MARSM = 1;
+var MARMD = 2;
+var MARLG = 3;
+var MARXL = 4;
+
+/*Functions*/
+function mar(v){
+    !isdef(v)?v=MARSM:'';
+    v == 'xs'?v=MARXS:'';
+    v == 'sm'?v=MARSM:'';
+    v == 'md'?v=MARMD:'';
+    v == 'lg'?v=MARLG:'';
+    v == 'xl'?v=MARXL:'';R?>
+    margin: ${cfg.pad*v}em;
+<?}
+function marX(v){
+    !isdef(v)?v=MARSM:'';
+    v == 'xs'?v=MARXS:'';
+    v == 'sm'?v=MARSM:'';
+    v == 'md'?v=MARMD:'';
+    v == 'lg'?v=MARLG:'';
+    v == 'xl'?v=MARXL:'';R?>
+    margin-left: ${cfg.pad*v}em;
+    margin-right: ${cfg.pad*v}em;
+<?}
+function marY(v){
+    !isdef(v)?v=MARSM:'';
+    v == 'xs'?v=MARXS:'';
+    v == 'sm'?v=MARSM:'';
+    v == 'md'?v=MARMD:'';
+    v == 'lg'?v=MARLG:'';
+    v == 'xl'?v=MARXL:'';R?>
+    margin-top: ${cfg.pad*v}em;
+    margin-bottom: ${cfg.pad*v}em;
+<?}
+function marT(v){
+    !isdef(v)?v=MARSM:'';
+    v == 'xs'?v=MARXS:'';
+    v == 'sm'?v=MARSM:'';
+    v == 'md'?v=MARMD:'';
+    v == 'lg'?v=MARLG:'';
+    v == 'xl'?v=MARXL:'';R?>
+    margin-top: ${cfg.pad*v}em;
+<?}
+function marR(v){
+    !isdef(v)?v=MARSM:'';
+    v == 'xs'?v=MARXS:'';
+    v == 'sm'?v=MARSM:'';
+    v == 'md'?v=MARMD:'';
+    v == 'lg'?v=MARLG:'';
+    v == 'xl'?v=MARXL:'';R?>
+    margin-right: ${cfg.pad*v}em;
+<?}
+function marB(v){
+    !isdef(v)?v=MARSM:'';
+    v == 'xs'?v=MARXS:'';
+    v == 'sm'?v=MARSM:'';
+    v == 'md'?v=MARMD:'';
+    v == 'lg'?v=MARLG:'';
+    v == 'xl'?v=MARXL:'';R?>
+    margin-bottom: ${cfg.pad*v}em;
+<?}
+function marL(v){
+    !isdef(v)?v=MARSM:'';
+    v == 'xs'?v=MARXS:'';
+    v == 'sm'?v=MARSM:'';
+    v == 'md'?v=MARMD:'';
+    v == 'lg'?v=MARLG:'';
+    v == 'xl'?v=MARXL:'';R?>
+    margin-left: ${cfg.pad*v}em;
+<?}
+
+/*Export classes to CSS*/
+function ClassMargin(bps) {
+    BPX(bps, function(b){R?>
+    
+    .${r} .${x}${b}mar { ${mar('sm')} }
+    .${r} .${x}${b}mar-xs { ${mar('xs')} }
+    .${r} .${x}${b}mar-sm { ${mar('sm')} }
+    .${r} .${x}${b}mar-md { ${mar('md')} }
+    .${r} .${x}${b}mar-lg { ${mar('lg')} }
+    .${r} .${x}${b}mar-xl { ${mar('xl')} }
+    .${r} .${x}${b}mar-no { ${mar(0)} }
+    
+    .${r} .${x}${b}mar-x { ${marX('sm')} }
+    .${r} .${x}${b}mar-x-xs { ${marX('xs')} }
+    .${r} .${x}${b}mar-x-sm { ${marX('sm')} }
+    .${r} .${x}${b}mar-x-md { ${marX('md')} }
+    .${r} .${x}${b}mar-x-lg { ${marX('lg')} }
+    .${r} .${x}${b}mar-x-xl { ${marX('xl')} }
+    .${r} .${x}${b}mar-x-no { ${marX(0)} }
+    
+    .${r} .${x}${b}mar-y { ${marY('sm')} }
+    .${r} .${x}${b}mar-y-xs { ${marY('xs')} }
+    .${r} .${x}${b}mar-y-sm { ${marY('sm')} }
+    .${r} .${x}${b}mar-y-md { ${marY('md')} }
+    .${r} .${x}${b}mar-y-lg { ${marY('lg')} }
+    .${r} .${x}${b}mar-y-xl { ${marY('xl')} }
+    .${r} .${x}${b}mar-y-no { ${marY(0)} }
+    
+    .${r} .${x}${b}mar-t { ${marT('sm')} }
+    .${r} .${x}${b}mar-t-xs { ${marT('xs')} }
+    .${r} .${x}${b}mar-t-sm { ${marT('sm')} }
+    .${r} .${x}${b}mar-t-md { ${marT('md')} }
+    .${r} .${x}${b}mar-t-lg { ${marT('lg')} }
+    .${r} .${x}${b}mar-t-xl { ${marT('xl')} }
+    .${r} .${x}${b}mar-t-no { ${marT(0)} }
+    
+    .${r} .${x}${b}mar-r { ${marR('sm')} }
+    .${r} .${x}${b}mar-r-xs { ${marR('xs')} }
+    .${r} .${x}${b}mar-r-sm { ${marR('sm')} }
+    .${r} .${x}${b}mar-r-md { ${marR('md')} }
+    .${r} .${x}${b}mar-r-lg { ${marR('lg')} }
+    .${r} .${x}${b}mar-r-xl { ${marR('xl')} }
+    .${r} .${x}${b}mar-r-no { ${marR(0)} }
+    
+    .${r} .${x}${b}mar-b { ${marB('sm')} }
+    .${r} .${x}${b}mar-b-xs { ${marB('xs')} }
+    .${r} .${x}${b}mar-b-sm { ${marB('sm')} }
+    .${r} .${x}${b}mar-b-md { ${marB('md')} }
+    .${r} .${x}${b}mar-b-lg { ${marB('lg')} }
+    .${r} .${x}${b}mar-b-xl { ${marB('xl')} }
+    .${r} .${x}${b}mar-b-no { ${marB(0)} }
+    
+    .${r} .${x}${b}mar-l { ${marL('sm')} }
+    .${r} .${x}${b}mar-l-xs { ${marL('xs')} }
+    .${r} .${x}${b}mar-l-sm { ${marL('sm')} }
+    .${r} .${x}${b}mar-l-md { ${marL('md')} }
+    .${r} .${x}${b}mar-l-lg { ${marL('lg')} }
+    .${r} .${x}${b}mar-l-xl { ${marL('xl')} }
+    .${r} .${x}${b}mar-l-no { ${marL(0)} }
+    <?});
+}
+?>

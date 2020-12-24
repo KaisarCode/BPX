@@ -1,0 +1,48 @@
+<?
+/*Functions*/
+function shad(){R?>
+-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+<?}
+function shadMD(){R?>
+-webkit-box-shadow: 0 .125em .25em rgba(0,0,0,.075);
+        box-shadow: 0 .125em .25em rgba(0,0,0,.075);
+<?}
+function shadLG(){R?>
+-webkit-box-shadow: 0 .5em 1em rgba(0,0,0,0.15);
+        box-shadow: 0 .5em 1em rgba(0,0,0,0.15);
+<?}
+function shadXL(){R?>
+-webkit-box-shadow: 0 1em 3em rgba(0,0,0,0.175);
+        box-shadow: 0 1em 3em rgba(0,0,0,0.175);
+<?}
+function shadNO(){R?>
+-webkit-box-shadow: none;
+        box-shadow: none;
+<?}
+
+function shadTxt(){R?>
+    text-shadow: 1px 2px 0 rgba(0,0,0,0.2);
+<?}
+function shadTtl(){R?>
+    text-shadow: 0 0 20px #000, 0 0 20px #000;
+<?}
+function shadTtlSm(){R?>
+    text-shadow: 1px -2px 5px rgba(0,0,0,0.8);
+<?}
+
+/*Export classes to CSS*/
+function ClassShadow(bps) {
+    BPX(bps, function(b){R?>
+    .${r} .${x}${b}shad,
+    .${r} .${x}${b}shad-sm { ${shad()} }
+    .${r} .${x}${b}shad-md { ${shadMD()} }
+    .${r} .${x}${b}shad-lg { ${shadLG()} }
+    .${r} .${x}${b}shad-xl { ${shadXL()} }
+    .${r} .${x}${b}shad-txt { ${shadTxt()} }
+    .${r} .${x}${b}shad-ttl { ${shadTtl()} }
+    .${r} .${x}${b}shad-ttl-sm { ${shadTtlSm()} }
+    .${r} .${x}${b}shad-no { ${shadNO()} }
+    <?});
+}
+?>

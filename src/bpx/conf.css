@@ -12,12 +12,7 @@ var cfg = {
     "rad": 4,   // Radius (px)
     
     /*Breakpoints*/
-    "bps": [
-        "0",
-        "768",
-        "1024",
-        "1280"
-    ],
+    "bps": ["0","768"],
     
     /*Font weights*/
     "fwt": {

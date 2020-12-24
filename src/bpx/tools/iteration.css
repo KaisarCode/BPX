@@ -1,0 +1,14 @@
+<?
+/*Functions*/
+function infinite(){R?>
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+<?}
+
+/*Export classes to CSS*/
+function ClassIteration(bps) {
+    BPX(bps, function(b){R?>
+    .${r} .${x}${b}infinite { ${infinite()} }
+    <?});
+}
+?>

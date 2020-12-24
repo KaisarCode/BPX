@@ -1,0 +1,28 @@
+<?
+/*Functions*/
+function oflow(){R?> overflow: hidden; <?}
+function oflowX(){R?> overflow-x: hidden; <?}
+function oflowY(){R?> overflow-y: hidden; <?}
+function scroll(){R?> overflow: auto; <?}
+function scrollX(){R?> overflow-x: auto; <?}
+function scrollY(){R?> overflow-y: auto; <?}
+function swipe(){R?>
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+<?}
+
+/*Export classes to CSS*/
+function ClassOverflow(bps) {
+    BPX(bps, function(b){R?>
+    .${r} .${x}${b}oflow { ${oflow()} }
+    .${r} .${x}${b}oflow-x { ${oflowX()} }
+    .${r} .${x}${b}oflow-y { ${oflowY()} }
+    .${r} .${x}${b}scroll { ${scroll()} }
+    .${r} .${x}${b}scroll-x { ${scrollX()} }
+    .${r} .${x}${b}scroll-y { ${scrollY()} }
+    .${r} .${x}${b}swipe { ${swipe()} }
+    .${r} .${x}${b}swipe::-webkit-scrollbar { display: none; }
+    <?});
+}
+?>
