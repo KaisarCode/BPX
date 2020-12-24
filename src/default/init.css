@@ -1,33 +1,8 @@
 @{src/core/conf.css}
 @{src/core/util.css}
+@{src/core/tools.css}
 @{src/core/reset/normalize.css}
 @{src/core/reset/customize.css}
-@{src/core/tools/align.css}
-@{src/core/tools/bgimg.css}
-@{src/core/tools/color.css}
-@{src/core/tools/column.css}
-@{src/core/tools/cursor.css}
-@{src/core/tools/display.css}
-@{src/core/tools/filter.css}
-@{src/core/tools/flex.css}
-@{src/core/tools/font.css}
-@{src/core/tools/grow.css}
-@{src/core/tools/iteration.css}
-@{src/core/tools/margin.css}
-@{src/core/tools/opacity.css}
-@{src/core/tools/overflow.css}
-@{src/core/tools/padding.css}
-@{src/core/tools/position.css}
-@{src/core/tools/radius.css}
-@{src/core/tools/rotate.css}
-@{src/core/tools/shadow.css}
-@{src/core/tools/shrink.css}
-@{src/core/tools/size.css}
-@{src/core/tools/speed.css}
-@{src/core/tools/spin.css}
-@{src/core/tools/text.css}
-@{src/core/tools/transition.css}
-@{src/core/tools/zindex.css}
 
 <?/*Apply CSS classes*/
 ClassAlign(cfg.bps);
