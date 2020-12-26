@@ -1,0 +1,26 @@
+<?
+/*Functions*/
+function pulse(){R?>
+    -webkit-animation: ${x}pulse ${cfg.spd}s 1 linear;
+    animation: ${x}pulse ${cfg.spd}s 1 linear;
+<?}
+
+/*Export classes to CSS*/
+function CorePulse(bps) {
+    BPX(bps, function(b){R?>
+    .${r} .${x}${b}pulse { ${pulse()} }
+    <?});
+}
+?>
+
+<?/*Export keyframes to CSS*/O?>
+@-webkit-keyframes ${x}pulse {
+    0% { opacity: 1 }
+    50% { opacity: 0.2 }
+    100% { opacity: 1 }
+}
+@keyframes ${x}pulse {
+    0% { opacity: 1 }
+    50% { opacity: 0.2 }
+    100% { opacity: 1 }
+}

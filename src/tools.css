@@ -14,6 +14,7 @@
 @{__core/tools/overflow.css}
 @{__core/tools/padding.css}
 @{__core/tools/position.css}
+@{__core/tools/pulse.css}
 @{__core/tools/radius.css}
 @{__core/tools/rotate.css}
 @{__core/tools/shadow.css}
@@ -23,4 +24,5 @@
 @{__core/tools/spin.css}
 @{__core/tools/text.css}
 @{__core/tools/transition.css}
+@{__core/tools/transout.css}
 @{__core/tools/zindex.css}

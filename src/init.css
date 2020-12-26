@@ -25,6 +25,7 @@
 //CoreOverflow(cfg.bps);
 //CorePadding(cfg.bps);
 //CorePosition(cfg.bps);
+//CorePulse(cfg.bps);
 //CoreRadius(cfg.bps);
 //CoreRotate(cfg.bps);
 //CoreShrink(cfg.bps);
@@ -34,5 +35,6 @@
 //CoreSpin(cfg.bps);
 //CoreText(cfg.bps);
 //CoreTransition(cfg.bps);
+//CoreTranslateOut(cfg.bps);
 //CoreZindex(cfg.bps);
 ?>
