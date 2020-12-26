@@ -18,7 +18,7 @@
     "kc-fread": "^1.0.7",
     "kc-fwrite": "^1.0.6",
     "kc-obj-merge": "^1.0.2",
-    "kc-rmcomm": "^1.0.9",
+    "kc-rmcomm": "^1.0.10",
     "kc-strmin": "^1.0.3",
     "kc-tagfun": "^1.2.6",
     "t2js": "^4.0.3"
