@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+/*Hue*/
+.hue,
+.hue-x1 { filter: hue-rotate(calc(45deg*1)); }
+.hue-x2 { filter: hue-rotate(calc(45deg*2)); }
+.hue-x3 { filter: hue-rotate(calc(45deg*3)); }
+.hue-x4 { filter: hue-rotate(calc(45deg*4)); }
+.hue-x5 { filter: hue-rotate(calc(45deg*5)); }
+.hue-x6 { filter: hue-rotate(calc(45deg*6)); }
+.hue-x7 { filter: hue-rotate(calc(45deg*7)); }
+.hue-x0,
+.hue-no { filter: hue-rotate(calc(45deg*0)); }

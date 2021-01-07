@@ -1,0 +1,8 @@
+@charset 'utf-8';
+
+/*Translate out*/
+.out-t { transform: translateY(-100%); }
+.out-r { transform: translateX(100%); }
+.out-b { transform: translateY(100%); }
+.out-l { transform: translateX(-100%); }
+.out-no { transform: translateX(0); }

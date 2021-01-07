@@ -1,0 +1,6 @@
+@charset 'utf-8';
+
+/*Display*/
+.blo { display: block; }
+.inl { display: inline-block; }
+.itm { display: list-item; }

@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+/*Grow*/
+.shrk,
+.shrk-x1 { transform: scale(0.9); }
+.shrk-x2 { transform: scale(0.8); }
+.shrk-x3 { transform: scale(0.7); }
+.shrk-x4 { transform: scale(0.6); }
+.shrk-x5 { transform: scale(0.5); }
+.shrk-x6 { transform: scale(0.4); }
+.shrk-x7 { transform: scale(0.3); }
+.shrk-x8 { transform: scale(0.2); }
+.shrk-x9 { transform: scale(0.1); }
+.shrk-x10 { transform: scale(2); }
+.shrk-x0,
+.shrk-no { transform: scale(1); }

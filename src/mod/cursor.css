@@ -1,0 +1,36 @@
+@charset 'utf-8';
+
+/*Cursor*/
+.cur-pnt { cursor: pointer; }
+.cur-grb { cursor: grab; }
+.cur-gbg { cursor: grabbing; }
+.cur-crs { cursor: crosshair; }
+.cur-mov { cursor: move; }
+.cur-mnu { cursor: context-menu; }
+.cur-hlp { cursor: help; }
+.cur-prg { cursor: progress; }
+.cur-wai { cursor: wait; }
+.cur-txt { cursor: text; }
+.cur-scr { cursor: all-scroll; }
+.cur-cel { cursor: cell; }
+.cur-cpy { cursor: copy; }
+.cur-dft { cursor: default; }
+.cur-zmi { cursor: zoom-in; }
+.cur-zmo { cursor: zoom-out; }
+.cur-rsz-n { cursor: n-resize; }
+.cur-rsz-ne { cursor: ne-resize; }
+.cur-rsz-e { cursor: e-resize; }
+.cur-rsz-se { cursor: se-resize; }
+.cur-rsz-s { cursor: s-resize; }
+.cur-rsz-sw { cursor: sw-resize; }
+.cur-rsz-w { cursor: w-resize; }
+.cur-rsz-nw{ cursor: nw-resize; }
+.cur-rsz-ns { cursor: ns-resize; }
+.cur-rsz-ew { cursor: ew-resize; }
+.cur-rsz-nesw { cursor: nesw-resize; }
+.cur-rsz-nwse { cursor: nwse-resize; }
+.cur-rsz-col { cursor: col-resize; }
+.cur-rsz-row { cursor: row-resize; }
+.cur-drp-no { cursor: no-drop; }
+.cur-alw-no { cursor: not-allowed; }
+.cur-no { cursor: none; }

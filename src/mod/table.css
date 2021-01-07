@@ -1,0 +1,17 @@
+@charset 'utf-8';
+
+/*Table*/
+.tbl { display: table; }
+.tbl .cel { display: table-cell; }
+
+.tbl .row { display: table-row; }
+.tbl .row-grp { display: table-row-group; }
+
+.tbl .col { display: table-column; }
+.tbl .col-grp { display: table-column-group; }
+
+.tbl .hdr-grp { display: table-header-group; }
+.tbl .ftr-grp { display: table-footer-group; }
+
+.tbl .cap { display: table-caption; }
+.tbl-fix { table-layout: fixed; }

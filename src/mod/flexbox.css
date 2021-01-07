@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+/*Flexbox*/
+.flx { display: flex; }
+.flx-inl { display: inline-flex; }
+.flx-row { flex-direction: row; }
+.flx-col { flex-direction: column; }
+
+.flx-full { flex: auto; }
+.flx-fall { flex-wrap: wrap; }
+.flx-fall-no { flex-wrap: nowrap; }
+
+.flx-al-l { align-items: flex-start; }
+.flx-al-c { align-items: center; }
+.flx-al-r { align-items: flex-end; }
+
+.flx-jus-l { justify-content: flex-start; }
+.flx-jus-c { justify-content: center; }
+.flx-jus-r { justify-content: flex-end; }
+
+.flx-arn { justify-content: space-around; }
+.flx-btw { justify-content: space-between; }
+
+.flx-mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

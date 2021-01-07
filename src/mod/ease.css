@@ -1,0 +1,56 @@
+@charset 'utf-8';
+
+/*Ease*/
+.ease {
+    transition-property: all;
+    transition-duration: calc(1s/2);
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.ease-out {
+    transition-property: all;
+    transition-duration: calc(1s/2);
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+}
+
+.ease-out-back {
+    transition-property: all;
+    transition-duration: calc(1s/2);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.spd-x1,
+.slow {
+    transition-duration: calc(1s/1);
+    animation-duration: calc(1s/1);
+}
+.spd-x2 {
+    transition-duration: calc(1s/2);
+    animation-duration: calc(1s/2);
+}
+.spd-x3,
+.fast {
+    transition-duration: calc(1s/3);
+    animation-duration: calc(1s/3);
+}
+.spd-x4 {
+    transition-duration: calc(1s/4);
+    animation-duration: calc(1s/4);
+}
+.spd-x5,
+.faster {
+    transition-duration: calc(1s/5);
+    animation-duration: calc(1s/5);
+}
+.spd-x6 {
+    transition-duration: calc(1s/6);
+    animation-duration: calc(1s/6);
+}
+.spd-x0,
+.spd-no,
+.instant {
+    transition-duration: 0s;
+    animation-duration: 0s;
+}
+
+.loop { animation-iteration-count: infinite; }

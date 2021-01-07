@@ -1,0 +1,22 @@
+@charset 'utf-8';
+
+/*Overflow*/
+.oflow { overflow: hidden; }
+.oflow-x { overflow-x: hidden; }
+.oflow-y { overflow-y: hidden; }
+.scroll { overflow: auto; }
+.scroll-x { overflow-x: auto; }
+.scroll-y { overflow-y: auto; }
+.swipe {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.swipe::-webkit-scrollbar { display: none; }
+
+.ellip {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

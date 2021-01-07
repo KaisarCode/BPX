@@ -1,0 +1,12 @@
+@charset 'utf-8';
+
+/*Rotate*/
+.rot-x0 { transform: rotate(0); }
+.rot-x1 { transform: rotate(45); }
+.rot-x2 { transform: rotate(90); }
+.rot-x3 { transform: rotate(135); }
+.rot-x4 { transform: rotate(180); }
+.rot-x5 { transform: rotate(225); }
+.rot-x6 { transform: rotate(270); }
+.rot-x7 { transform: rotate(315); }
+.rot-x8 { transform: rotate(360); }

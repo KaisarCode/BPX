@@ -1,0 +1,25 @@
+@charset 'utf-8';
+
+/*Text size*/
+.tx-x1 { font-size: 0.4em; }
+.tx-x2,.xs { font-size: 0.6em; }
+.tx-x3,.sm { font-size: 0.8em; }
+.tx-x4,.h6 { font-size: 1em; }
+.tx-x5,.h5 { font-size: 1.2em; }
+.tx-x6,.h4 { font-size: 1.4em; }
+.tx-x7,.h3 { font-size: 1.6em; }
+.tx-x8,.h2 { font-size: 1.8em; }
+.tx-x9,.h1 { font-size: 2em; }
+.tx-x10,.lg { font-size: 2.2em; }
+.tx-x11,.xl { font-size: 2.4em; }
+.tx-x12 { font-size: 2.6em; }
+.tx-x0,
+.tx-no { font-size: 0; }
+
+/*Text style*/
+.bold { font-weight: bold; }
+.thin { font-weight: thin; }
+.italic { font-style: italic; }
+.upper { text-transform: uppercase; }
+.lower { text-transform: lowercase; }
+.under { text-transform: underline; }
