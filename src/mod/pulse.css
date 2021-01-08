@@ -1,8 +1,8 @@
-@charset 'utf-8';
-
 /*Pulse*/
-.pulse { animation: pulse 1s 1 linear; }
-@keyframes ${x}pulse {
+.pulse {
+    animation: pulse 1s 1 linear;
+}
+@keyframes pulse {
     0% { opacity: 1 }
     50% { opacity: 0.2 }
     100% { opacity: 1 }

@@ -1,0 +1,23 @@
+{
+  "name": "bpx",
+  "version": "4.0.0",
+  "description": "Breakpoint X - A CSS toolset",
+  "main": "index.js",
+  "author": "KaisarCode",
+  "license": "ISC",
+  "scripts": {
+    "build": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:KaisarCode/BPX.git"
+  },
+  "homepage": "https://github.com/KaisarCode/BPX",
+  "dependencies": {
+    "css": "^3.0.0",
+    "kc-fread": "^1.0.7",
+    "kc-fwrite": "^1.0.6",
+    "kc-strrepl": "^1.0.5",
+    "kc-tagfun": "^1.2.6"
+  }
+}

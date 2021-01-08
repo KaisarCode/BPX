@@ -1,5 +1,3 @@
-@charset 'utf-8';
-
 /*Ease*/
 .ease {
     transition-property: all;
@@ -53,4 +51,6 @@
     animation-duration: 0s;
 }
 
-.loop { animation-iteration-count: infinite; }
+.loop {
+    animation-iteration-count: infinite;
+}

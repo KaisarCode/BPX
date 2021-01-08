@@ -1,0 +1,31 @@
+@{__BPXCORE/mod/align.css}
+@{__BPXCORE/mod/background.css}
+@{__BPXCORE/mod/blur.css}
+@{__BPXCORE/mod/color.css}
+@{__BPXCORE/mod/cursor.css}
+@{__BPXCORE/mod/darken.css}
+@{__BPXCORE/mod/display.css}
+@{__BPXCORE/mod/flexbox.css}
+@{__BPXCORE/mod/grid.css}
+@{__BPXCORE/mod/grow.css}
+@{__BPXCORE/mod/hue.css}
+@{__BPXCORE/mod/lighten.css}
+@{__BPXCORE/mod/margin.css}
+@{__BPXCORE/mod/opacity.css}
+@{__BPXCORE/mod/overflow.css}
+@{__BPXCORE/mod/padding.css}
+@{__BPXCORE/mod/pulse.css}
+@{__BPXCORE/mod/radius.css}
+@{__BPXCORE/mod/rotate.css}
+@{__BPXCORE/mod/selectable.css}
+@{__BPXCORE/mod/shadow.css}
+@{__BPXCORE/mod/shrink.css}
+@{__BPXCORE/mod/spin.css}
+@{__BPXCORE/mod/table.css}
+@{__BPXCORE/mod/text.css}
+@{__BPXCORE/mod/translate.css}
+@{__BPXCORE/mod/width.css}
+@{__BPXCORE/mod/zindex.css}
+@{__BPXCORE/mod/ease.css}
+.hid { display: hide; }
+.no { display: none; }

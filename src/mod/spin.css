@@ -1,5 +1,3 @@
-@charset 'utf-8';
-
 /*Spin*/
 .spin {
     display: inline-block;
@@ -8,13 +6,9 @@
 }
 @keyframes spin {
     0% {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
         transform: rotate(0deg);
     }
     100% {
-        -webkit-transform: rotate(359deg);
-        -ms-transform: rotate(359deg);
         transform: rotate(359deg);
     }
 }
