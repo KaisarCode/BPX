@@ -1,1 +1,5 @@
-@{__BPXCORE/bpx.css}
+@{__BPX/bpx.css}
+.test { color: red; }
+.lolo {
+    padding: 5px;
+}

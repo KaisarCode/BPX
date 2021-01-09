@@ -2,3 +2,5 @@
 .blo { display: block; }
 .inl { display: inline-block; }
 .itm { display: list-item; }
+.hid { visibility: hidden; }
+.no { display: none; }

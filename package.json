@@ -14,10 +14,14 @@
   },
   "homepage": "https://github.com/KaisarCode/BPX",
   "dependencies": {
-    "css": "^3.0.0",
+    "asbox": "^1.0.8",
     "kc-fread": "^1.0.7",
     "kc-fwrite": "^1.0.6",
+    "kc-obj-merge": "^1.0.2",
+    "kc-rmcomm": "^1.0.10",
+    "kc-strmin": "^1.0.3",
     "kc-strrepl": "^1.0.5",
-    "kc-tagfun": "^1.2.6"
+    "kc-tagfun": "^1.2.6",
+    "t2js": "^4.0.3"
   }
 }
