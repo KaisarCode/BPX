@@ -1,15 +1,15 @@
 /*Table*/
-.tbl { display: table; }
-.tbl .cel { display: table-cell; }
+.${r} .${x}tbl { display: table; }
+.${r} .${x}tbl .${x}cel { display: table-cell; }
 
-.tbl .row { display: table-row; }
-.tbl .row-grp { display: table-row-group; }
+.${r} .${x}tbl .${x}row { display: table-row; }
+.${r} .${x}tbl .${x}row-grp { display: table-row-group; }
 
-.tbl .col { display: table-column; }
-.tbl .col-grp { display: table-column-group; }
+.${r} .${x}tbl .${x}col { display: table-column; }
+.${r} .${x}tbl .${x}col-grp { display: table-column-group; }
 
-.tbl .hdr-grp { display: table-header-group; }
-.tbl .ftr-grp { display: table-footer-group; }
+.${r} .${x}tbl .${x}hdr-grp { display: table-header-group; }
+.${r} .${x}tbl .${x}ftr-grp { display: table-footer-group; }
 
-.tbl .cap { display: table-caption; }
-.tbl-fix { table-layout: fixed; }
+.${r} .${x}tbl .${x}cap { display: table-caption; }
+.${r} .${x}tbl-fix { table-layout: fixed; }

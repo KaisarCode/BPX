@@ -1,11 +1,11 @@
 /*Shadow*/
-.shad,
-.shad-x1 { box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2); }
-.shad-x2 { box-shadow: 0 .125em .25em rgba(0,0,0,.075); }
-.shad-x3 { box-shadow: 0 .5em 1em rgba(0,0,0,0.15); }
-.shad-x4 { box-shadow: 0 1em 3em rgba(0,0,0,0.175); }
-.shad-x0,
-.shad-no { box-shadow: none; }
+.${r} .${x}shad,
+.${r} .${x}shad-x1 { box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2); }
+.${r} .${x}shad-x2 { box-shadow: 0 .125em .25em rgba(0,0,0,.075); }
+.${r} .${x}shad-x3 { box-shadow: 0 .5em 1em rgba(0,0,0,0.15); }
+.${r} .${x}shad-x4 { box-shadow: 0 1em 3em rgba(0,0,0,0.175); }
+.${r} .${x}shad-x0,
+.${r} .${x}shad-no { box-shadow: none; }
 
-.shad-txt { text-shadow: 1px 2px 0 rgba(0,0,0,0.2); }
-.shad-txt-no { text-shadow: none; }
+.${r} .${x}shad-txt { text-shadow: 1px 2px 0 rgba(0,0,0,0.2); }
+.${r} .${x}shad-txt-no { text-shadow: none; }

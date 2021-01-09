@@ -1,6 +1,6 @@
 /*Display*/
-.blo { display: block; }
-.inl { display: inline-block; }
-.itm { display: list-item; }
-.hid { visibility: hidden; }
-.no { display: none; }
+.${r} .${x}blo { display: block; }
+.${r} .${x}inl { display: inline-block; }
+.${r} .${x}itm { display: list-item; }
+.${r} .${x}hid { visibility: hidden; }
+.${r} .${x}no { display: none; }

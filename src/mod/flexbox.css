@@ -1,25 +1,25 @@
 /*Flexbox*/
-.flx { display: flex; }
-.flx-inl { display: inline-flex; }
-.flx-row { flex-direction: row; }
-.flx-col { flex-direction: column; }
+.${r} .${x}flx { display: flex; }
+.${r} .${x}flx-inl { display: inline-flex; }
+.${r} .${x}flx-row { flex-direction: row; }
+.${r} .${x}flx-col { flex-direction: column; }
 
-.flx-full { flex: auto; }
-.flx-fall { flex-wrap: wrap; }
-.flx-fall-no { flex-wrap: nowrap; }
+.${r} .${x}flx-full { flex: auto; }
+.${r} .${x}flx-fall { flex-wrap: wrap; }
+.${r} .${x}flx-fall-no { flex-wrap: nowrap; }
 
-.flx-al-l { align-items: flex-start; }
-.flx-al-c { align-items: center; }
-.flx-al-r { align-items: flex-end; }
+.${r} .${x}flx-al-l { align-items: flex-start; }
+.${r} .${x}flx-al-c { align-items: center; }
+.${r} .${x}flx-al-r { align-items: flex-end; }
 
-.flx-jus-l { justify-content: flex-start; }
-.flx-jus-c { justify-content: center; }
-.flx-jus-r { justify-content: flex-end; }
+.${r} .${x}flx-jus-l { justify-content: flex-start; }
+.${r} .${x}flx-jus-c { justify-content: center; }
+.${r} .${x}flx-jus-r { justify-content: flex-end; }
 
-.flx-arn { justify-content: space-around; }
-.flx-btw { justify-content: space-between; }
+.${r} .${x}flx-arn { justify-content: space-around; }
+.${r} .${x}flx-btw { justify-content: space-between; }
 
-.flx-mid {
+.${r} .${x}flx-mid {
     display: flex;
     align-items: center;
     justify-content: center;

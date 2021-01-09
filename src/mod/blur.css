@@ -1,11 +1,11 @@
 /*Blur*/
-.blur,
-.blur-x1 { filter: blur(1px); }
-.blur-x2 { filter: blur(2px); }
-.blur-x3 { filter: blur(3px); }
-.blur-x4 { filter: blur(4px); }
-.blur-x5 { filter: blur(5px); }
-.blur-x6 { filter: blur(6px); }
-.blur-x7 { filter: blur(7px); }
-.blur-x0,
-.blur-no { filter: blur(0); }
+.${r} .${x}blur,
+.${r} .${x}blur-x1 { filter: blur(1px); }
+.${r} .${x}blur-x2 { filter: blur(2px); }
+.${r} .${x}blur-x3 { filter: blur(3px); }
+.${r} .${x}blur-x4 { filter: blur(4px); }
+.${r} .${x}blur-x5 { filter: blur(5px); }
+.${r} .${x}blur-x6 { filter: blur(6px); }
+.${r} .${x}blur-x7 { filter: blur(7px); }
+.${r} .${x}blur-x0,
+.${r} .${x}blur-no { filter: blur(0); }

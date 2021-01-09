@@ -1,14 +1,14 @@
 /*Darken*/
-.drk,
-.drk-x1 { filter: brightness(90%); }
-.drk-x2 { filter: brightness(80%); }
-.drk-x3 { filter: brightness(70%); }
-.drk-x4 { filter: brightness(60%); }
-.drk-x5 { filter: brightness(50%); }
-.drk-x6 { filter: brightness(40%); }
-.drk-x7 { filter: brightness(30%); }
-.drk-x8 { filter: brightness(20%); }
-.drk-x9 { filter: brightness(10%); }
-.drk-x10 { filter: brightness(0%); }
-.drk-x0,
-.drk-no { filter: brightness(100%); }
+.${r} .${x}drk,
+.${r} .${x}drk-x1 { filter: brightness(90%); }
+.${r} .${x}drk-x2 { filter: brightness(80%); }
+.${r} .${x}drk-x3 { filter: brightness(70%); }
+.${r} .${x}drk-x4 { filter: brightness(60%); }
+.${r} .${x}drk-x5 { filter: brightness(50%); }
+.${r} .${x}drk-x6 { filter: brightness(40%); }
+.${r} .${x}drk-x7 { filter: brightness(30%); }
+.${r} .${x}drk-x8 { filter: brightness(20%); }
+.${r} .${x}drk-x9 { filter: brightness(10%); }
+.${r} .${x}drk-x10 { filter: brightness(0%); }
+.${r} .${x}drk-x0,
+.${r} .${x}drk-no { filter: brightness(100%); }

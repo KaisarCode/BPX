@@ -1,5 +1,5 @@
 /*Z Index*/
-.idx-1 { z-index: 1; }
-.idx-2 { z-index: 2; }
-.idx-3 { z-index: 3; }
-.on-top { z-index: 9999999999999; }
+.${r} .${x}idx-1 { z-index: 1; }
+.${r} .${x}idx-2 { z-index: 2; }
+.${r} .${x}idx-3 { z-index: 3; }
+.${r} .${x}on-top { z-index: 9999999999999; }

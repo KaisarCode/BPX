@@ -1,5 +1,5 @@
 @{__BPX/util.css}
-<?O?>
+<?setBreaks('screen', function(x){R?>
 @{__BPX/mod/align.css}
 @{__BPX/mod/background.css}
 @{__BPX/mod/blur.css}
@@ -29,3 +29,4 @@
 @{__BPX/mod/zindex.css}
 @{__BPX/mod/ease.css}
 @{__BPX/mod/display.css}
+<?});?>

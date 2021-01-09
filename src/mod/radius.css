@@ -1,15 +1,15 @@
 /*Radius*/
-.circ { border-radius: 50%; }
+.${r} .${x}circ { border-radius: 50%; }
 
-.rad { border-radius: 0.3em; }
-.rad-no { border-radius: 0; }
+.${r} .${x}rad { border-radius: 0.3em; }
+.${r} .${x}rad-no { border-radius: 0; }
 
-.rad-tl { border-top-left-radius: 0.3em; }
-.rad-tr { border-top-right-radius: 0.3em; }
-.rad-bl { border-bottom-left-radius: 0.3em; }
-.rad-br { border-bottom-right-radius: 0.3em; }
+.${r} .${x}rad-tl { border-top-left-radius: 0.3em; }
+.${r} .${x}rad-tr { border-top-right-radius: 0.3em; }
+.${r} .${x}rad-bl { border-bottom-left-radius: 0.3em; }
+.${r} .${x}rad-br { border-bottom-right-radius: 0.3em; }
 
-.rad-tl-no { border-top-left-radius: 0; }
-.rad-tr-no { border-top-right-radius: 0; }
-.rad-bl-no { border-bottom-left-radius: 0; }
-.rad-br-no { border-bottom-right-radius: 0; }
+.${r} .${x}rad-tl-no { border-top-left-radius: 0; }
+.${r} .${x}rad-tr-no { border-top-right-radius: 0; }
+.${r} .${x}rad-bl-no { border-bottom-left-radius: 0; }
+.${r} .${x}rad-br-no { border-bottom-right-radius: 0; }

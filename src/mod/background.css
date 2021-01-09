@@ -1,21 +1,21 @@
 /*BG Size*/
-.bg-cv { background-size: cover; }
-.bg-cn { background-size: contain; }
+.${r} .${x}bg-cv { background-size: cover; }
+.${r} .${x}bg-cn { background-size: contain; }
 
-.bg-x0 { background-size: 0; }
-.bg-x1 { background-size: 10%; }
-.bg-x2 { background-size: 20%; }
-.bg-x3 { background-size: 30%; }
-.bg-x4 { background-size: 40%; }
-.bg-x5 { background-size: 50%; }
-.bg-x6 { background-size: 60%; }
-.bg-x7 { background-size: 70%; }
-.bg-x8 { background-size: 80%; }
-.bg-x9 { background-size: 90%; }
-.bg-x10{ background-size: 100%; }
+.${r} .${x}bg-x0 { background-size: 0; }
+.${r} .${x}bg-x1 { background-size: 10%; }
+.${r} .${x}bg-x2 { background-size: 20%; }
+.${r} .${x}bg-x3 { background-size: 30%; }
+.${r} .${x}bg-x4 { background-size: 40%; }
+.${r} .${x}bg-x5 { background-size: 50%; }
+.${r} .${x}bg-x6 { background-size: 60%; }
+.${r} .${x}bg-x7 { background-size: 70%; }
+.${r} .${x}bg-x8 { background-size: 80%; }
+.${r} .${x}bg-x9 { background-size: 90%; }
+.${r} .${x}bg-x10{ background-size: 100%; }
 
 /*BG Repeat*/
-.bg-rp { background-repeat: repeat; }
-.bg-rp-no { background-repeat: no-repeat; }
+.${r} .${x}bg-rp { background-repeat: repeat; }
+.${r} .${x}bg-rp-no { background-repeat: no-repeat; }
 
 

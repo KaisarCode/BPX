@@ -5,6 +5,32 @@ function isdef(v) {
     !=='undefined';
 }
 
+/*Breakpoints*/
+function setBreaks(media, cb) {
+    var out = '';
+    media ? media+=' and ':'';
+    cfg.bps.forEach(function(s, i){
+        var b = x; x ? b = x+'-':'';
+        if (s > 0) { out +=?>
+            @media screen and (min-width: ${s}px) {
+                ${cb(b+'bp'+i+'-')}
+            }
+        <?} else { out += cb(b); }
+    }); O?>${out}<?;
+}
+
+/*Set breakpoints*/
+function setBrea(bps, cb) {
+    var out = '';
+    bps.forEach(function(s, i){
+        if (s > 0) {
+        out += ?>
+        @media (min-width: ${s}px) {
+            ${cb('bp'+i+'-')} 
+        }<? } else { out += cb(''); }
+    }); O?><? out;
+}
+
 /*Hex to RGB object*/
 function hex2rgb(hex) {
     hex = hex || '';

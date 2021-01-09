@@ -1,16 +1,16 @@
 /*Color*/
-.tx-c0 { color: #000; }
-.bd-c0 { border-color: #000; }
-.bg-c0 { background-color: #000; }
+.${r} .${x}tx-c0 { color: #000; }
+.${r} .${x}bd-c0 { border-color: #000; }
+.${r} .${x}bg-c0 { background-color: #000; }
 
-.tx-c1 { color: #FFF; }
-.bd-c1 { border-color: #FFF; }
-.bg-c1 { background-color: #FFF; }
+.${r} .${x}tx-c1 { color: #FFF; }
+.${r} .${x}bd-c1 { border-color: #FFF; }
+.${r} .${x}bg-c1 { background-color: #FFF; }
 
-.tx-c2 { color: red; }
-.bd-c2 { border-color: red; }
-.bg-c2 { background-color: red; }
+.${r} .${x}tx-c2 { color: red; }
+.${r} .${x}bd-c2 { border-color: red; }
+.${r} .${x}bg-c2 { background-color: red; }
 
-.tx-c3 { color: green; }
-.bd-c3 { border-color: green; }
-.bg-c3 { background-color: green; }
+.${r} .${x}tx-c3 { color: green; }
+.${r} .${x}bd-c3 { border-color: green; }
+.${r} .${x}bg-c3 { background-color: green; }

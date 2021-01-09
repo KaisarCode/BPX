@@ -1,14 +1,14 @@
 /*Lighten*/
-.lgt,
-.lgt-x1 { filter: brightness(110%); }
-.lgt-x2 { filter: brightness(120%); }
-.lgt-x3 { filter: brightness(130%); }
-.lgt-x4 { filter: brightness(140%); }
-.lgt-x5 { filter: brightness(150%); }
-.lgt-x6 { filter: brightness(160%); }
-.lgt-x7 { filter: brightness(170%); }
-.lgt-x8 { filter: brightness(180%); }
-.lgt-x9 { filter: brightness(190%); }
-.lgt-x10 { filter: brightness(200%); }
-.lgt-x0,
-.lgt-no { filter: brightness(100%); }
+.${r} .${x}lgt,
+.${r} .${x}lgt-x1 { filter: brightness(110%); }
+.${r} .${x}lgt-x2 { filter: brightness(120%); }
+.${r} .${x}lgt-x3 { filter: brightness(130%); }
+.${r} .${x}lgt-x4 { filter: brightness(140%); }
+.${r} .${x}lgt-x5 { filter: brightness(150%); }
+.${r} .${x}lgt-x6 { filter: brightness(160%); }
+.${r} .${x}lgt-x7 { filter: brightness(170%); }
+.${r} .${x}lgt-x8 { filter: brightness(180%); }
+.${r} .${x}lgt-x9 { filter: brightness(190%); }
+.${r} .${x}lgt-x10 { filter: brightness(200%); }
+.${r} .${x}lgt-x0,
+.${r} .${x}lgt-no { filter: brightness(100%); }

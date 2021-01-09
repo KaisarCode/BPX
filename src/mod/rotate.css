@@ -1,10 +1,10 @@
 /*Rotate*/
-.rot-x0 { transform: rotate(0); }
-.rot-x1 { transform: rotate(45); }
-.rot-x2 { transform: rotate(90); }
-.rot-x3 { transform: rotate(135); }
-.rot-x4 { transform: rotate(180); }
-.rot-x5 { transform: rotate(225); }
-.rot-x6 { transform: rotate(270); }
-.rot-x7 { transform: rotate(315); }
-.rot-x8 { transform: rotate(360); }
+.${r} .${x}rot-x0 { transform: rotate(0); }
+.${r} .${x}rot-x1 { transform: rotate(45); }
+.${r} .${x}rot-x2 { transform: rotate(90); }
+.${r} .${x}rot-x3 { transform: rotate(135); }
+.${r} .${x}rot-x4 { transform: rotate(180); }
+.${r} .${x}rot-x5 { transform: rotate(225); }
+.${r} .${x}rot-x6 { transform: rotate(270); }
+.${r} .${x}rot-x7 { transform: rotate(315); }
+.${r} .${x}rot-x8 { transform: rotate(360); }

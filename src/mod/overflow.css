@@ -1,17 +1,17 @@
 /*Overflow*/
-.oflow { overflow: hidden; }
-.oflow-x { overflow-x: hidden; }
-.oflow-y { overflow-y: hidden; }
-.scroll { overflow: auto; }
-.scroll-x { overflow-x: auto; }
-.scroll-y { overflow-y: auto; }
-.swipe {
+.${r} .${x}oflow { overflow: hidden; }
+.${r} .${x}oflow-x { overflow-x: hidden; }
+.${r} .${x}oflow-y { overflow-y: hidden; }
+.${r} .${x}scroll { overflow: auto; }
+.${r} .${x}scroll-x { overflow-x: auto; }
+.${r} .${x}scroll-y { overflow-y: auto; }
+.${r} .${x}swipe {
     overflow: auto;
     scrollbar-width: none;
 }
-.swipe::-webkit-scrollbar { display: none; }
+.${r} .${x}swipe::-webkit-scrollbar { display: none; }
 
-.ellip {
+.${r} .${x}ellip {
     max-width: 100%;
     overflow: hidden;
     white-space: nowrap;
