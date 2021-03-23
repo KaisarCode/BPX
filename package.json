@@ -10,9 +10,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:KaisarCode/BPX.git"
+    "url": "https://github.com/kaisarsnippets/BPX.git"
   },
-  "homepage": "https://github.com/KaisarCode/BPX",
+  "homepage": "https://github.com/kaisarsnippets/BPX",
   "dependencies": {
     "asbox": "^1.0.8",
     "kc-fread": "^1.0.7",
